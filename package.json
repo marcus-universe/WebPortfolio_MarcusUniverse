@@ -1,0 +1,67 @@
+{
+  "name": "marcus_harting_webportfolio",
+  "version": "1.0.0",
+  "description": "Webportfolio from Marcus Harting created in year 2021",
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.6.14",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-jest": "^4.0.3",
+    "gulp-jshint": "^2.1.0",
+    "gulp-jslint": "^1.0.10",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.12",
+    "cssnano": "^5.0.2",
+    "jest": "^26.6.3",
+    "jshint": "^2.11.0",
+    "rename": "^1.0.4",
+    "tinyify": "^3.0.0",
+    "tsify": "^5.0.2",
+    "typescript": "^4.2.4",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.1",
+    "babel-runtime": "^6.26.0",
+    "faker": "^5.1.0",
+    "gulp-esbuild": "^0.8.2",
+    "jest-puppeteer": "^4.4.0",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.1.0",
+    "puppeteer": "^7.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusTutorials/webportfolio_mh_2021.github.io.git"
+  },
+  "keywords": [
+    "Webportfolio",
+    "Design",
+    "Neon",
+    "Marcus",
+    "Harting",
+    "3D",
+    "VR"
+  ],
+  "author": "Marcus Harting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcusTutorials/webportfolio_mh_2021.github.io/issues"
+  },
+  "homepage": "https://github.com/MarcusTutorials/webportfolio_mh_2021.github.io#readme"
+}
