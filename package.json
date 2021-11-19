@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarcusTutorials/webportfolio_mh_2021.github.io.git"
+    "url": "git@github.com:MarcusTutorials/webportfolio_mh_2021.github.io.git"
   },
   "keywords": [
     "Webportfolio",
