@@ -1,0 +1,535 @@
+{
+  "Gallery" : {
+    "3D-Scan-of-Me" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/3D-Scan-of-Me.jpg?alt=media&token=ac116d56-11d4-4045-962a-c67d256cf8d0",
+      "Link" : "https://www.artstation.com/artwork/Z5JP2w",
+      "LinkNeed" : true,
+      "Order" : 5,
+      "Tags" : "3DArt",
+      "Title" : "3D Scan of Me"
+    },
+    "Avatar Universe" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Zeichnen%2FAvatar-Universe.png?alt=media&token=5c83a3bd-a625-4f95-8091-4b88f14fe859",
+      "Link" : "https://www.artstation.com/artwork/nYE9r9",
+      "LinkNeed" : true,
+      "Tags" : "Illustration Zeichnungen",
+      "Title" : "Avatar"
+    },
+    "Blue Leaves" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FBlue-Leaves.jpg?alt=media&token=4c1142a6-cebf-4bd8-8b6a-fb66a97a08b3",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49941932183/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 8,
+      "Tags" : "Fotos",
+      "Title" : "Blue Leaves"
+    },
+    "Crystal Treehouse" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Zeichnen%2FMattpainting.png?alt=media&token=bea434c6-edc7-45ed-a5e8-fe47a26b8db9",
+      "Link" : "https://www.artstation.com/artwork/184y1Z",
+      "LinkNeed" : true,
+      "Tags" : "Zeichnungen Illustration",
+      "Title" : "Crystal Treehouse"
+    },
+    "Cube Cracks" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Cube-Cracks.jpg?alt=media&token=1cdb2582-75b2-4650-84d6-f5db46ddb805",
+      "Link" : "https://www.artstation.com/artwork/y8OXx",
+      "LinkNeed" : true,
+      "Order" : 5,
+      "Tags" : "3DArt",
+      "Title" : "Cube Cracks"
+    },
+    "Czech Republic Pier" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FCzech-Republic-Pier.jpg?alt=media&token=c7a29f8a-3480-4765-923b-342fef94b9d9",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942695912/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 9,
+      "Tags" : "Fotos",
+      "Title" : "Czech Republic Pier"
+    },
+    "Dark_Planet_Material" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Dark_Planet_Material.jpg?alt=media&token=7c5bdd3e-a1cb-441e-a671-8783bf6339e0",
+      "Link" : "https://www.artstation.com/artwork/Oy3e4y",
+      "LinkNeed" : true,
+      "Order" : 5,
+      "Tags" : "3DArt",
+      "Title" : "Dark Planet Material"
+    },
+    "Dramatic Sky" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FSunSet-Sky.jpg?alt=media&token=6441a1d4-ff07-4374-a0fc-00e6e253c144",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942707117/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 7,
+      "Tags" : "Fotos",
+      "Title" : "Sunset Sky Dramatic"
+    },
+    "Dreamroom VR" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Gamedev%2FVR-Dreamroom.png?alt=media&token=1753d1f5-ff52-4ddb-a08b-990510f5c46d",
+      "Link" : "https://youtu.be/NrpcwbHG6Bg",
+      "LinkNeed" : true,
+      "Tags" : "GameDev",
+      "Title" : "Dream Room VR Project"
+    },
+    "Drive over the Horizon" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Drive-over-the-Horizon.png?alt=media&token=6f5a60a4-4e82-421a-95f0-6c3ad278ea52",
+      "Link" : "https://www.artstation.com/artwork/3ddyrD",
+      "LinkNeed" : true,
+      "Tags" : "3DArt",
+      "Title" : "Drive over the Horizon"
+    },
+    "FakeCorporate" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/FakeCorporateDesign.jpg?alt=media&token=1ce42d32-5289-46e5-81ae-42c01bf13794",
+      "Link" : "https://www.artstation.com/artwork/WKGkXG",
+      "LinkNeed" : true,
+      "Order" : 9,
+      "Tags" : "3DArt",
+      "Title" : "Fake Corporate Design"
+    },
+    "Geweih_Wallpaper" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Illustration%2FGeweih_Wallpaper_Illustration.png?alt=media&token=487f1341-72f0-4c82-a25a-3bf9a204de5b",
+      "Link" : "https://www.artstation.com/artwork/e050gP",
+      "LinkNeed" : true,
+      "Tags" : "Illustration",
+      "Title" : "Geweih_Wallpaper"
+    },
+    "Langzeitbelichtungen" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FLangzeitbelichtung.jpg?alt=media&token=50ce36f6-ade0-4e28-b4d1-eb6df7be7a1a",
+      "Link" : "https://www.pinterest.de/MarcusTutorials/langzeit-belichtungen/",
+      "LinkNeed" : true,
+      "Order" : 8,
+      "Tags" : "Fotos",
+      "Title" : "Langzeitbelichtungen"
+    },
+    "Light Bricks" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FLight-Bricks.jpg?alt=media&token=b612a7ae-d9dc-4c05-88d4-7812d56bcdc2",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49941932073/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 8,
+      "Tags" : "Fotos",
+      "Title" : "Light Bricks"
+    },
+    "MT Future Office" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/MT_Future_Office.jpg?alt=media&token=7deda31c-73b1-4352-a650-c5b17f4011c4",
+      "Link" : "https://www.artstation.com/artwork/9eo1gq",
+      "LinkNeed" : true,
+      "Order" : 1,
+      "Tags" : "3DArt",
+      "Title" : "MT Future Office"
+    },
+    "MT Logo Metall Grid" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/MT_Logo_Metall_Grid.jpg?alt=media&token=fc8a151f-7c88-418e-84c1-ede772d51412",
+      "Link" : "https://www.artstation.com/artwork/xz2gB2",
+      "LinkNeed" : true,
+      "Order" : 4,
+      "Tags" : "3DArt",
+      "Title" : "MT Logo Metall Grid"
+    },
+    "Max Banner" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Banner%2FMax_YT_Banner.png?alt=media&token=dba763f5-eabe-4420-b5fb-7cdef82649e9",
+      "Link" : "https://youtu.be/GN_uHTC5hqA",
+      "LinkNeed" : true,
+      "Tags" : "Banner",
+      "Title" : "Max Youtube Banner"
+    },
+    "One Line Zeichnungen" : {
+      "CustomClass" : "OneLine",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Zeichnen%2FOne-Line-Zeichnungen.jpg?alt=media&token=e5098dcc-1300-4d47-bb9d-1dd435ee53a0",
+      "Link" : "https://www.pinterest.de/MarcusTutorials/zeichnungen-malerei/one-line-draw/",
+      "LinkNeed" : true,
+      "Order" : 8,
+      "Tags" : "Zeichnungen",
+      "Title" : "One Line Zeichnungen"
+    },
+    "Pixelart_Character" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Pixelart%2FPixelart_Character.jpg?alt=media&token=5897828b-473f-4097-8839-e9d753f17b41",
+      "Link" : "https://www.artstation.com/artwork/rRl9bG",
+      "LinkNeed" : true,
+      "Order" : 3,
+      "Tags" : "Pixelart",
+      "Title" : "Pixelart Character"
+    },
+    "Poison Girl" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Poison-Girl.jpg?alt=media&token=dbdc6f59-bc91-4945-ad40-5fb769a5d1ff",
+      "Link" : "https://www.artstation.com/artwork/mqmNP8",
+      "LinkNeed" : true,
+      "Order" : 6,
+      "Tags" : "3DArt",
+      "Title" : "Poison Girl"
+    },
+    "Spiral_3D_Art" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Spiral_3D_Art.jpg?alt=media&token=d8ad0236-8a26-4547-aa5d-cdfe218a6533",
+      "Link" : "https://www.artstation.com/artwork/N5gQK5",
+      "LinkNeed" : true,
+      "Order" : 4,
+      "Tags" : "3DArt",
+      "Title" : "Spiral 3D Art"
+    },
+    "Sunglasses" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FSunglasses.jpg?alt=media&token=7443a4fc-d939-472d-bd72-3acdb5ff10bd",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942707772/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 7,
+      "Tags" : "Fotos",
+      "Title" : "Sunglasses"
+    },
+    "Sunset Beach" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FSunset-Beach.jpg?alt=media&token=505ac61b-17ce-43a1-8b8b-03ae4f6d38ba",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942744862/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 9,
+      "Tags" : "Fotos",
+      "Title" : "Sunset Beach"
+    },
+    "Triangle Infinity Room" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Triangle-Infinity-Cube.jpg?alt=media&token=69140f0c-dba8-4166-aec4-0c1478b9258e",
+      "Link" : "https://www.artstation.com/artwork/w8NbPL",
+      "LinkNeed" : true,
+      "Order" : 4,
+      "Tags" : "3DArt",
+      "Title" : "Triangle Infinity Room"
+    },
+    "Turkey Farm Hungary" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FTurkey-Farm-Hungary.jpg?alt=media&token=c5272b6f-7e0a-4aad-b1d3-64f6ef132418",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49941888903/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 9,
+      "Tags" : "Fotos",
+      "Title" : "Turkey Farm Hungary"
+    },
+    "Typo-Portrait" : {
+      "CustomClass" : "OneLine",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Typo%2FTypo-Portrait.jpg?alt=media&token=cd1fbaef-d25d-4bab-b607-61ef8a228e98",
+      "Link" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Typo%2FTypografie_Portrait.pdf?alt=media&token=77b03466-903d-4f2b-8890-84fe9ab17737",
+      "LinkNeed" : true,
+      "Order" : 9,
+      "Tags" : "Fotos",
+      "Title" : "Typo-Portrait"
+    },
+    "VRChat_SynthwaveRetro Character" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/VRChat_Character.png?alt=media&token=17cd77a3-3e72-480d-869a-a7d6144ef6e7",
+      "Link" : "https://www.artstation.com/artwork/0n3ZZ5",
+      "LinkNeed" : true,
+      "Tags" : "3DArt",
+      "Title" : "VRChat Synthwave Retro Character"
+    },
+    "Waterdrops-Sunset" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FWaterdrop-Sunset.jpg?alt=media&token=116d4e7d-2470-4a35-8a42-0439e17a34c1",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942399981/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 8,
+      "Tags" : "Fotos",
+      "Title" : "Waterdrops-Sunset"
+    },
+    "Wave Terrain" : {
+      "CustomClass" : "Gif_1x1",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Video%2FWaveTerrain.gif?alt=media&token=18596e2d-7f87-4180-9bba-36eefcc6d8b8",
+      "Link" : "https://www.instagram.com/p/CAdctXroO-A/",
+      "LinkNeed" : true,
+      "Order" : 6,
+      "Tags" : "3DArt Instagram",
+      "Title" : "Wave Terrain"
+    },
+    "Wide Angle Beach" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FWide-Angle-Beach.jpg?alt=media&token=891547ec-12bb-4734-8e57-c628ed492ea5",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942744787/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : 9,
+      "Tags" : "Fotos",
+      "Title" : "Wide Angle Beach"
+    },
+    "Your Pinguin" : {
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Gamedev%2FYour-Pinguin.png?alt=media&token=084a2929-9a8b-4aec-87f6-ae55b1a94167",
+      "Link" : "https://marcustutorials.itch.io/your-pinguin",
+      "LinkNeed" : true,
+      "Tags" : "GameDev",
+      "Title" : "Your Pinguin"
+    }
+  },
+  "GalleryPortfolio" : {
+    "3D Scan of Me" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/3D-Scan-of-Me.jpg?alt=media&token=ac116d56-11d4-4045-962a-c67d256cf8d0",
+      "Link" : "https://www.artstation.com/artwork/Z5JP2w",
+      "LinkNeed" : true,
+      "Order" : -2,
+      "Tags" : "3DArt",
+      "Title" : "3D Scan of Me"
+    },
+    "Crystal Treehouse" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Zeichnen%2FMattpainting.png?alt=media&token=bea434c6-edc7-45ed-a5e8-fe47a26b8db9",
+      "Link" : "https://www.artstation.com/artwork/184y1Z",
+      "LinkNeed" : true,
+      "Order" : -26,
+      "Tags" : "Zeichnungen Illustration",
+      "Title" : "Crystal Treehouse"
+    },
+    "Cube Cracks" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Cube-Cracks.jpg?alt=media&token=1cdb2582-75b2-4650-84d6-f5db46ddb805",
+      "Link" : "https://www.artstation.com/artwork/y8OXx",
+      "LinkNeed" : true,
+      "Order" : -17,
+      "Tags" : "3DArt",
+      "Title" : "Cube Cracks"
+    },
+    "Czech Republic Pier" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FCzech-Republic-Pier.jpg?alt=media&token=c7a29f8a-3480-4765-923b-342fef94b9d9",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942695912/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : -5,
+      "Tags" : "Fotos",
+      "Title" : "Czech Republic Pier"
+    },
+    "Dark Planet Material" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Dark_Planet_Material.jpg?alt=media&token=7c5bdd3e-a1cb-441e-a671-8783bf6339e0",
+      "Link" : "https://www.artstation.com/artwork/Oy3e4y",
+      "LinkNeed" : true,
+      "Order" : -16,
+      "Tags" : "3DArt",
+      "Title" : "Dark Planet Material"
+    },
+    "Digilog Manual Pressure" : {
+      "CustomClass" : "OneLine",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Illustration%2FDigilog_Vorschau.jpg?alt=media&token=f6cbb69b-dcf2-4b07-a6a1-af918f155a92",
+      "Link" : "https://www.artstation.com/artwork/J9O2gZ",
+      "LinkNeed" : true,
+      "Order" : -32,
+      "Tags" : "Illustration Analog",
+      "Title" : "Digilog Manual Pressure"
+    },
+    "Dream Room VR Project" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Gamedev%2FVR-Dreamroom.png?alt=media&token=1753d1f5-ff52-4ddb-a08b-990510f5c46d",
+      "Link" : "https://youtu.be/NrpcwbHG6Bg",
+      "LinkNeed" : true,
+      "Order" : -24,
+      "Tags" : "3DArt GameDev",
+      "Title" : "Dream Room VR Project"
+    },
+    "Drive over the Horizon" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Drive-over-the-Horizon.png?alt=media&token=6f5a60a4-4e82-421a-95f0-6c3ad278ea52",
+      "Link" : "https://www.artstation.com/artwork/3ddyrD",
+      "LinkNeed" : true,
+      "Order" : -25,
+      "Tags" : "3DArt",
+      "Title" : "Drive over the Horizon"
+    },
+    "Fake Corporate Design" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/FakeCorporateDesign.jpg?alt=media&token=1ce42d32-5289-46e5-81ae-42c01bf13794",
+      "Link" : "https://www.artstation.com/artwork/WKGkXG",
+      "LinkNeed" : true,
+      "Order" : -31,
+      "Tags" : "3DArt Werbung",
+      "Title" : "Fake Corporate Design"
+    },
+    "Geweih_Wallpaper" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Illustration%2FGeweih_Wallpaper_Illustration.png?alt=media&token=487f1341-72f0-4c82-a25a-3bf9a204de5b",
+      "Link" : "https://www.artstation.com/artwork/e050gP",
+      "LinkNeed" : true,
+      "Order" : -23,
+      "Tags" : "Illustation",
+      "Title" : "Geweih_Wallpaper"
+    },
+    "JOURNEY" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Illustration%2FJourneyDesign.jpg?alt=media&token=86c5e7ee-ab3e-4801-ac86-7437bd217fb2",
+      "Link" : "https://www.artstation.com/artwork/0noxrw",
+      "LinkNeed" : true,
+      "Order" : -33,
+      "Tags" : "Illustration 3DArt",
+      "Title" : "JOURNEY"
+    },
+    "Langzeitbelichtungen" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FLangzeitbelichtung.jpg?alt=media&token=50ce36f6-ade0-4e28-b4d1-eb6df7be7a1a",
+      "Link" : "https://www.pinterest.de/MarcusTutorials/langzeit-belichtungen/",
+      "LinkNeed" : true,
+      "Order" : -8,
+      "Tags" : "Fotos",
+      "Title" : "Langzeitbelichtungen"
+    },
+    "Light Bricks" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FLight-Bricks.jpg?alt=media&token=b612a7ae-d9dc-4c05-88d4-7812d56bcdc2",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49941932073/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : -7,
+      "Tags" : "Fotos",
+      "Title" : "Light Bricks"
+    },
+    "MT Future Office" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/MT_Future_Office.jpg?alt=media&token=7deda31c-73b1-4352-a650-c5b17f4011c4",
+      "Link" : "https://www.artstation.com/artwork/9eo1gq",
+      "LinkNeed" : true,
+      "Order" : -30,
+      "Tags" : "3DArt",
+      "Title" : "MT Future Office"
+    },
+    "MT Logo Metall Grid" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/MT_Logo_Metall_Grid.jpg?alt=media&token=fc8a151f-7c88-418e-84c1-ede772d51412",
+      "Link" : "https://www.artstation.com/artwork/xz2gB2",
+      "LinkNeed" : true,
+      "Order" : -18,
+      "Tags" : "3DArt",
+      "Title" : "MT Logo Metall Grid"
+    },
+    "Max Youtube Banner" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Banner%2FMax_YT_Banner.png?alt=media&token=dba763f5-eabe-4420-b5fb-7cdef82649e9",
+      "Link" : "https://youtu.be/GN_uHTC5hqA",
+      "LinkNeed" : true,
+      "Order" : -22,
+      "Tags" : "Banner 3DArt",
+      "Title" : "Max Youtube Banner"
+    },
+    "Neon Avatar Universe" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Zeichnen%2FAvatar-Universe.png?alt=media&token=5c83a3bd-a625-4f95-8091-4b88f14fe859",
+      "Link" : "https://www.artstation.com/artwork/nYE9r9",
+      "LinkNeed" : true,
+      "Order" : -27,
+      "Tags" : "Zeichnungen Illustration",
+      "Title" : "Neon Avatar Universe"
+    },
+    "One Line Zeichnungen" : {
+      "CustomClass" : "OneLine",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Zeichnen%2FOne-Line-Zeichnungen.jpg?alt=media&token=e5098dcc-1300-4d47-bb9d-1dd435ee53a0",
+      "Link" : "https://www.pinterest.de/MarcusTutorials/zeichnungen-malerei/one-line-draw/",
+      "LinkNeed" : true,
+      "Order" : -1,
+      "Tags" : "Zeichnungen",
+      "Title" : "One Line Zeichnungen"
+    },
+    "Pixelart Character" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Pixelart%2FPixelart_Character.jpg?alt=media&token=5897828b-473f-4097-8839-e9d753f17b41",
+      "Link" : "https://www.artstation.com/artwork/rRl9bG",
+      "LinkNeed" : true,
+      "Order" : -21,
+      "Tags" : "Pixelart Illustration",
+      "Title" : "Pixelart Character"
+    },
+    "Spiral 3D Art" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Spiral_3D_Art.jpg?alt=media&token=d8ad0236-8a26-4547-aa5d-cdfe218a6533",
+      "Link" : "https://www.artstation.com/artwork/N5gQK5",
+      "LinkNeed" : true,
+      "Order" : -19,
+      "Tags" : "3DArt",
+      "Title" : "Spiral 3D Art"
+    },
+    "Sunglasses" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FSunglasses.jpg?alt=media&token=7443a4fc-d939-472d-bd72-3acdb5ff10bd",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942707772/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : -11,
+      "Tags" : "Fotos",
+      "Title" : "Sunglasses"
+    },
+    "Sunset Beach" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FSunset-Beach.jpg?alt=media&token=505ac61b-17ce-43a1-8b8b-03ae4f6d38ba",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942744862/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : -4,
+      "Tags" : "Fotos",
+      "Title" : "Sunset Beach"
+    },
+    "Sunset Sky Dramatic" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FSunSet-Sky.jpg?alt=media&token=6441a1d4-ff07-4374-a0fc-00e6e253c144",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942707117/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : -10,
+      "Tags" : "Fotos",
+      "Title" : "Sunset Sky Dramatic"
+    },
+    "Triangle Infinity Room" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Triangle-Infinity-Cube.jpg?alt=media&token=69140f0c-dba8-4166-aec4-0c1478b9258e",
+      "Link" : "https://www.artstation.com/artwork/w8NbPL",
+      "LinkNeed" : true,
+      "Order" : -20,
+      "Tags" : "3DArt",
+      "Title" : "Triangle Infinity Room"
+    },
+    "Turkey Farm Hungary" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FTurkey-Farm-Hungary.jpg?alt=media&token=c5272b6f-7e0a-4aad-b1d3-64f6ef132418",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49941888903/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : -6,
+      "Tags" : "Fotos",
+      "Title" : "Turkey Farm Hungary"
+    },
+    "Typo-Portrait" : {
+      "CustomClass" : "OneLine",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Typo%2FTypo-Portrait.jpg?alt=media&token=cd1fbaef-d25d-4bab-b607-61ef8a228e98",
+      "Link" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Typo%2FTypografie_Portrait.pdf?alt=media&token=77b03466-903d-4f2b-8890-84fe9ab17737",
+      "LinkNeed" : true,
+      "Order" : -15,
+      "Tags" : "Illustration",
+      "Title" : "Typo-Portrait"
+    },
+    "VRChat Synthwave Retro Character" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/VRChat_Character.png?alt=media&token=17cd77a3-3e72-480d-869a-a7d6144ef6e7",
+      "Link" : "https://www.artstation.com/artwork/0n3ZZ5",
+      "LinkNeed" : true,
+      "Order" : -29,
+      "Tags" : "3DArt GameDev Illustration",
+      "Title" : "VRChat Synthwave Retro Character"
+    },
+    "Waterdrops-Sunset" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FWaterdrop-Sunset.jpg?alt=media&token=116d4e7d-2470-4a35-8a42-0439e17a34c1",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942399981/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : -9,
+      "Tags" : "Fotos",
+      "Title" : "Waterdrops-Sunset"
+    },
+    "Wave Terrain" : {
+      "CustomClass" : "OnetoOneImage",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Video%2FWaveTerrain.gif?alt=media&token=18596e2d-7f87-4180-9bba-36eefcc6d8b8",
+      "Link" : "https://www.instagram.com/p/CAdctXroO-A/",
+      "LinkNeed" : true,
+      "Order" : -14,
+      "Tags" : "3DArt",
+      "Title" : "Wave Terrain"
+    },
+    "Wide Angle Beach" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Fotografie%2FWide-Angle-Beach.jpg?alt=media&token=891547ec-12bb-4734-8e57-c628ed492ea5",
+      "Link" : "https://www.flickr.com/photos/188629683@N07/49942744787/in/dateposted-public/",
+      "LinkNeed" : true,
+      "Order" : -3,
+      "Tags" : "Fotos",
+      "Title" : "Wide Angle Beach"
+    },
+    "Your Pinguin" : {
+      "CustomClass" : "Normal",
+      "IMG" : "https://firebasestorage.googleapis.com/v0/b/marcusharting-portfolio.appspot.com/o/Gamedev%2FYour-Pinguin.png?alt=media&token=084a2929-9a8b-4aec-87f6-ae55b1a94167",
+      "Link" : "https://marcustutorials.itch.io/your-pinguin",
+      "LinkNeed" : true,
+      "Order" : -28,
+      "Tags" : "3DArt GameDev",
+      "Title" : "Your Pinguin"
+    }
+  },
+  "OrderNumber" : {
+    "Number" : -33
+  }
+}

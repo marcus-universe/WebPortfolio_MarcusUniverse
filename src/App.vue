@@ -21,11 +21,11 @@ export default {
                         link: '#Home'
                     },
                     {
-                        name: 'Work',
+                        name: 'Works',
                         link: '#Work'
                     },
                     {
-                        name: 'AboutMe',
+                        name: 'About',
                         link: '#About'
                     }
                 ]
