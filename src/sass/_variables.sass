@@ -1,3 +1,6 @@
+//Contrast
+$WColor: #eeeeee
+    
 //Neon Colors
 $nBlue: #3EE4FF
 $nGreen: #9CFF5C
@@ -6,21 +9,25 @@ $nPurple: #A25AFF
 $nRed: #FF6161
 $nOrange: #FFA05F
 
-    
-    
-//Blue Gradient       
-$BLcolor_1: #05153A
-$BLcolor_2: #032143
-$BLcolor_3: #022848
-$BLcolor_4: #012E4C
-$BLcolor_5: #003451
+//BG
+$BGcolor: #2a4223
+$BGcolor: #422823
+$BGcolor: #232d42
 
-$BLGradient: linear-gradient(to right top, $BLcolor_1 0% 20%,  $BLcolor_2 20% 40%, $BLcolor_3 40% 60%, $BLcolor_4 60% 80%, $BLcolor_5 80% 100%)
+//root
+:root
+  --color_p: #{$nBlue}
+  --color_bg: #{$BGcolor}
 
+
+//Responsive
+$phone: 640px
+$tablet: 1024px
+$desktop: 1600px
 
 // Fonts
 // @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;800;900&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Saira+Stencil+One&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Saira+Stencil+One&display=swap')
 
 // $fontExo: 'Exo 2', sans-serif
 $fontNoto: 'Noto Sans JP', sans-serif

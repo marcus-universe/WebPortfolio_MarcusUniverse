@@ -1,15 +1,12 @@
 <template>
 
 <section class="Start">
-  <h1 class="Headline">I think</h1>
+  <h1 class="Headline">I think
+  <br>
+    <b :class="{smallerHeadline: smallHeadline}">{{title}}</b> 
+  </h1>
+  
 </section>
-
-<section class="Works">
-
-</section>
-
-  <div class="bg bluegradient">
-  </div>
 </template>
 
 <script>
@@ -17,6 +14,19 @@
 
 
 export default {
+  name: 'StartPage',
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    smallHeadline:{
+      type: Boolean,
+      required: true
+    }
+  },
+  methods: {
+  }
   
 }
 </script>
