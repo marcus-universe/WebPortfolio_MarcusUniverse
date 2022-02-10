@@ -54,19 +54,20 @@ export default {
             type: Array,
             required: true
         },
-        currentIndex: {
+        selectedIndex: {
             type: Number,
             required: true
         }
     },
     data() {
         return {
-            MycurrentIndex: this.currentIndex,
+            MycurrentIndex: this.selectedIndex,
         }
     },
     methods: {
         LeftClick() {
             var self = this;
+            this.MycurrentIndex = this.selectedIndex
             if (self.MycurrentIndex > 0) {
                 self.MycurrentIndex--;
                 self.$emit('ChangeNav', self.MycurrentIndex);
@@ -78,6 +79,7 @@ export default {
 
         RightClick() {
             var self = this;
+            this.MycurrentIndex = this.selectedIndex
             if (self.MycurrentIndex < self.navlists.length - 1) {
                 self.MycurrentIndex++;
                 self.$emit('ChangeNav', self.MycurrentIndex);

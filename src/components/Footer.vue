@@ -2,9 +2,9 @@
 <footer>
 
     <div class="social_media">
-            <a href="https://www.artstation.com/marcusharting"><img src="../assets/artstation.svg" alt="Artstation"></a>
-            <a href="https://www.instagram.com/marcustutorials/"><img src="../assets/insta.svg" alt="Instagram"></a>
-            <a href="https://www.youtube.com/user/MarcusTutorials1"><img src="../assets/yt.svg" alt="YouTube"></a>
+            <a target="_blank" href="https://www.artstation.com/marcusharting"><img src="../assets/artstation.svg" alt="Artstation"></a>
+            <a target="_blank" href="https://www.instagram.com/marcustutorials/"><img src="../assets/insta.svg" alt="Instagram"></a>
+            <a target="_blank" href="https://www.youtube.com/user/MarcusTutorials1"><img src="../assets/yt.svg" alt="YouTube"></a>
 
     </div>
 

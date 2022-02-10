@@ -22,7 +22,7 @@
 <style lang="sass">
 @import '../sass/base.sass'
 .workinprogress
-    background: var(--BGcolor)
+    background: rgba(var(--color_bg), 1)
     height: 100vh
     width: 100%
     display: flex

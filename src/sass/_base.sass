@@ -2,19 +2,37 @@
 @import _include-media
 
 body
-    
-    height: 90vh
-    width: 100%
-    margin: 0
-    padding: 0
 
+  height: 90vh
+  width: 100%
+  margin: 0
+  padding: 0
 
+::-webkit-scrollbar
+  width: 6px
+
+/* Track */
+::-webkit-scrollbar-track
+  background: darken($WColor, 70%)
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: var(--color_p)
+  transition: all 0.3s ease
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  filter: brightness(1.6)
 
 .flex_c_h
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: row
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row
 
-
-
+.logo
+  position: absolute
+  top: 20px
+  left: 20px
+  width: 100px
+  height: 100px

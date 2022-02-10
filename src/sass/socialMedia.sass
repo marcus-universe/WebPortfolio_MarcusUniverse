@@ -1,0 +1,33 @@
+.social_media
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: row
+        margin-top: 2rem
+        a
+            color: $WColor
+            margin-right: 3rem
+            @include media('<=tablet')
+                margin-right: 2rem
+            @include media('<=phone')
+                margin-right: 1rem
+            &:hover
+                color: $nBlue
+                img
+                    opacity: 1
+            &:last-child
+                margin-right: 0
+            img
+                width: 5rem
+                opacity: 0.5
+                transition: opacity 0.5s ease-in-out
+            svg
+                width: 6rem
+                height: 6rem
+                polygon
+                    fill: var(--color_p)
+                path
+                    fill: var(--color_p)
+                rect
+                    fill: var(--color_p)
+                

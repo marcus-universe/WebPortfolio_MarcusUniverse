@@ -1,20 +1,27 @@
 <template>
 <ErrorPage v-if="error == true" />
 
+<img class="logo" src="./assets/logo/mu-logo.svg">
+
 <Menu
     :navlists="navigation.navlist"
     v-if="error == false"
+    :selectedIndex="currentselectedIndex"
     @ChangeNav="changeNav" />
 <StartPage
     v-if="error == false"
     :title="title"
-    :smallHeadline="smallHeadline" />
+    :smallHeadline="smallHeadline"
+    :hideHeadline="hideHeadline"
+     />
 
-<Slider :navlists="navigation.navlist" :currentIndex="currentselectedIndex" @ChangeNav="changeNav" />
+<Slider v-if="error == false" :navlists="navigation.navlist" @ChangeNav="changeNav" :selectedIndex="currentselectedIndex"/>
 
-<About />
+<About v-if="error == false" />
 
-<Footer />
+<LetsTalk v-if="error == false" />
+
+<Footer v-if="error == false" />
 </template>
 
 <style lang="scss">
@@ -26,6 +33,7 @@ import Menu from './components/Ui/Menu.vue'
 import StartPage from './components/StartPage.vue'
 import Slider from './components/Ui/Slider.vue'
 import About from './components/About.vue'
+import LetsTalk from './components/LetsTalk.vue'
 import ErrorPage from './components/ErrorPage.vue'
 import Footer from './components/Footer.vue'
 let root = document.documentElement;
@@ -37,6 +45,7 @@ export default {
         StartPage,
         Slider,
         About,
+        LetsTalk,
         ErrorPage,
         Footer
     },
@@ -45,10 +54,11 @@ export default {
         return {
             error: false,
             color_p: ["#3EE4FF", "#A25AFF", "#FFA05F"],
-            color_bg: ["#232d42", "#392342", "#422823"],
+            color_bg: ["35, 45, 66", "57, 35, 66", "66, 40, 35"],
             title: "3D",
             smallHeadline: false,
             currentselectedIndex: 0,
+            hideHeadline: false,
             navigation: {
                 navlist: [{
                         name: '3D',
@@ -85,6 +95,8 @@ export default {
                 root.style.setProperty('--color_bg', this.color_bg[0]);
                 var self = this;
                 var textArr = self.navigation.navlist[0].name.split('');
+                this.hideHeadline = true;
+
                 //add every textArray element a class in an interval of 0.1s
                 textArr.forEach(function (letter, index) {
                     setTimeout(function () {
@@ -95,6 +107,7 @@ export default {
                 setTimeout(function () {
                     self.title = self.navigation.navlist[0].name;
                     self.smallHeadline = false;
+                    self.hideHeadline = false;
                 }, 400);
                
 
@@ -110,9 +123,12 @@ export default {
                 root.style.setProperty('--color_bg', this.color_bg[1]);
 
                 self = this;
+                this.hideHeadline = true;
                 setTimeout(function () {
+                    
                     self.title = self.navigation.navlist[1].name;
                     self.smallHeadline = true;
+                    self.hideHeadline = false;
                 }, 400);
                
             }
@@ -128,9 +144,11 @@ export default {
                 root.style.setProperty('--color_bg', this.color_bg[2]);
 
                 self = this;
+                this.hideHeadline = true;
                 setTimeout(function () {
                     self.smallHeadline = true;
                     self.title = self.navigation.navlist[2].name;
+                    self.hideHeadline = false;
                 }, 400);
              
             }

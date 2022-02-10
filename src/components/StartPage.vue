@@ -1,39 +1,40 @@
 <template>
-
 <section class="Start">
-  <h1 class="Headline">I think
-  <br>
-    <b :class="{smallerHeadline: smallHeadline}">{{title}}</b> 
-  </h1>
-  
+    <div class="HeadlineBox">
+        <h1 class="Headline">I think
+            <br>
+            <b :class="{smallerHeadline: smallHeadline, hideHeadline: hideHeadline}">{{title}}</b>
+        </h1>
+
+    </div>
+
+    <!-- <div class="ContentBox"></div> -->
+
 </section>
 </template>
 
 <script>
-
-
-
 export default {
-  name: 'StartPage',
-  props: {
-    title: {
-      type: String,
-      required: true
+    name: 'StartPage',
+    props: {
+        title: {
+            type: String,
+            required: true
+        },
+        smallHeadline: {
+            type: Boolean,
+            required: true
+        },
+        hideHeadline: {
+            type: Boolean,
+            required: true
+        }
     },
-    smallHeadline:{
-      type: Boolean,
-      required: true
-    }
-  },
-  methods: {
-  }
-  
+    methods: {}
+
 }
 </script>
 
-
 <style lang="scss">
-  @import '../sass/pages/startpage.sass';
-  
-
+@import '../sass/pages/startpage.sass';
 </style>
