@@ -1,15 +1,11 @@
 <template>
-<section class="About">
+<section class="About Talk">
     <h1 class="Headline AboutTitle">Let's Talk
 
     </h1>
 
     <div class="centerText">
-        <p class="Intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Ipsum maiores nobis quae dolores hic reiciendis iure assumenda
-            distinctio facilis.
-            Doloremque fugiat eius minus dolores enim expedita sunt
-            quisquam exercitationem dicta.
+        <p class="Intro">The best ways to send a message to me and my universe. 
         </p>
 
     </div>

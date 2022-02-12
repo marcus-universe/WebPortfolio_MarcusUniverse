@@ -19,7 +19,7 @@
   ref="anim"
   :animationData="require('../assets/lotties/polyloop.json')"
   :loop="true"
-  :autoPlay="true"
+  :autoPlay="false"
   :speed="1"
   direction="alternate"
 />

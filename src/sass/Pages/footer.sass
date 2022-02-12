@@ -1,4 +1,4 @@
-footer 
+footer
     background: rgba(var(--color_bg), 1)
     padding: 5rem 0px
     z-index: 3
@@ -19,8 +19,9 @@ footer
             justify-content: center
             align-items: center
             transition: all 0.3s ease
+            &:first-child
+                margin-left: 0px
             &:hover
-                margin: 0px 1rem
                 img
                     cursor: pointer
                     opacity: 1
@@ -28,5 +29,20 @@ footer
                 width: 4rem
                 height: 4rem
                 opacity: 0.5
-                transition: all 0.3s ease 
-                
+                transition: all 0.3s ease
+
+    .impressumButton
+        border: none
+        outline: none
+        cursor: pointer
+        padding: 0.8rem 1rem
+        background: transparent
+        color: rgba($WColor, 0.5)
+        font-size: clamp(1rem, 15vw, 1.2rem)
+        font-family: $fontNoto
+        transition: all 0.3s ease
+        text-decoration: none
+        unterline: none
+        &:hover
+            color: var(--color_p)
+            transform: scale(1.1)

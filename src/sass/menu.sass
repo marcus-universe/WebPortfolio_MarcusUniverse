@@ -1,5 +1,5 @@
 @import _variables
-    
+
 nav
     z-index: 99
     left: 50%
@@ -21,7 +21,7 @@ nav
             transition: all 0.3s ease
             font-family: $fontNoto
             font-weight: 500
-            font-size: 13pt
+            font-size: 1.5rem
             letter-spacing: 2px
             font-weight: 300
             &:last-child
@@ -29,12 +29,10 @@ nav
             &:first-child
                 margin-left: 40px
             &:hover
-                    color: $WColor
-                    padding: 8px 20px 8px 20px
-                    background: rgba(var(--color_bg), 1)
-                    cursor: pointer
-                
-                
+                color: $WColor
+                padding: 8px 20px 8px 20px
+                background: rgba(var(--color_bg), 1)
+                cursor: pointer
 
 .activeNav
     color: $WColor
@@ -45,8 +43,7 @@ nav
 nav:not(.stickyNav)
     top: 90%
     position: absolute
-    
+
 .stickyNav
     position: fixed
     top: 0
-    

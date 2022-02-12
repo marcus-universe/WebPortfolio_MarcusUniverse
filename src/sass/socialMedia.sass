@@ -1,33 +1,45 @@
 .social_media
-        display: flex
-        justify-content: center
-        align-items: center
-        flex-direction: row
-        margin-top: 2rem
-        a
-            color: $WColor
-            margin-right: 3rem
-            @include media('<=tablet')
-                margin-right: 2rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    margin-top: 2rem
+    margin-bottom: 2rem
+    a
+        color: $WColor
+        margin-right: 3rem
+        @include media('<=tablet')
+            margin-right: 2rem
             @include media('<=phone')
                 margin-right: 1rem
             &:hover
                 color: $nBlue
+                cursor: pointer
                 img
                     opacity: 1
-            &:last-child
-                margin-right: 0
-            img
-                width: 5rem
-                opacity: 0.5
-                transition: opacity 0.5s ease-in-out
+        &:last-child
+            margin-right: 0
+        &:hover
             svg
-                width: 6rem
-                height: 6rem
                 polygon
-                    fill: var(--color_p)
+                    fill: $WColor
                 path
-                    fill: var(--color_p)
+                    fill: $WColor
                 rect
-                    fill: var(--color_p)
-                
+                    fill: $WColor
+        img
+            width: 5rem
+            opacity: 0.5
+            transition: opacity 0.5s ease-in-out
+        svg
+            width: 6rem
+            height: 6rem
+            polygon
+                fill: var(--color_p)
+                transition: all 0.3s ease
+            path
+                fill: var(--color_p)
+                transition: all 0.3s ease
+            rect
+                fill: var(--color_p)
+                transition: all 0.3s ease

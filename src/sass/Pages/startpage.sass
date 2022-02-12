@@ -49,6 +49,18 @@
     font-size: 0
     transform: scale(0) !important
 
+.playcontainer
+    width: 100%
+    margin-top: 2rem
+    display: flex
+    justify-content: center
+    flex-direction: row
+    .playbutton
+        width: 100px !important
+        height: 100px !important
+        &:hover
+            cursor: pointer
+
 section
     min-height: 100vh
     z-index: 2
@@ -70,35 +82,53 @@ section
         font-size: clamp(5rem, 15vw, 8rem) !important
 
 //Slider Icon
-.sliderTopic
-    position: absolute
-    width: 100%
+.leftSlide, .rightSlide
+    width: clamp(50px, 50vw, 100px)
+    transition: all 0.3s ease
+    z-index: 99
     top: 50%
     transform: translateY(-50%)
-    display: flex
-    justify-content: space-between
-    svg
-        width: clamp(50px, 50vw, 100px)
-        transition: all 0.3s ease
-        z-index: 99
-        height: 100%
-        display: block
-        &:hover
-            cursor: pointer
-            filter: brightness(1.6)
-            #Circle circle
-                opacity: 0.1
+    display: block
+    position: absolute
+    &:hover
+        cursor: pointer
+        filter: brightness(1.6)
         #Circle circle
-            fill: $WColor
-            opacity: 0
-            transition: opacity 0.3s ease
-        #Rocket path
-            fill: var(--color_p)
-        #ShadowRocket path
-            fill: var(--color_p)
-            filter: brightness(0.8)
-    .leftSlide
-        transform: scaleX(-1)
-        margin-left: clamp(10px, 10vw, 50px)
-    .rightSlide
-        margin-right: clamp(10px, 10vw, 50px)
+            opacity: 0.1
+    #Circle circle
+        fill: $WColor
+        opacity: 0
+        transition: opacity 0.3s ease
+    #Rocket path
+        fill: var(--color_p)
+    #ShadowRocket path
+        fill: var(--color_p)
+        filter: brightness(0.8)
+.leftSlide
+    transform: scaleX(-1) translateY(-50%)
+    left: 2rem
+.rightSlide
+    right: 2rem
+
+//##############################################################################
+//Videobox
+//##############################################################################
+
+.Showreelbox
+    opacity: 0
+    transition: opacity 0.3s ease
+    pointer-events: none
+.activeShowreel
+    opacity: 1
+    pointer-events: all
+.Videobox
+    position: fixed
+    z-index: 99
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(var(--color_bg), 0.7)
+    display: flex
+    justify-content: center
+    align-items: center
