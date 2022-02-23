@@ -1,8 +1,8 @@
 <template>
 <footer>
 
-<router-link to="/impressum" class="flex_c_h">
-    <button class="impressumButton">Impressum</button>
+<router-link to="/impressum" class="flex_c_h impressumButton">
+    Impressum
 
 </router-link>
 

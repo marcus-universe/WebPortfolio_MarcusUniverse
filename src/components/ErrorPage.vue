@@ -14,6 +14,11 @@
 
         </div>
 
+
+<!-- Impressum -->
+<router-link to="/impressum" class="flex_c_h impressumButton">
+   Impressum
+</router-link>
     </div>
 </div>    
 </template>
@@ -21,6 +26,9 @@
 
 <style lang="sass">
 @import '../sass/base.sass'
+
+
+        
 .workinprogress
     background: rgba(var(--color_bg), 1)
     height: 100vh

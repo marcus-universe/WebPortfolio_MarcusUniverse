@@ -10,16 +10,20 @@ const routes = [
   {
     path: '/impressum',
     name: 'Impressum',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Impressum.vue')
+    component: () => import('../views/Impressum.vue')
   }
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return savedPosition || new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({top: 0 })
+      }, 500)
+    }
+    )}
 })
 
 export default router

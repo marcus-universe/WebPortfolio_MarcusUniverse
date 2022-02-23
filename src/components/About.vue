@@ -38,8 +38,22 @@
 
 import Vue3Lottie from 'vue3-lottie';
 export default {
+    name: 'About',
     components: { 
         Vue3Lottie
+    },
+    
+    data() {
+        return {
+            contentEng: [
+                {
+                    index: 0,
+                    intro: "I am Marcus and do 3D Art, XR Applications, Interactive 3D Scenes",
+                    title_1: "Whats my references"
+                    
+                }
+                ]
+        }
     },
     
 }

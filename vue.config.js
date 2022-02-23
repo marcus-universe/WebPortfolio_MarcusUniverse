@@ -13,7 +13,6 @@ module.exports = {
         additionalData: `
                 @import "~@/sass/_variables.sass";
                 @import "~@/sass/_base.sass";
-                
                 `
       }
     }

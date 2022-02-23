@@ -1,25 +1,15 @@
-@keyframes fadeIn
-    0%
-        opacity: 0
-    100%
-        opacity: 1
-
 body
-    background: $BGcolorBlue
+    background: rgba(var(--color_bg), 1)
 
 // @keframes FadeOut
 .LogoImpressum
     position: relative
     left: 50%
     transform: translateX(-50%)
-    opacity: 0
-    animation: fadeIn 1s ease forwards
 
 .Impressum
-    background: $BGcolorBlue
+    background: rgba(var(--color_bg), 1)
     min-height: 100vh
-    animation: fadeIn 1s ease forwards
-    opacity: 0
     h1
         text-align: center
         padding: 20px
@@ -27,3 +17,65 @@ body
         font-family: $fontNoto
         color: $WColor
         font-size: 2.5em
+        font-variation-settings: 'wght' 700
+    h2
+        text-align: left
+        padding: 50px 70px 20px 70px
+        margin: 0px
+        font-family: $fontNoto
+        color: var(--color_p)
+        font-size: 1.5em
+        font-weight: 700
+        font-variation-settings: 'wght' 700
+        left: 50%
+        position: relative
+        transform: translateX(-50%)
+        max-width: 800px
+    h3
+        text-align: left
+        padding: 40px 70px 10px 70px
+        margin: 0px
+        font-family: $fontNoto
+        color: $WColor
+        font-size: 1.5em
+        font-weight: 500
+        font-variation-settings: 'wght' 500
+        left: 50%
+        position: relative
+        transform: translateX(-50%)
+        max-width: 800px
+    p
+        text-align: left
+        padding: 0px 70px
+        margin: 0px
+        font-family: $fontNoto
+        color: $WColor
+        font-size: 1.2em
+        font-weight: 300
+        font-variation-settings: 'wght' 300
+        max-width: 800px
+        left: 50%
+        position: relative
+        transform: translateX(-50%)
+        @include media('<phone')
+            font-size: 1.2em
+            padding: 0px 20px
+
+        a
+            color: var(--color_p)
+            text-decoration: none
+            transition: color 0.3s ease
+            &:hover
+                color: $WColor
+                text-decoration: underline
+
+        .ExternalLink
+            color: var(--color_p) !important
+            text-decoration: underline !important
+            transition: color 0.3s ease
+    .ImpressumGenerator
+        padding-bottom: 3rem
+        a
+            color: var(--color_p) !important
+            text-decoration: underline !important
+            transition: color 0.3s ease

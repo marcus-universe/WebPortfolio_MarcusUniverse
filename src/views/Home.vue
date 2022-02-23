@@ -1,7 +1,8 @@
 <template>
+<div class="HOME">
 <ErrorPage v-if="error == true" />
 
-<Logo />
+<Logo v-if="error == false" />
 
 <Menu
     :navlists="navigation.navlist"
@@ -22,6 +23,8 @@
 <LetsTalk v-if="error == false" />
 
 <Footer v-if="error == false" />
+</div>
+
 </template>
 
 <style lang="scss">
@@ -81,6 +84,9 @@ export default {
             }
 
         }
+    },
+    created() {
+        this.changeNav(0);
     },
     methods: {
         changeNav: function (MycurrentIndex) {
