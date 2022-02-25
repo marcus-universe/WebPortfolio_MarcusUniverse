@@ -7,7 +7,6 @@
     <div class="centerText">
         <p class="Content">The best ways to send a message to me and my universe. 
         </p>
-
     </div>
 
     <div class="social_media">

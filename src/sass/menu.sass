@@ -44,6 +44,10 @@ nav
 nav:not(.stickyNav)
     top: 90%
     position: absolute
+    @include media('<phone')
+        position: fixed
+        bottom: 2%
+        top: unset
 
 .stickyNav
     position: fixed

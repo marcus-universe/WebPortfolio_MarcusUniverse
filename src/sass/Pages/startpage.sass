@@ -15,7 +15,7 @@
     position: relative
     @include media('<phone')
         padding: 2rem clamp(2rem, 2%, 200px)
-        min-height: 80vh
+        min-height: 100vh
 
 .Headline
     font-family: $fontNoto
@@ -149,13 +149,19 @@ section
     backdrop-filter: blur(10px)
     .Video
         h3
+            margin-top: 0rem
             font-family: $fontNoto
             font-size: clamp(2rem, 15vw, 3rem)
             font-weight: 500
             font-variation-settings: 'wght' 500
             color: var(--color_p)
             text-align: center
-            @include media('<tablet')
+            @include media('<phone')
+                position: fixed
+                top: 40%
+                left: 50%
+                transform: translate(-50%, -50%)
+                min-width: 350px
                 font-size: clamp(1.5rem, 10vw, 2rem)
         p
             font-family: $fontNoto
@@ -164,8 +170,14 @@ section
             font-variation-settings: 'wght' 500
             color: var(--color_p)
             text-align: center
-            @include media('<tablet')
+            @include media('<phone')
                 font-size: clamp(1rem, 5vw, 1.5rem)
+                margin-top: 4rem
+                position: fixed
+                bottom: 35%
+                left: 50%
+                transform: translate(-50%, -50%)
+                min-width: 350px
             a
                 color: $WColor
                 text-decoration: none

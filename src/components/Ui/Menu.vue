@@ -69,7 +69,7 @@ export default {
         checkSticky: function () {
             // console.log({NavPos:this.NavElement.offsetTop,
             // Window:window.pageYOffset});
-            if (window.pageYOffset >= this.NavElement.offsetTop) {
+            if (window.pageYOffset >= this.NavElement.offsetTop && window.innerWidth > 640) {
                 this.navSticky = true;
             } else {
                 this.navSticky = false;

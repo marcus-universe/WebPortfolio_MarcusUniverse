@@ -5,18 +5,26 @@
     flex-direction: row
     margin-top: 2rem
     margin-bottom: 2rem
+    @include media('<phone')
+        justify-content: space-around
     a
         color: $WColor
         margin-right: 3rem
+        display: flex
+        justify-content: center
+        align-items: center
+
         @include media('<=tablet')
             margin-right: 2rem
-            @include media('<=phone')
-                margin-right: 1rem
-            &:hover
-                color: $nBlue
-                cursor: pointer
-                img
-                    opacity: 1
+        @include media('<=phone')
+            margin-right: 1rem
+            width: clamp(4rem, 50%, 6rem)
+            height: clamp(4rem, 50%, 6rem)
+        &:hover
+            color: $nBlue
+            cursor: pointer
+            img
+                opacity: 1
         &:last-child
             margin-right: 0
         &:hover
@@ -34,6 +42,9 @@
         svg
             width: 6rem
             height: 6rem
+            @include media('<phone')
+                width: clamp(4rem, 50%, 6rem)
+                height: clamp(4rem, 50%, 6rem)
             polygon
                 fill: var(--color_p)
                 transition: all 0.3s ease

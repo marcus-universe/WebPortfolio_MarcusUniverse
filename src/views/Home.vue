@@ -1,32 +1,59 @@
 <template>
 <div class="HOME">
-<ErrorPage v-if="error == true" />
 
-<Logo v-if="error == false" />
+    <teleport to="head">
+        <title>Marcus Universe Portfolio</title>
 
-<Menu
-    :navlists="navigation.navlist"
-    v-if="error == false"
-    :selectedIndex="currentselectedIndex"
-    @ChangeNav="changeNav" />
-<StartPage
-    v-if="error == false"
-    :title="title"
-    :smallHeadline="smallHeadline"
-    :hideHeadline="hideHeadline"
-    :navlists="navigation.navlist"
-    :currentIndex="currentselectedIndex"
-     />
+  <meta name="msapplication-TileColor" :content="color_p[currentselectedIndex]">
 
-<Slider v-if="error == false" :navlists="navigation.navlist" @ChangeNav="changeNav" :selectedIndex="currentselectedIndex"/>
+        <meta
+            name="theme-color"
+            :content="color_p[currentselectedIndex]">
 
-<About v-if="error == false" :currentIndex="currentselectedIndex"/>
 
-<LetsTalk v-if="error == false" />
+        <meta
+            property="og:title"
+            content="Marcus Universe Portfolio">
 
-<Footer v-if="error == false" />
+        <meta
+            property="og:description"
+            content="Marcus Harting (alias Marcus Universe) Portfolio. Im an artist, musician and coder">
+        
+        <meta
+            property="og:image"
+            content="./assets/img/me_profile.png">
+    </teleport>
+    <ErrorPage v-if="error == true" />
+
+    <Logo v-if="error == false" />
+
+    <Menu
+        :navlists="navigation.navlist"
+        v-if="error == false"
+        :selectedIndex="currentselectedIndex"
+        @ChangeNav="changeNav" />
+    <StartPage
+        v-if="error == false"
+        :title="title"
+        :smallHeadline="smallHeadline"
+        :hideHeadline="hideHeadline"
+        :navlists="navigation.navlist"
+        :currentIndex="currentselectedIndex" />
+
+    <Slider
+        v-if="error == false"
+        :navlists="navigation.navlist"
+        @ChangeNav="changeNav"
+        :selectedIndex="currentselectedIndex" />
+
+    <About
+        v-if="error == false"
+        :currentIndex="currentselectedIndex" />
+
+    <LetsTalk v-if="error == false" />
+
+    <Footer v-if="error == false" />
 </div>
-
 </template>
 
 <style lang="scss">
@@ -55,6 +82,10 @@ export default {
         LetsTalk,
         ErrorPage,
         Footer
+    },
+
+    setup() {
+
     },
 
     data() {
@@ -102,7 +133,7 @@ export default {
             console.log(this.currentselectedIndex);
 
             if (this.currentselectedIndex == 0 || this.navigation.navlist[0].selected == true) {
-                
+
                 this.navigation.navlist.forEach(function (navitem) {
                     navitem.selected = false;
                 });
@@ -125,15 +156,14 @@ export default {
                     self.smallHeadline = false;
                     self.hideHeadline = false;
                 }, 400);
-               
 
             }
             if (this.currentselectedIndex == 1 || this.navigation.navlist[1].selected == true) {
-                
+
                 this.navigation.navlist.forEach(function (navitem) {
                     navitem.selected = false;
                 });
-                
+
                 this.navigation.navlist[1].selected = true
                 root.style.setProperty('--color_p', this.color_p[1]);
                 root.style.setProperty('--color_bg', this.color_bg[1]);
@@ -141,19 +171,18 @@ export default {
                 self = this;
                 this.hideHeadline = true;
                 setTimeout(function () {
-                    
+
                     self.title = self.navigation.navlist[1].name;
                     self.smallHeadline = true;
                     self.hideHeadline = false;
                 }, 400);
-               
+
             }
             if (this.currentselectedIndex == 2 || this.navigation.navlist[2].selected == true) {
-                
+
                 this.navigation.navlist.forEach(function (navitem) {
                     navitem.selected = false;
                 });
-                
 
                 this.navigation.navlist[2].selected = true
                 root.style.setProperty('--color_p', this.color_p[2]);
@@ -166,7 +195,7 @@ export default {
                     self.title = self.navigation.navlist[2].name;
                     self.hideHeadline = false;
                 }, 400);
-             
+
             }
         },
     },
