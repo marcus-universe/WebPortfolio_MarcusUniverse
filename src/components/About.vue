@@ -3,7 +3,7 @@
     <h1 class="Headline AboutTitle">Who am I
 
     </h1>
-    <img src="../assets/img/me_profile.png" alt="profile_picture" class="profile_img">
+    <img src="../assets/img/me_profile.jpg" alt="profile_picture" class="profile_img">
     <div class="centerText">
 
         <transition
@@ -29,7 +29,7 @@
 
             <Vue3Lottie
                 ref="anim"
-                :animationData="require('../assets/lotties/polyloop.json')"
+                :animationData="PolyloopJSON"
                 :loop="true"
                 :autoPlay="false"
                 :speed="1"
@@ -43,7 +43,7 @@
 
             <Vue3Lottie
                 ref="polytwo"
-                :animationData="require('../assets/lotties/polyloop.json')"
+                :animationData="PolyloopJSON"
                 :loop="true"
                 :autoPlay="false"
                 :speed="0.9"
@@ -63,6 +63,8 @@
 <script>
 import Vue3Lottie from 'vue3-lottie';
 import rellax from 'rellax';
+const PolyloopJSON = require('../assets/lotties/polyloop.json')
+
 import {
     ThreeDAboutDE,
     CodeAboutDE,
@@ -85,7 +87,7 @@ export default {
     },
     data() {
         return {
-
+            PolyloopJSON
         }
     },
     methods: {

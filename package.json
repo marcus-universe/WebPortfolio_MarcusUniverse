@@ -14,7 +14,6 @@
     "lottie-web-vue": "^1.2.1",
     "rellax": "^1.12.1",
     "sass": "^1.43.4",
-    "three": "^0.134.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vue3-lottie": "^1.6.0"
@@ -38,6 +37,7 @@
     "root": true,
     "env": {
       "node": true
+      
     },
     "extends": [
       "plugin:vue/vue3-essential",
