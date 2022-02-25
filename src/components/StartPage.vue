@@ -1,7 +1,7 @@
 <template>
 <section class="Start">
     <div class="HeadlineBox">
-        <h1 class="Headline">I think
+        <h1 class="Headline">I {{navlists[currentIndex].subDo}}
             <br>
             <b :class="{smallerHeadline: smallHeadline, hideHeadline: hideHeadline}">{{title}}</b>
         </h1>
@@ -17,17 +17,20 @@
                 :pauseAnimation="true"
                 direction="reverse"
                 v-on:mouseover="hoverPlay"
-                v-on:mouseleave="leavePlay" 
-                @click="OpenVideoBox"
-                />
-                
+                v-on:mouseleave="leavePlay"
+                @click="OpenVideoBox" />
 
         </div>
 
     </div>
 
-
-<Showreel class="Showreelbox" :class="{activeShowreel: OpenVideo}" @click="OpenVideo = false"/>
+    <Showreel
+        class="Showreelbox"
+        :class="{activeShowreel: OpenVideo}"
+        @click="OpenVideo = false" 
+        :currentIndex="currentIndex"
+        :navlists="navlists"
+        />
     <!-- <div class="ContentBox"></div> -->
 
 </section>
@@ -42,6 +45,8 @@ export default {
     data() {
         return {
             OpenVideo: false,
+            // currentIndexSelected: currentIndex,
+            // navlistsElement: navlists,
         }
     },
     props: {
@@ -56,7 +61,16 @@ export default {
         hideHeadline: {
             type: Boolean,
             required: true
+        },
+        currentIndex: {
+            type: Number,
+            required: true
+        },
+        navlists: {
+            type: Array,
+            required: true
         }
+
     },
     methods: {
         hoverPlay: function () {

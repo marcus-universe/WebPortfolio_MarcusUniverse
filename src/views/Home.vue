@@ -14,11 +14,13 @@
     :title="title"
     :smallHeadline="smallHeadline"
     :hideHeadline="hideHeadline"
+    :navlists="navigation.navlist"
+    :currentIndex="currentselectedIndex"
      />
 
 <Slider v-if="error == false" :navlists="navigation.navlist" @ChangeNav="changeNav" :selectedIndex="currentselectedIndex"/>
 
-<About v-if="error == false" />
+<About v-if="error == false" :currentIndex="currentselectedIndex"/>
 
 <LetsTalk v-if="error == false" />
 
@@ -67,17 +69,23 @@ export default {
             navigation: {
                 navlist: [{
                         name: '3D',
-                        link: '#Home',
+                        subDo: 'think',
+                        linkTitle: 'Artstation Profile',
+                        link: 'https://www.artstation.com/marcusharting',
                         selected: true
                     },
                     {
                         name: 'Music',
-                        link: '#Work',
+                        subDo: 'make',
+                        linkTitle: 'Soundcloud Tracks',
+                        link: 'https://soundcloud.com/marcus-universe/tracks',
                         selected: false
                     },
                     {
                         name: 'Code',
-                        link: '#About',
+                        subDo: 'write',
+                        linkTitle: 'Github Profile',
+                        link: 'https://github.com/marcus-universe',
                         selected: false
                     }
                 ]

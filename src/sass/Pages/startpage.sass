@@ -5,15 +5,17 @@
     min-height: 100vh
     padding: 4rem clamp(5rem, 4%, 200px)
     top: 0
-    z-index: 1
+    z-index: 6
     background: rgba(var(--color_bg), 1)
     transition: background 0.3s ease
     border-bottom: 3px solid rgba($WColor, 0.5)
     display: flex
     justify-content: center
     flex-wrap: wrap
-    @include media('<tablet')
+    position: relative
+    @include media('<phone')
         padding: 2rem clamp(2rem, 2%, 200px)
+        min-height: 80vh
 
 .Headline
     font-family: $fontNoto
@@ -27,9 +29,10 @@
     line-height: 1
     transition: color 0.3s ease
     text-align: center
-    @include media('<tablet')
-        font-size: clamp(2rem, 10vw, 3rem)
+    @include media('<phone')
+        font-size: clamp(2.5rem, 15vw, 4rem)
         text-align: center
+        margin: 20vh 0px 0px 0px
     b
         display: block
         // font-weight: 500
@@ -41,8 +44,8 @@
         text-align: center
         transform: scale(1)
         transition: opacity 0.3s ease, transform 0.3s ease
-        @include media('<tablet')
-            font-size: clamp(5rem, 20vw, 10rem)
+        @include media('<phone')
+            font-size: clamp(5rem, 35vw, 10rem)
             text-align: center
             margin-left: 0px
 
@@ -58,10 +61,12 @@
     justify-content: center
     flex-direction: row
     .playbutton
-        width: 100px !important
-        height: 100px !important
+        width: 80px !important
+        height: 80px !important
         &:hover
             cursor: pointer
+        @include media('<phone')
+            width: 70px !important
 
 section
     min-height: 100vh
@@ -109,8 +114,15 @@ section
 .leftSlide
     transform: scaleX(-1) translateY(-50%)
     left: 2rem
+    @include media('<phone')
+        left: 1rem
+        width: 80px
+
 .rightSlide
     right: 2rem
+    @include media('<phone')
+        right: 1rem
+        width: 80px
 
 //##############################################################################
 //Videobox
@@ -130,7 +142,34 @@ section
     left: 0
     width: 100vw
     height: 100vh
-    background: rgba(var(--color_bg), 0.7)
+    background: rgba(var(--color_bg), 0.9)
     display: flex
     justify-content: center
     align-items: center
+    backdrop-filter: blur(10px)
+    .Video
+        h3
+            font-family: $fontNoto
+            font-size: clamp(2rem, 15vw, 3rem)
+            font-weight: 500
+            font-variation-settings: 'wght' 500
+            color: var(--color_p)
+            text-align: center
+            @include media('<tablet')
+                font-size: clamp(1.5rem, 10vw, 2rem)
+        p
+            font-family: $fontNoto
+            font-size: clamp(1.5rem, 10vw, 2rem)
+            font-weight: 500
+            font-variation-settings: 'wght' 500
+            color: var(--color_p)
+            text-align: center
+            @include media('<tablet')
+                font-size: clamp(1rem, 5vw, 1.5rem)
+            a
+                color: $WColor
+                text-decoration: none
+                opacity: 0.8
+                transition: opacity 0.3s ease
+                &:hover
+                    opacity: 1

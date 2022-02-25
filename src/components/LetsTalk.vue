@@ -5,7 +5,7 @@
     </h1>
 
     <div class="centerText">
-        <p class="Intro">The best ways to send a message to me and my universe. 
+        <p class="Content">The best ways to send a message to me and my universe. 
         </p>
 
     </div>

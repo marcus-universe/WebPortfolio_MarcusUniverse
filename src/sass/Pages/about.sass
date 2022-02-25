@@ -18,26 +18,95 @@
         left: auto
         top: auto
         text-align: center
-
+        padding-bottom: 2rem
+    .profile_img
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        width: clamp(200px, 100%, 400px)
+        border-radius: 50%
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3)
     .centerText
         display: flex
         justify-content: center
         align-items: center
-        .Intro
+        .fade-enter-active,
+        .fade-leave-active
+            transition: opacity 0.3s ease
+        .fade-enter,
+        .fade-leave-to
+            opacity: 0
+        .Content
             color: var(--color_p)
             font-family: $fontNoto
             font-size: clamp(1rem, 15vw, 1.2rem)
             width: clamp(200px, 80vw, 800px)
             text-align: center
             padding: 0
-
-    .polyloop
-        position: absolute
+            .Intro
+                backdrop-filter: blur(4px)
+                width: auto !important
+                min-width: 200px
+                max-width: 500px
+                padding: 10px
+            h3
+                color: $WColor
+                font-size: clamp(1.5rem, 20vw, 2.2rem)
+                margin: 3rem 0 1rem 0
+            .HeadlineL
+                text-align: left
+            .article_point
+                text-align: left
+                font-variation-settings: 'wght' 300
+                padding: 2rem 0 2rem 0rem
+                margin: 0
+                border-bottom: solid 1px var(--color_p)
+                border-top: solid 1px var(--color_p)
+                backdrop-filter: blur(4px)
+                background: rgba(var(--color_bg), 0.7)
+                a
+                    color: $WColor
+            .textcenter
+                text-align: center !important
+            ul
+                li
+                    text-align: left
+                    color: $WColor
+                    padding: 1rem 0
+                    &:first-child
+                        padding-top: 0
+            .LastSatzBox
+                background: var(--color_p)
+                padding: 1rem 2rem
+                margin-bottom: 2rem
+                h3
+                    color: rgba(var(--color_bg), 1)
+                .EinerSatz
+                    padding-bottom: 5rem
+                    color: rgba(var(--color_bg), 0.8)
+    .rellax-wrapper
+        height: 100vh
+        position: fixed
+        width: 100vw
         top: 0
-        opacity: 0.2
-        width: 1000px
-        left: 50%
-        transform: translateX(-50%)
+        left: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: -1
+        .polyloop
+            position: fixed
+            top: 50vh
+            left: 50vw
+            opacity: 0.2
+            width: 1000px
+        // left: 50%
+        // transform: translateX(-50%)
+            z-index: -1
+        .SecondPoly
+            left: -20%
+            top: -20%
+            width: clamp(1000px, 100vw, 2000px)
 
 .Talk
     min-height: 30vh
