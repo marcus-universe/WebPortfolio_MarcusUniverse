@@ -24,16 +24,21 @@
     </div>
     <div class="rellax-wrapper">
         <div
+            v-if="showPoly == true"
             class="polyloop rellax"
-            data-rellax-speed="3.5">
+            data-rellax-speed="3.5"
+            
+            >
 
             <Vue3Lottie
                 ref="anim"
                 :animationData="PolyloopJSON"
                 :loop="true"
                 :autoPlay="false"
-                :speed="1"
-                direction="alternate" />
+                :speed="1.3"
+                direction="alternate" 
+                 />
+                />
 
         </div>
 
@@ -42,11 +47,12 @@
             data-rellax-speed="3.5">
 
             <Vue3Lottie
+                class="flipAnimation"
                 ref="polytwo"
                 :animationData="PolyloopJSON"
                 :loop="true"
                 :autoPlay="false"
-                :speed="0.9"
+                :speed="1"
                 direction="alternate" />
                 />
 
@@ -61,9 +67,9 @@
 </style>
 
 <script>
-import Vue3Lottie from 'vue3-lottie';
+// import { Vue3Lottie } from 'vue3-lottie';
 import rellax from 'rellax';
-const PolyloopJSON = require('../assets/lotties/polyloop.json')
+const PolyloopJSON = require('../assets/lotties/polyloopanim.json')
 
 import {
     ThreeDAboutDE,
@@ -74,7 +80,7 @@ import {
 export default {
     name: 'About',
     components: {
-        Vue3Lottie,
+        // Vue3Lottie,
         ThreeDAboutDE,
         CodeAboutDE,
         MusicAboutDE,
@@ -87,22 +93,37 @@ export default {
     },
     data() {
         return {
-            PolyloopJSON
+            PolyloopJSON,
+            showPoly: true,
         }
     },
     methods: {
       
     },
+
+    setup() {
+        
+    },
     mounted() {
         // var polytwo = this.$refs.polytwo;
         // polytwo.goToAndPlay(1000, true);
 
+
+        if(window.innerWidth > 640) {
+            this.showPoly = true;
+        }else {
+            this.showPoly = false;
+        }
+
+
         new rellax('.rellax', {
-            breakpoints: [640, 1280, 1600]
+                breakpoints: [640, 1280, 1600]
             // wrapper: '.rellax-wrapper',
             // center: true,
             // horizontal: true
         });
+
+        
     },
 
 }

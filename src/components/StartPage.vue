@@ -1,10 +1,14 @@
 <template>
 <section class="Start">
-    <div class="HeadlineBox">
+    <div class="HeadlineBox rellax" data-rellax-speed="3.5" data-rellax-mobile-speed="3.5" data-rellax-desktop-speed="7">
+        
+        
         <h1 class="Headline">I {{navlists[currentIndex].subDo}}
             <br>
             <b :class="{smallerHeadline: smallHeadline, hideHeadline: hideHeadline}">{{title}}</b>
         </h1>
+
+
         <div class="playcontainer">
 
             <Vue3Lottie
@@ -37,8 +41,9 @@
 </template>
 
 <script>
-import Vue3Lottie from 'vue3-lottie';
+
 import Showreel from './Popups/Showreel.vue';
+import rellax from 'rellax';
 
 export default {
     name: 'StartPage',
@@ -72,6 +77,14 @@ export default {
         }
 
     },
+    mounted() {
+        new rellax('.rellax', {
+                breakpoints: [640, 1280, 1600]
+            // wrapper: '.rellax-wrapper',
+            // center: true,
+            // horizontal: true
+        });
+    },
     methods: {
         hoverPlay: function () {
             this.$refs['playButton'].setDirection("forward");
@@ -86,7 +99,6 @@ export default {
         }
     },
     components: {
-        Vue3Lottie,
         Showreel
     },
 

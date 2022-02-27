@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import Vue3Lottie from 'vue3-lottie';
+
 
 export default {
     components: {
-        Vue3Lottie
+
     },
     methods: {
         stopLogo: function(){
