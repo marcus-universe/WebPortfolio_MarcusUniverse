@@ -12,6 +12,9 @@ nav
         border-bottom-right-radius: 20px
         background: rgba(var(--color_bg), 0.7)
         backdrop-filter: blur(10px)
+        @include media('<tablet')
+            backdrop-filter: none
+            background: rgba(var(--color_bg), 1)
         li
             margin: 0px 10px
             display: block

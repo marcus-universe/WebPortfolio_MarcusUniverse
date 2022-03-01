@@ -13,15 +13,25 @@
     <h3>Lieblings Genres</h3>
     <p class="article_point textcenter">80s Synthwave und Electro Swing</p>
 
-    <h3 class="HeadlineL">Welche Software ich nutze</h3>
-    <ul class="ListeSoftware">
-        <li>FL Studio (DAW)</li>
-        <li>VCV Rack (Synthesizer Builder)</li>
-        <li>Vite (Lieblings VST)</li>
+    <h3 class="HeadlineL InstrumentsH3" v-if="showPolygon == true ">Welche Software ich nutze</h3>
+    <ul class="ListeSoftware SoftwareBox" v-if="showPolygon == true">
+        <li>
+            <img src="../../../assets/softwares/fl_studio.svg" alt="fl studio imageline">
+            <p> FL Studio <br>(DAW)</p>
+            </li>
+        <li>
+            <img src="../../../assets/softwares/vcv.svg" alt="VCV Rack">
+            
+            <p>VCV Rack <br>(Synthesizer Builder)</p>
+            </li>
+        <li>
+            <img src="../../../assets/softwares/vital.svg" alt="Vital VST">
+            <p>Vital <br>(Lieblings VST)</p>
+            </li>
     </ul>
 
-    <h3 class="HeadlineL">Meine Instrumente</h3>
-    <ul class="ListeSoftware">
+    <h3 class="HeadlineL InstrumentsH3">Meine Instrumente</h3>
+    <ul class="ListeSoftware Instruments">
         <li>Midi Keyboard</li>
         <li>Hybrid Synth</li>
         <li>Stratocaster E-Gitarre</li>
@@ -36,3 +46,13 @@
     </div>
 </div>
 </template>
+<script>
+export default {
+    props:{
+        showPolygon: {
+            type: Boolean,
+            required: true
+        }, 
+    }
+}
+</script>

@@ -5,7 +5,7 @@
     background: rgba(var(--color_bg), 1)
     transition: background 0.3s ease
     align-items: flex-start !important
-    border-bottom: 3px solid rgba($WColor, 0.5)
+    // border-bottom: 3px solid rgba($WColor, 0.5)
     padding: 0 clamp(20px, 10vw, 300px)
     position: relative
     overflow-x: hidden
@@ -65,10 +65,78 @@
                 border-top: solid 1px var(--color_p)
                 backdrop-filter: blur(4px)
                 background: rgba(var(--color_bg), 0.7)
+                @include media('<tablet')
+                    backdrop-filter: none
+                    background: rgba(var(--color_bg), 0.9)
                 a
                     color: $WColor
             .textcenter
                 text-align: center !important
+            .SoftwareBox
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                margin: 0 0 4rem 0
+                padding: 0
+                li
+                    list-style: none
+                    min-width: 200px
+                    max-width: 200px
+                    min-height: 230px
+                    // flex-direction: column
+                    background: rgba(var(--color_bg), 1)
+                    position: relative
+                    border: solid 1px var(--color_p)
+                    margin: 10px
+                    padding: 20px
+                    transition: box-shadow 0.3s ease
+                    &:hover
+                        cursor: pointer
+                        box-shadow: 0px 0px 10px var(--color_p)
+                    &:first-child
+                        padding-top: 20px !important
+                    img
+                        width: 150px
+                        position: relative
+                        left: 50%
+                        transform: translateX(-50%)
+                    p
+                        margin: 0px 0 0 0
+                        padding: 0
+                        text-align: center
+
+            .InstrumentsH3
+                text-align: center
+            .Instruments
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                padding: 0
+                margin: 0 0 2rem 0
+                li
+                    min-width: 200px
+                    margin: 0.5rem 0.5rem 0.5rem 0.5rem
+                    list-style: none
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    text-align: center
+                    font-variation-settings: 'wght' 500
+                    font-size: clamp(1rem, 15vw, 1.2rem)
+                    padding: 20px
+                    background-color: var(--color_p)
+                    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+                    @include media('<phone')
+                        min-width: 100px
+                        font-size: clamp(0.8rem, 10vw, 1rem)
+                        padding: 10px
+                        &:first-child
+                            padding-top: 10px !important
+                    &:first-child
+                        padding-top: 20px
             ul
                 li
                     text-align: left
@@ -123,3 +191,13 @@
 .Talk
     min-height: 30vh
     padding-bottom: 10rem
+    background: var(--color_p)
+    border-bottom: none
+    h1
+        color: rgba(var(--color_bg), 1)
+        font-variation-settings: 'wght' 700
+        text-align: center
+
+    .Content
+        color: rgba(var(--color_bg), 1) !important
+        font-variation-settings: 'wght' 500

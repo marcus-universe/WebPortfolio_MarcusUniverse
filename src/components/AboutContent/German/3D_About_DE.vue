@@ -12,14 +12,29 @@
     <p class="article_point">Auch habe ich an Online 3D Art Contests teilgenommen wie z.B die "Dynamic Machines Challange".</p>
     <p class="article_point">Während meines Kommunikationsdesign-Studiums habe ich einige 3D Projekte umgesetzt im Bereich Marketing und Produktvisualisierung.</p>
 
-    <h3 class="HeadlineL">Software die ich mag</h3>
-    <ul class="ListeSoftware">
-        <li> Unreal Engine (Render, Interaktivität)</li>
-        <li> Blender (Modellieren)</li>
-        <li> Davinci Resolve (Videoschnitt)</li>
-        <li> Adobe After Effects (VFX / Motion Graphics)</li>
-        <li> Adobe Suite (Illustrationen, Texturen, Mockups)</li>
-        <li> PureRef (Moodboards)</li>
+    <h3 class="HeadlineL InstrumentsH3" v-if="showPolygon == true">Software die ich mag</h3>
+    <ul class="ListeSoftware SoftwareBox" v-if="showPolygon == true">
+        <li>
+            <img src="../../../assets/softwares/unrealengine.svg" alt="Unreal Engine Epic Games">
+            <p>Unreal Engine <br>(Render, Interaktivität)</p>
+
+        </li>
+        <li>
+            <img src="../../../assets/softwares/blender.svg" alt="Blender 3D Modelling">
+            <p>Blender <br>(Modellieren)</p>
+        </li>
+        <li> 
+       <img src="../../../assets/softwares/davinciresolve.svg" alt="Davinci Resolve">
+           <p>Davinci Resolve <br>(Videoschnitt)</p> </li>
+        <li> 
+            <img src="../../../assets/softwares/ae.svg" alt="After Effects">
+           <p>Adobe After Effects <br>(VFX / Motion Graphics)</p> </li>
+        <li> 
+            <img src="../../../assets/softwares/adobecloud.svg" alt="Adobe Creative Cloud">
+           <p>Adobe Suite <br>(Illustrationen, Texturen, Mockups)</p> </li>
+        <li> 
+            <img src="../../../assets/softwares/pureref.svg" alt="Pureref">
+            <p>PureRef <br>(Moodboards)</p> </li>
     </ul>
 
     <div class="LastSatzBox">
@@ -28,3 +43,13 @@
     </div>
 </div>
 </template>
+<script>
+export default {
+    props:{
+        showPolygon: {
+            type: Boolean,
+            required: true
+        }, 
+    }
+}
+</script>

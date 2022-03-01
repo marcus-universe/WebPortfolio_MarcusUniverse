@@ -1,0 +1,48 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d3d3d3;
+      }
+
+      .cls-2, .cls-5 {
+        fill: #c6c6c6;
+      }
+
+      .cls-3 {
+        fill: #eee;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        fill-opacity: 0.2;
+      }
+
+      .cls-5 {
+        isolation: isolate;
+        opacity: 0.2;
+      }
+
+      .cls-6 {
+        fill: url(#Unbenannter_Verlauf_2);
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+    </style>
+    <linearGradient id="Unbenannter_Verlauf_2" data-name="Unbenannter Verlauf 2" x1="-454.66" y1="400.16" x2="-452.66" y2="398.7" gradientTransform="matrix(95, 0, 0, -131, 43295.33, 52537.93)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.1"/>
+      <stop offset="0.14" stop-color="#fff" stop-opacity="0.08"/>
+      <stop offset="0.61" stop-color="#fff" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M108.43,277.3l31-198.41a5.73,5.73,0,0,1,10.71-1.82l32.06,59.81L195,112.54a5.72,5.72,0,0,1,10.13,0L291.67,277.3Z"/>
+  <path class="cls-2" d="M215.55,200,182.2,136.85,108.43,277.3Z"/>
+  <path class="cls-3" d="M291.67,277.3l-23.75-147a5.73,5.73,0,0,0-9.69-3.1L108.43,277.29l82.89,46.49a17.21,17.21,0,0,0,16.75,0l83.6-46.49Z"/>
+  <path class="cls-4" d="M267.92,130.34a5.73,5.73,0,0,0-9.69-3.1L228.5,157.05l-23.38-44.51a5.73,5.73,0,0,0-10.14,0L182.2,136.88,150.13,77.07a5.72,5.72,0,0,0-10.7,1.83l-31,198.4h-.1l.1.11.82.4,148.93-149.1a5.73,5.73,0,0,1,9.71,3.09l23.55,145.64.23-.14-23.75-147ZM108.71,277,139.44,80.31a5.73,5.73,0,0,1,10.71-1.84l32.06,59.81L195,114a5.72,5.72,0,0,1,10.13,0L228,157.51,108.7,277Z"/>
+  <path class="cls-5" d="M208.07,322.38a17.21,17.21,0,0,1-16.75,0L108.63,276l-.2,1.28,82.89,46.46a17.16,17.16,0,0,0,16.75,0l83.6-46.46-.22-1.32-83.38,46.4Z"/>
+  <path id="b" class="cls-6" d="M267.68,130.37a5.7,5.7,0,0,0-9.66-3.09l-29.63,29.79L205.1,112.58a5.7,5.7,0,0,0-10.1,0l-12.74,24.33L150.31,77.13A5.7,5.7,0,0,0,139.64,79l-30.89,198.3,82.6,46.45a17.1,17.1,0,0,0,16.69,0l83.31-46.45L267.68,130.37Z"/>
+  <rect class="cls-7" width="400" height="400"/>
+</svg>
