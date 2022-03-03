@@ -3,7 +3,7 @@
 
 .Start
     min-height: 100vh
-    padding: 4rem clamp(5rem, 4%, 200px)
+    padding: 0rem clamp(5rem, 4%, 200px) 0px clamp(5rem, 4%, 200px)
     top: 0
     z-index: 6
     background: rgba(var(--color_bg), 1)
@@ -73,7 +73,9 @@ section
     z-index: 2
 
     .HeadlineBox
-        margin: 4rem
+        margin: 4rem 4rem 0px 4rem
+        z-index: 4
+        max-height: 50vh
 
     .ContentBox
         width: clamp(300px, 50vw, 1000px)
@@ -186,3 +188,13 @@ section
                 font-variation-settings: 'wght' 700
                 &:hover
                     opacity: 1
+
+.pointcloud
+    position: absolute
+    top: 0
+    left: 0
+    // width: 100%
+    // min-height: 100%
+    border: 1px solid rgba($WColor, 0.5)
+    z-index: 3
+    opacity: 0.5
