@@ -103,6 +103,7 @@ export default {
                         subDo: 'think',
                         linkTitle: 'Artstation Profile',
                         link: 'https://www.artstation.com/marcusharting',
+                        iconlink: 'artstation',
                         selected: true
                     },
                     {
@@ -110,6 +111,7 @@ export default {
                         subDo: 'make',
                         linkTitle: 'Soundcloud Tracks',
                         link: 'https://soundcloud.com/marcus-universe/tracks',
+                        iconlink: 'soundcloud',
                         selected: false
                     },
                     {
@@ -117,6 +119,7 @@ export default {
                         subDo: 'write',
                         linkTitle: 'Github Profile',
                         link: 'https://github.com/marcus-universe',
+                        iconlink: 'github',
                         selected: false
                     }
                 ]

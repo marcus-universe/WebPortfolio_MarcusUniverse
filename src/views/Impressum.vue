@@ -28,7 +28,7 @@
     <h3>Kontakt:</h3>
     <p>E-Mail: <a href="mailto:contact@marcus-universe.de">contact@marcus-universe.de</a> (bevorzugt)</p>
 
-    <h3>Postanschrift:</h3>
+    <h3>Anschrift:</h3>
     <p><b>Kunstschule Wandsbek (Antreffbar)</b></p>
     <p>Neumann-Reichardt-Str. 27–33, Haus 19<br>22041 Hamburg<br></p>
 
