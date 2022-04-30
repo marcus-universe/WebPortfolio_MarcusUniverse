@@ -5,7 +5,7 @@
     </h1>
 
     <div class="centerText">
-        <p class="Content">The best ways to send a message to me and my universe. 
+        <p class="Content">The best ways to send a message to me and my universe.
         </p>
     </div>
 
@@ -27,9 +27,7 @@
                 </g>
             </svg>
         </a>
-
-
-        <a target="_blank" href="https://www.instagram.com/marcustutorials/">
+        <a target="_blank" href="https://www.instagram.com/marcusunivers/">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
 
                 <g id="Rocket">
@@ -47,7 +45,6 @@
                 </g>
             </svg>
         </a>
-
 
         <a target="_blank" href="https://www.linkedin.com/in/marcus-harting-626b1aa4/">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
