@@ -30,14 +30,14 @@
             class="polyloop rellax"
             data-rellax-speed="3.5">
 
-            <Vue3Lottie
+            <!-- <Vue3Lottie
                 ref="anim"
                 :animationData="PolyloopJSON"
                 :loop="true"
                 :autoPlay="false"
                 :speed="1.3"
-                direction="alternate" />
-            />
+                direction="alternate" /> -->
+       
 
         </div>
 
@@ -45,15 +45,15 @@
             class="polyloop SecondPoly rellax"
             data-rellax-speed="3.5">
 
-            <Vue3Lottie
+            <!-- <Vue3Lottie
                 class="flipAnimation"
                 ref="polytwo"
                 :animationData="PolyloopJSON"
                 :loop="true"
                 :autoPlay="false"
                 :speed="1"
-                direction="alternate" />
-            />
+                direction="alternate" /> -->
+       
 
         </div>
     </div>

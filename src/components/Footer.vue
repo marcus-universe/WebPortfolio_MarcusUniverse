@@ -13,7 +13,7 @@
 
     </div>
 
-    <div class="CreditSection">©2021/22 coded by Marcus Harting </div>
+    <div class="CreditSection">©2022 coded by Marcus Harting </div>
 
     
 </footer>

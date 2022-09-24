@@ -19,37 +19,6 @@
   src: url(./assets/fonts/Assistant/Assistant-VariableFont_wght.ttf) format("truetype");
 }
 
-// @font-face {
-//     font-family: 'Noto Sans JP';
-//     font-weight: 100;
-//     font-display: swap;
-//     src: url('./assets/fonts/NotoSansJP/NotoSansJP-Thin.otf') format('opentype');
-// }
-// @font-face {
-//   font-family: 'Noto Sans JP';
-//   src: url('./assets/fonts/NotoSansJP/NotoSansJP-Regular.otf') format('opentype');
-//   font-weight: 400;
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Noto Sans JP';
-//   src: url('./assets/fonts/NotoSansJP/NotoSansJP-Medium.otf') format('opentype');
-//   font-weight: 500;
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Noto Sans JP';
-//   src: url('./assets/fonts/NotoSansJP/NotoSansJP-Bold.otf') format('opentype');
-//   font-weight: 700;
-//   font-display: swap;
-// }
-// @font-face {
-//   font-family: 'Noto Sans JP';
-//   src: url('./assets/fonts/NotoSansJP/NotoSansJP-Black.otf') format('opentype');
-//   font-weight: 900;
-//   font-display: swap;
-// }
-
 .fade-enter-from,
 .fade-leave-to {
     opacity: 0;

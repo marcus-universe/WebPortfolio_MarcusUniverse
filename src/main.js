@@ -2,8 +2,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+
 // import VueGtag from "vue-gtag";
 import Vue3Lottie from 'vue3-lottie';
+
+import store from './store'
 
 // import rellax from 'rellax';
 
@@ -14,4 +17,4 @@ import Vue3Lottie from 'vue3-lottie';
 //   }
 // }).use(Vue3Lottie).mount('#app')
 
-createApp(App).use(router).use(Vue3Lottie).mount('#app')
+createApp(App).use(store).use(router).use(Vue3Lottie).mount('#app')

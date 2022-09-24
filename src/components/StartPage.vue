@@ -3,10 +3,10 @@
     <div class="HeadlineBox rellax" data-rellax-speed="3.5" data-rellax-mobile-speed="3.5" data-rellax-desktop-speed="7">
         
         
-        <h1 class="Headline">I {{navlists[currentIndex].subDo}}
+        <!-- <h1 class="Headline">I {{navlists[currentIndex].subDo}}
             <br>
             <b :class="{smallerHeadline: smallHeadline, hideHeadline: hideHeadline}">{{title}}</b>
-        </h1>
+        </h1> -->
 
 
         <div class="playcontainer">
