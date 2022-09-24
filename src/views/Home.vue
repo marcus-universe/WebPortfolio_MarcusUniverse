@@ -23,6 +23,8 @@
             property="og:image"
             content="./assets/img/me_profile.png">
     </teleport>
+
+    
     <ErrorPage v-if="error == true" />
 
     <Logo v-if="error == false" />
