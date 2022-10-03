@@ -1,5 +1,98 @@
 [{
-    "name": "Cozy Room",
-    "description": "A cozy room with a fireplace and a view of the ocean."
+        "name": "Crystal Treehouse Mattepainting",
+        "description": "Crystal treehouse mattepainting painted with a graphic tablet and some textures.",
+        "link": "https://www.artstation.com/artwork/184y1Z",
+        "music": false,
+        "github": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/028/695/904/large/marcus-harting-mattpainting-crystal-treehouse.jpg?1595249437",
+            "https://cdna.artstation.com/p/assets/images/images/028/696/070/large/marcus-harting-baumhaus.jpg?1595249017",
+            "https://cdnb.artstation.com/p/assets/images/images/028/696/065/large/marcus-harting-versions-mattpainting.jpg?1595249014",
+            "https://cdnb.artstation.com/p/assets/images/images/028/696/061/large/marcus-harting-ideas-mattpainting.jpg?1595249011"
 
-}]
+        ]
+    },
+
+    {
+        "name": "Character Design Avatar Universe",
+        "description": "Thesis for the 2nd semester of studies in digital illustration/character design. Avatar character with matte painting in the background.",
+        "link": "https://www.artstation.com/artwork/nYE9r9",
+        "music": false,
+        "github": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/028/694/779/large/marcus-harting-harting-marcus-2-2-abschlussarbeitfinal.jpg?1595246158",
+            "https://cdna.artstation.com/p/assets/images/images/028/695/026/large/marcus-harting-perspektivabfolgeperspektiv-abfolge.jpg?1595246816"
+        ]
+    },
+    {
+        "name": "Drive over the horizon",
+        "description": "I modelled all assets for this 3D synthwave music video. I also produced the music and animated the entire scene and assets. ",
+        "link": "https://www.artstation.com/artwork/3ddyrD",
+        "music": false,
+        "github": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/028/405/598/large/marcus-harting-artstation.jpg?1594377555",
+            "https://cdnb.artstation.com/p/assets/images/images/028/408/171/large/marcus-harting-screenshot-2.jpg?1594384932",
+            "https://cdnb.artstation.com/p/assets/images/images/028/408/167/large/marcus-harting-screenshot-1.jpg?1594384929"
+        ]
+    },
+    {
+        "name": "MT Future Office Room",
+        "description": "I created an animated bluescreen background for my old youtube channel Marcus Tutorials (now Marcus Universe) which I can use for recordings with me. My inspiration I got from cyberpunk-styled rooms. I created all the Assets, Logos and Textures by myself in Blender Eevee.",
+        "link": "https://www.artstation.com/artwork/N5gQK5",
+        "music": false,
+        "github": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/023/173/595/large/marcus-harting-studio.jpg?1578348221",
+            "https://cdnb.artstation.com/p/assets/images/images/023/173/601/large/marcus-harting-studio4.jpg?1578348232",
+            "https://cdnb.artstation.com/p/assets/images/images/023/173/589/large/marcus-harting-studio5.jpg?1578348210",
+            "https://cdna.artstation.com/p/assets/images/images/023/173/932/large/marcus-harting-project-studio-1.jpg?1578348926"
+        ]
+    },
+
+    {
+        "name": "Spiral_Point",
+        "description": "Spiral Shapes created in Blender EEVEE",
+        "link": "https://www.artstation.com/artwork/N5gQK5",
+        "music": false,
+        "github": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/017/499/507/large/marcus-harting-spiral-blue-1.jpg?1556219545",
+            "https://cdna.artstation.com/p/assets/images/images/017/499/522/large/marcus-harting-spiral-blue-2.jpg?1556219568",
+            "https://cdna.artstation.com/p/assets/images/images/017/499/530/large/marcus-harting-spiral-blue-3.jpg?1556219584",
+            "https://cdna.artstation.com/p/assets/images/images/017/499/552/large/marcus-harting-project-2.jpg?1556219627"
+        ]
+    },
+    {
+        "name": "Triangle Infinity Room",
+        "description": "Small project for myself to create a nice wallpaper for my screen. I tried different colour variations and rendered it in Blender.",
+        "link": "https://www.artstation.com/artwork/w8NbPL",
+        "music": false,
+        "github": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/017/128/200/large/marcus-harting-render-3.jpg?1554749689",
+            "https://cdnb.artstation.com/p/assets/images/images/017/128/201/large/marcus-harting-render.jpg?1554749691",
+            "https://cdna.artstation.com/p/assets/images/images/017/128/202/large/marcus-harting-render2.jpg?1554749695",
+            "https://cdna.artstation.com/p/assets/images/images/017/128/204/large/marcus-harting-projekt-datei.jpg?1554749697"
+        ]
+    }
+
+]
