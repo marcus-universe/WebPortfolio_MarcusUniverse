@@ -90,7 +90,8 @@ export default {
     props: {
         currentIndex: {
             type: Number,
-            required: true
+            default: 0,
+            required: false
         }
     },
     data() {

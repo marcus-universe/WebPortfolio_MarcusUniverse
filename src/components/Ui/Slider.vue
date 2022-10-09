@@ -54,10 +54,6 @@ export default {
             type: Array,
             required: true
         },
-        selectedIndex: {
-            type: Number,
-            required: true
-        }
     },
     data() {
         return {

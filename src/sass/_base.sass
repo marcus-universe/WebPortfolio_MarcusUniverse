@@ -31,18 +31,20 @@ body
   align-items: center
   flex-direction: row
 
-.logo
-  position: absolute
-  top: 20px
-  left: 20px
-  width: 100px
-  height: 100px
-  z-index: 99
-  @include media('<phone')
-    width: 100px
-    height: 100px
-    top: 5%
-  &:hover
-    cursor: pointer
+.flex_c
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
 
+.flex_space
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
 
+.flex_end
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  flex-direction: row

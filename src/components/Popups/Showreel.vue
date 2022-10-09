@@ -5,12 +5,12 @@
         <p v-if="currentIndex != 0 || videoOneActive == false"> <span v-if="currentIndex == 4"> Here if you can't wait: </span>
 <br v-if="currentIndex == 4">
 <br v-if="currentIndex == 4">
-            <a :href="navlists[currentIndex].link" target="_blank" rel="noopener noreferrer">
+            <a :href="navigation.navlist[currentIndex].link" target="_blank" rel="noopener noreferrer">
                 <img 
-            :src="require('@/assets/' + navlists[currentIndex].iconlink + '.svg')" 
-            :alt="navlists[currentIndex].linkTitle" />
+            :src="require('@/assets/' + navigation.navlist[currentIndex].iconlink + '.svg')" 
+            :alt="navigation.navlist[currentIndex].linkTitle" />
             <br>
-            {{navlists[currentIndex].linkTitle}}
+            {{navigation.navlist[currentIndex].linkTitle}}
             </a>
             
             
@@ -60,9 +60,12 @@ export default {
             type: Number,
             required: true
         },
-        navlists: {
-            type: Array,
-            required: true
+
+
+    },
+    computed: {
+        navigation: function () {
+            return this.$store.state.navigation;
         },
     },
 }

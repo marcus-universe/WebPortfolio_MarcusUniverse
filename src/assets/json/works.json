@@ -1,9 +1,136 @@
-[{
+[
+
+    {
+        "name": "Chill-Zone",
+        "description": "This is a hobby project where I used some Blender Kit Assets and created some of my own models like the fireplace to create a cosy chill zone.",
+        "link": "https://www.artstation.com/artwork/B3QJQA",
+        "music": false,
+        "github": false,
+        "direct": false,
+        "thumbnail": "",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/050/266/322/large/marcus-universe-fireplacerendercomposed4k.jpg?1654461562",
+            "https://cdnb.artstation.com/p/assets/images/images/050/266/327/large/marcus-universe-render-2composed.jpg?1654461575",
+            "https://cdnb.artstation.com/p/assets/images/images/050/266/333/large/marcus-universe-render-4composed.jpg?1654461585",
+            "https://cdnb.artstation.com/p/assets/images/images/050/266/329/large/marcus-universe-render-3composed.jpg?1654461580",
+            "https://cdna.artstation.com/p/assets/images/images/050/266/482/large/marcus-universe-bild-2022-06-05-224411642.jpg?1654461853"
+        ]
+    },
+    {
+        "name": "BLACK CARDS| Neon Edition",
+        "description": "Black Cards is a student project where the task was to design a poster for an imaginary product. The focus was on the 3D rendering. On top, I designed the card textures in Illustrator. For the first time, I worked with Redshift in Cinema 4D on this project.",
+        "link": "https://www.artstation.com/artwork/8wZyEx",
+        "music": false,
+        "github": false,
+        "direct": false,
+        "thumbnail": "",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/047/973/788/large/marcus-universe-blackcardsneonedition.jpg?1648896518",
+            "https://cdna.artstation.com/p/assets/images/images/047/973/772/large/marcus-universe-cards.jpg?1648896489",
+            "https://cdnb.artstation.com/p/assets/images/images/047/973/789/large/marcus-universe-carddesign.jpg?1648896525",
+            "https://cdnb.artstation.com/p/assets/images/images/047/973/781/large/marcus-universe-screenshotcinema4d-2.jpg?1648896510"
+        ]
+    },
+    {
+        "name": "Sunrise Apartment",
+        "description": "I created for a student project in 3D class an entire apartment in Unreal and Blender in 2 weeks. It runs in real-time and users can walk around in first-person mode. It's also optimized for VR. All 3 D assets, pictures on the wall, Materials and Blueprint parts are created by me.Only the textures, except for the books on the shelf and the pictures on the wall, are from the Quixel Megascan Library.I photographed the other textures myself. The music of the video is also created by me on a loopstation wink ",
+        "link": "https://www.artstation.com/artwork/xYzgLR",
+        "music": false,
+        "github": false,
+        "direct": true,
+        "thumbnail": ""
+    },
+
+    {
+        "name": "VR Dream Room",
+        "description": "I created my dream room as a hobby project to get more familiar with Unreal Engine. Here I created all the 3D assets, light setup and programming work myself using blueprints. The project took about 3 weeks and ended on 30.06.2019.",
+        "link": "https://www.artstation.com/artwork/2q22la",
+        "music": false,
+        "github": false,
+        "direct": true,
+        "thumbnail": ""
+    },
+    {
+        "name": "Dynamic Maschines Challange Submission",
+        "description": "This was my submission for the dynamic maschines challange from @pwnisher. Everything is modelled, textured, animated, shaded by me and sounds + piano in background are created and played by me",
+        "link": "https://www.artstation.com/artwork/oA4wJJ",
+        "music": false,
+        "github": false,
+        "direct": true,
+        "thumbnail": ""
+    },
+
+    {
+        "name": "Adidas Ad Gives you Power",
+        "description": "This social media advertising for 2 of Addidas products was a student project. The aim was to create a social media campaign for different products, but with the same topic. Music and Sounds are all created by my self",
+        "link": "https://www.artstation.com/artwork/lxJqoa",
+        "music": false,
+        "github": false,
+        "direct": true,
+        "thumbnail": ""
+    },
+    {
+        "name": "VoiScooter_Student_Project",
+        "description": "As a student project, I created a 3D model from a Voi scooter. This was not a real customer project and was purely for study purposes.",
+        "link": "https://www.artstation.com/artwork/YeveN6",
+        "music": false,
+        "github": false,
+        "direct": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/036/042/486/large/marcus-harting-voiscooter.jpg?1616583833",
+            "https://cdna.artstation.com/p/assets/images/images/036/042/726/large/marcus-harting-speed-version.jpg?1616584385",
+            "https://cdnb.artstation.com/p/assets/images/images/036/042/693/large/marcus-harting-wideangle.jpg?1616584292",
+            "https://cdnb.artstation.com/p/assets/images/images/036/042/827/large/marcus-harting-3d-modelling-1.jpg?1616584550"
+        ]
+    },
+
+    {
+        "name": "JOURNEY",
+        "description": "Dies ist ein Studentenprojekt, bei dem die Aufgabe darin bestand, ein Design für ein T-Shirt zu entwerfen, das Treadless bedruckt.",
+        "link": "https://www.artstation.com/artwork/0noxrw",
+        "music": false,
+        "github": false,
+        "direct": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/031/072/426/large/marcus-harting-design-1.jpg?1602523100",
+            "https://cdnb.artstation.com/p/assets/images/images/031/072/429/large/marcus-harting-design-2.jpg?1602523105",
+            "https://cdnb.artstation.com/p/assets/images/images/031/072/433/large/marcus-harting-design-3.jpg?1602523115",
+            "https://cdna.artstation.com/p/assets/images/images/031/130/306/large/marcus-harting-3d-1.jpg?1602689725",
+            "https://cdnb.artstation.com/p/assets/images/images/031/130/303/large/marcus-harting-3d-3.jpg?1602689722"
+        ]
+    },
+    {
+        "name": "Fake Corporate Design",
+        "description": "Fake corporate design is a student project in which everyone takes a company and places its corporate design in a different context. I choused for this project the companies Fivegum, X-Box, Flixbus",
+        "link": "https://www.artstation.com/artwork/WKGkXG",
+        "music": false,
+        "github": false,
+        "direct": false,
+        "music_urls": [""],
+        "github_urls": [""],
+        "thumbnail": "",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/030/640/361/large/marcus-harting-fivegum-optimized.jpg?1601223804",
+            "https://cdnb.artstation.com/p/assets/images/images/030/640/005/large/marcus-harting-harting-marcus-corporate-fake.jpg?1601223224",
+            "https://cdna.artstation.com/p/assets/images/images/030/640/432/large/marcus-harting-flixbusdesignoptimized.jpg?1601223930",
+            "https://cdna.artstation.com/p/assets/images/images/030/640/440/large/marcus-harting-fivegum.jpg?1601223952",
+            "https://cdnb.artstation.com/p/assets/images/images/030/640/595/large/marcus-harting-x-box-joghurt.jpg?1601224362",
+            "https://cdna.artstation.com/p/assets/images/images/030/640/600/large/marcus-harting-flixbus-bts.jpg?1601224369"
+        ]
+    },
+    {
         "name": "Crystal Treehouse Mattepainting",
         "description": "Crystal treehouse mattepainting painted with a graphic tablet and some textures.",
         "link": "https://www.artstation.com/artwork/184y1Z",
         "music": false,
         "github": false,
+        "direct": false,
         "music_urls": [""],
         "github_urls": [""],
         "thumbnail": "",
@@ -22,6 +149,7 @@
         "link": "https://www.artstation.com/artwork/nYE9r9",
         "music": false,
         "github": false,
+        "direct": false,
         "music_urls": [""],
         "github_urls": [""],
         "thumbnail": "",
@@ -36,6 +164,7 @@
         "link": "https://www.artstation.com/artwork/3ddyrD",
         "music": false,
         "github": false,
+        "direct": false,
         "music_urls": [""],
         "github_urls": [""],
         "thumbnail": "",
@@ -51,6 +180,7 @@
         "link": "https://www.artstation.com/artwork/N5gQK5",
         "music": false,
         "github": false,
+        "direct": false,
         "music_urls": [""],
         "github_urls": [""],
         "thumbnail": "",
@@ -68,6 +198,7 @@
         "link": "https://www.artstation.com/artwork/N5gQK5",
         "music": false,
         "github": false,
+        "direct": false,
         "music_urls": [""],
         "github_urls": [""],
         "thumbnail": "",
@@ -84,6 +215,7 @@
         "link": "https://www.artstation.com/artwork/w8NbPL",
         "music": false,
         "github": false,
+        "direct": false,
         "music_urls": [""],
         "github_urls": [""],
         "thumbnail": "",

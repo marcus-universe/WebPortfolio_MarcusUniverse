@@ -79,28 +79,6 @@ export default {
 
     },
     mounted() {
-    //     var pointcloud = this.$refs.pointcloud
-    //     pointcloud.width = window.innerWidth;
-    //     pointcloud.height = window.innerHeight;
-    //     var c = pointcloud.getContext('2d')
-        
-    //     var lastposition = [100, 100]
-    //   for (var i = 0; i < 100; i++) {
-    //       var x = Math.random() * (window.innerWidth - 200) + 100;
-    //     var y = Math.random() * (window.innerHeight - 200) + 100;
-    //     var radius =  Math.random() * (30 - 3) + 3;
-    //     c.beginPath();
-    //     c.arc(x, y, radius, 0, 2 * Math.PI, false)
-    //     c.fillStyle = 'rgba(238, 238, 238, 1)'
-    //     c.fill();
-    //     c.beginPath();
-    //     c.moveTo(lastposition[0], lastposition[1])
-    //     c.lineTo(x, y)
-    //     c.lineWidth = 5
-    //     c.strokeStyle = 'rgba(238, 238, 238, 1)'
-    //     c.stroke();
-    //     lastposition = [x,y]
-    //   }
         new rellax('.rellax', {
                 breakpoints: [640, 1280, 1600]
             // wrapper: '.rellax-wrapper',
@@ -108,6 +86,7 @@ export default {
             // horizontal: true
         });
     },
+    
     methods: {
         hoverPlay: function () {
             this.$refs['playButton'].setDirection("forward");

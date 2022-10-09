@@ -4,23 +4,27 @@ nav
     z-index: 99
     left: 50%
     transform: translateX(-50%)
+    position: fixed
+    top: 0
+
     ul
         list-style: none
         margin: 0
         padding: 0
         border-bottom-left-radius: 20px
         border-bottom-right-radius: 20px
-        background: rgba(var(--color_bg), 0.7)
+        background: rgba(var(--color_p), 0.7)
         backdrop-filter: blur(10px)
+        gap: 2rem
         @include media('<tablet')
             backdrop-filter: none
             background: rgba(var(--color_bg), 1)
         li
-            margin: 0px 10px
             display: block
             color: var(--color_p)
             text-decoration: none
-            padding: 8px 20px
+            // padding: 10px 10px
+
             transition: all 0.3s ease
             font-family: $fontNoto
             // font-weight: 500
@@ -29,15 +33,40 @@ nav
             font-size: 1.3rem
             letter-spacing: 2px
             font-weight: 300
+
             &:last-child
                 margin-right: 40px
             &:first-child
                 margin-left: 40px
             &:hover
                 color: $WColor
-                padding: 8px 20px 8px 20px
+                // padding: 8px 20px 8px 20px
                 background: rgba(var(--color_bg), 1)
                 cursor: pointer
+            a
+                text-decoration: none
+                color: var(--color_p)
+                opacity: 0.5
+                &:hover
+                    opacity: 1
+                    cursor: pointer
+
+                .logo
+                    position: relative
+                    width: 60px
+                    height: 60px
+                    z-index: 99
+                    @include media('<phone')
+                        width: 100px
+                        height: 100px
+                        top: 5%
+                    &:hover
+                        cursor: pointer
+            .activeMenu
+                opacity: 1
+                svg
+                    path
+                        fill: var(--color_p)
 
 .activeNav
     color: $WColor
@@ -48,14 +77,10 @@ nav
     padding: 8px 20px 8px 20px
     // background: rgba(var(--color_bg), 1)
 
-nav:not(.stickyNav)
-    top: 90%
-    position: absolute
-    @include media('<phone')
-        position: fixed
-        bottom: 2%
-        top: unset
-
-.stickyNav
-    position: fixed
-    top: 0
+// nav:not(.stickyNav)
+//     top: 90%
+//     position: absolute
+//     @include media('<phone')
+//         position: fixed
+//         bottom: 2%
+//         top: unset

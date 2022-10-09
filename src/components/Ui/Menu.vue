@@ -1,80 +1,40 @@
 <template>
 <nav
     id="Menu"
-    :class="{stickyNav: navSticky}"
-    ref="nav"
-    >
+    ref="nav">
     <ul class="flex_c_h">
+
         <li
             v-for="(navitem, index ) in navlists"
-            :key="index"
-            :class="{activeNav: navitem.selected}"
-            v-on:click="selectNav(index, {navitem})">
-            {{navitem.name}}
+            :key="index" class="flex_c">
+
+            <a :href="'/' + navitem.link" :class="[{activeMenu: currentRouteName === navitem.name}]">
+                <Logo :icon="navitem.icon" :navname="navitem.name"/>
+            </a>
         </li>
     </ul>
 </nav>
 </template>
 
 <script>
+import Logo from '@/components/Ui/Logo.vue';
 export default {
     name: 'Menu',
-    data() {
-        return {
-            navSticky: false,
-            NavElementPos: 0,
-            NavElement: null,
+    components: {
+        Logo
+    },
+    computed: {
+        navlists() {
+            return this.$store.state.navigation.navlist
+        },
+        currentRouteName() {
+            return this.$route.name;
         }
     },
-    props: {
-        navlists: {
-            type: Array,
-            required: true
-        },
-        selectedIndex: {
-            type: Number,
-            required: true
-        },
-       
-    },
-
-    created() {
-    },
-
-    mounted() {
-        window.addEventListener('scroll', this.checkSticky);
-        this.checkSticky;
-        window.addEventListener('resize', this.WindowResize);
-        this.NavElement = this.$refs.nav;
-    },
-
-    unmounted() {
-        window.removeEventListener('scroll', this.checkSticky);
-    },
-
     methods: {
-        selectNav: function (index, navitem) {
-            this.navlists.forEach(function (navitem) {
-                navitem.selected = false;
-            });
-            navitem.navitem.selected = true;
-            // this.selectedIndex = index;
-            this.$emit('ChangeNav', index);
-            
-        },
         WindowResize: function () {
             this.NavElement = this.$refs.nav;
         },
-
-        checkSticky: function () {
-            // console.log({NavPos:this.NavElement.offsetTop,
-            // Window:window.pageYOffset});
-            if (window.pageYOffset >= this.NavElement.offsetTop && window.innerWidth > 640) {
-                this.navSticky = true;
-            } else {
-                this.navSticky = false;
-            }
-        }
     }
 }
 </script>
