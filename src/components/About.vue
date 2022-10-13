@@ -62,7 +62,7 @@
 </template>
 
 <style lang="scss">
-@import '../sass/Pages/about.sass';
+
 </style>
 
 <script>

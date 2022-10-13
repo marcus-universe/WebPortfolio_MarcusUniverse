@@ -36,9 +36,7 @@
         :navlists="navigation.navlist"
         :currentIndex="currentselectedIndex" />
 
-    <About
-        v-if="error == false"
-        :currentIndex="currentselectedIndex" />
+
 
     <LetsTalk v-if="error == false" />
 
@@ -46,25 +44,22 @@
 </div>
 </template>
 
-<style lang="scss">
-@import '../sass/base.sass';
-</style>
+
 
 <script>
 
-// import Menu from '../components/Ui/Menu.vue'
+
 import StartPage from '../components/StartPage.vue'
-import About from '../components/About.vue'
+
 import LetsTalk from '../components/LetsTalk.vue'
 import ErrorPage from '../components/ErrorPage.vue'
-// import Footer from '../components/Footer.vue'
+
 // let root = document.documentElement;
 
 export default {
     name: 'App',
     components: {
         StartPage,
-        About,
         LetsTalk,
         ErrorPage,
     },
@@ -75,7 +70,7 @@ export default {
 
     data() {
         return {
-            title: "3D",
+            title: "Home",
             smallHeadline: false,
             currentselectedIndex: 0,
             hideHeadline: false,

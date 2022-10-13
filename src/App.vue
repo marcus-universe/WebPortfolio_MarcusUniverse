@@ -4,7 +4,7 @@
     <transition
         name="fade"
         mode="out-in">
-        <component :is="Component" />
+        <component :is="Component" :key="$route.path" />
     </transition>
 </router-view>
 
@@ -17,20 +17,26 @@
 </template>
 
 <style lang="scss">
+@import '@/sass/base.sass';
+@import '@/sass/Pages/about.sass';
+@import '@/sass/Pages/Impressum.sass';
+
 @font-face {
   font-family: Assistant;
   src: url(./assets/fonts/Assistant/Assistant-VariableFont_wght.ttf) format("truetype");
 }
 
-.fade-enter-from,
-.fade-leave-to {
-    opacity: 0;
-    transform: scale(1);
-}
-
 .fade-enter-active,
 .fade-leave-active {
     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    right: 50%;
+    transform: scale(1.1) translateY(0%) translateX(0%);
+    
 }
 </style>
 

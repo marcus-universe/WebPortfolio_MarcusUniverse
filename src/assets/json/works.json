@@ -7,7 +7,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "cozy",
         "images": [
             "https://cdna.artstation.com/p/assets/images/images/050/266/322/large/marcus-universe-fireplacerendercomposed4k.jpg?1654461562",
             "https://cdnb.artstation.com/p/assets/images/images/050/266/327/large/marcus-universe-render-2composed.jpg?1654461575",
@@ -23,7 +24,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "cards",
         "images": [
             "https://cdna.artstation.com/p/assets/images/images/047/973/788/large/marcus-universe-blackcardsneonedition.jpg?1648896518",
             "https://cdna.artstation.com/p/assets/images/images/047/973/772/large/marcus-universe-cards.jpg?1648896489",
@@ -38,7 +40,9 @@
         "music": false,
         "github": false,
         "direct": true,
-        "thumbnail": ""
+        "video": true,
+        "vidPreview": "sunrise_preview",
+        "thumbnail": "sunriseapartment"
     },
 
     {
@@ -48,7 +52,9 @@
         "music": false,
         "github": false,
         "direct": true,
-        "thumbnail": ""
+        "video": true,
+        "vidPreview": "dreamroom_preview",
+        "thumbnail": "DreamRoom"
     },
     {
         "name": "Dynamic Maschines Challange Submission",
@@ -57,7 +63,9 @@
         "music": false,
         "github": false,
         "direct": true,
-        "thumbnail": ""
+        "video": true,
+        "vidPreview": "dynamicmaschines_preview",
+        "thumbnail": "dynamicmaschines"
     },
 
     {
@@ -67,7 +75,9 @@
         "music": false,
         "github": false,
         "direct": true,
-        "thumbnail": ""
+        "video": true,
+        "vidPreview": "addidas_preview",
+        "thumbnail": "addidas"
     },
     {
         "name": "VoiScooter_Student_Project",
@@ -76,9 +86,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "voiscooter",
         "images": [
             "https://cdna.artstation.com/p/assets/images/images/036/042/486/large/marcus-harting-voiscooter.jpg?1616583833",
             "https://cdna.artstation.com/p/assets/images/images/036/042/726/large/marcus-harting-speed-version.jpg?1616584385",
@@ -94,9 +103,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "journey",
         "images": [
             "https://cdna.artstation.com/p/assets/images/images/031/072/426/large/marcus-harting-design-1.jpg?1602523100",
             "https://cdnb.artstation.com/p/assets/images/images/031/072/429/large/marcus-harting-design-2.jpg?1602523105",
@@ -112,9 +120,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "fakecorporate",
         "images": [
             "https://cdnb.artstation.com/p/assets/images/images/030/640/361/large/marcus-harting-fivegum-optimized.jpg?1601223804",
             "https://cdnb.artstation.com/p/assets/images/images/030/640/005/large/marcus-harting-harting-marcus-corporate-fake.jpg?1601223224",
@@ -131,9 +138,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "treehouse",
         "images": [
             "https://cdna.artstation.com/p/assets/images/images/028/695/904/large/marcus-harting-mattpainting-crystal-treehouse.jpg?1595249437",
             "https://cdna.artstation.com/p/assets/images/images/028/696/070/large/marcus-harting-baumhaus.jpg?1595249017",
@@ -150,9 +156,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "avataruniverse",
         "images": [
             "https://cdnb.artstation.com/p/assets/images/images/028/694/779/large/marcus-harting-harting-marcus-2-2-abschlussarbeitfinal.jpg?1595246158",
             "https://cdna.artstation.com/p/assets/images/images/028/695/026/large/marcus-harting-perspektivabfolgeperspektiv-abfolge.jpg?1595246816"
@@ -165,9 +170,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "drivehorizon",
         "images": [
             "https://cdna.artstation.com/p/assets/images/images/028/405/598/large/marcus-harting-artstation.jpg?1594377555",
             "https://cdnb.artstation.com/p/assets/images/images/028/408/171/large/marcus-harting-screenshot-2.jpg?1594384932",
@@ -181,9 +185,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "mtstudio",
         "images": [
             "https://cdnb.artstation.com/p/assets/images/images/023/173/595/large/marcus-harting-studio.jpg?1578348221",
             "https://cdnb.artstation.com/p/assets/images/images/023/173/601/large/marcus-harting-studio4.jpg?1578348232",
@@ -199,9 +202,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "spiral",
         "images": [
             "https://cdnb.artstation.com/p/assets/images/images/017/499/507/large/marcus-harting-spiral-blue-1.jpg?1556219545",
             "https://cdna.artstation.com/p/assets/images/images/017/499/522/large/marcus-harting-spiral-blue-2.jpg?1556219568",
@@ -216,9 +218,8 @@
         "music": false,
         "github": false,
         "direct": false,
-        "music_urls": [""],
-        "github_urls": [""],
-        "thumbnail": "",
+        "video": false,
+        "thumbnail": "trianglecube",
         "images": [
             "https://cdna.artstation.com/p/assets/images/images/017/128/200/large/marcus-harting-render-3.jpg?1554749689",
             "https://cdnb.artstation.com/p/assets/images/images/017/128/201/large/marcus-harting-render.jpg?1554749691",

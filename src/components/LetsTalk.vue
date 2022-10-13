@@ -77,7 +77,6 @@
 </template>
 
 <style lang="scss">
-@import '../sass/base.sass';
 @import '../sass/socialMedia.sass';
 @import '../sass/Pages/about.sass';
 </style>
