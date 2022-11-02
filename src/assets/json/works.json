@@ -80,20 +80,14 @@
         "thumbnail": "addidas"
     },
     {
-        "name": "VoiScooter_Student_Project",
+        "name": "VoiScooter Student Project",
         "description": "As a student project, I created a 3D model from a Voi scooter. This was not a real customer project and was purely for study purposes.",
         "link": "https://www.artstation.com/artwork/YeveN6",
         "music": false,
         "github": false,
-        "direct": false,
+        "direct": true,
         "video": false,
-        "thumbnail": "voiscooter",
-        "images": [
-            "https://cdna.artstation.com/p/assets/images/images/036/042/486/large/marcus-harting-voiscooter.jpg?1616583833",
-            "https://cdna.artstation.com/p/assets/images/images/036/042/726/large/marcus-harting-speed-version.jpg?1616584385",
-            "https://cdnb.artstation.com/p/assets/images/images/036/042/693/large/marcus-harting-wideangle.jpg?1616584292",
-            "https://cdnb.artstation.com/p/assets/images/images/036/042/827/large/marcus-harting-3d-modelling-1.jpg?1616584550"
-        ]
+        "thumbnail": "voiscooter"
     },
 
     {
@@ -102,16 +96,9 @@
         "link": "https://www.artstation.com/artwork/0noxrw",
         "music": false,
         "github": false,
-        "direct": false,
+        "direct": true,
         "video": false,
-        "thumbnail": "journey",
-        "images": [
-            "https://cdna.artstation.com/p/assets/images/images/031/072/426/large/marcus-harting-design-1.jpg?1602523100",
-            "https://cdnb.artstation.com/p/assets/images/images/031/072/429/large/marcus-harting-design-2.jpg?1602523105",
-            "https://cdnb.artstation.com/p/assets/images/images/031/072/433/large/marcus-harting-design-3.jpg?1602523115",
-            "https://cdna.artstation.com/p/assets/images/images/031/130/306/large/marcus-harting-3d-1.jpg?1602689725",
-            "https://cdnb.artstation.com/p/assets/images/images/031/130/303/large/marcus-harting-3d-3.jpg?1602689722"
-        ]
+        "thumbnail": "journey"
     },
     {
         "name": "Fake Corporate Design",
@@ -119,17 +106,9 @@
         "link": "https://www.artstation.com/artwork/WKGkXG",
         "music": false,
         "github": false,
-        "direct": false,
+        "direct": true,
         "video": false,
-        "thumbnail": "fakecorporate",
-        "images": [
-            "https://cdnb.artstation.com/p/assets/images/images/030/640/361/large/marcus-harting-fivegum-optimized.jpg?1601223804",
-            "https://cdnb.artstation.com/p/assets/images/images/030/640/005/large/marcus-harting-harting-marcus-corporate-fake.jpg?1601223224",
-            "https://cdna.artstation.com/p/assets/images/images/030/640/432/large/marcus-harting-flixbusdesignoptimized.jpg?1601223930",
-            "https://cdna.artstation.com/p/assets/images/images/030/640/440/large/marcus-harting-fivegum.jpg?1601223952",
-            "https://cdnb.artstation.com/p/assets/images/images/030/640/595/large/marcus-harting-x-box-joghurt.jpg?1601224362",
-            "https://cdna.artstation.com/p/assets/images/images/030/640/600/large/marcus-harting-flixbus-bts.jpg?1601224369"
-        ]
+        "thumbnail": "fakecorporate"
     },
     {
         "name": "Crystal Treehouse Mattepainting",
@@ -137,16 +116,9 @@
         "link": "https://www.artstation.com/artwork/184y1Z",
         "music": false,
         "github": false,
-        "direct": false,
+        "direct": true,
         "video": false,
-        "thumbnail": "treehouse",
-        "images": [
-            "https://cdna.artstation.com/p/assets/images/images/028/695/904/large/marcus-harting-mattpainting-crystal-treehouse.jpg?1595249437",
-            "https://cdna.artstation.com/p/assets/images/images/028/696/070/large/marcus-harting-baumhaus.jpg?1595249017",
-            "https://cdnb.artstation.com/p/assets/images/images/028/696/065/large/marcus-harting-versions-mattpainting.jpg?1595249014",
-            "https://cdnb.artstation.com/p/assets/images/images/028/696/061/large/marcus-harting-ideas-mattpainting.jpg?1595249011"
-
-        ]
+        "thumbnail": "treehouse"
     },
 
     {
@@ -155,21 +127,17 @@
         "link": "https://www.artstation.com/artwork/nYE9r9",
         "music": false,
         "github": false,
-        "direct": false,
+        "direct": true,
         "video": false,
-        "thumbnail": "avataruniverse",
-        "images": [
-            "https://cdnb.artstation.com/p/assets/images/images/028/694/779/large/marcus-harting-harting-marcus-2-2-abschlussarbeitfinal.jpg?1595246158",
-            "https://cdna.artstation.com/p/assets/images/images/028/695/026/large/marcus-harting-perspektivabfolgeperspektiv-abfolge.jpg?1595246816"
-        ]
+        "thumbnail": "avataruniverse"
     },
     {
         "name": "Drive over the horizon",
         "description": "I modelled all assets for this 3D synthwave music video. I also produced the music and animated the entire scene and assets. ",
         "link": "https://www.artstation.com/artwork/3ddyrD",
-        "music": false,
+        "music": true,
         "github": false,
-        "direct": false,
+        "direct": true,
         "video": false,
         "thumbnail": "drivehorizon",
         "images": [
@@ -196,7 +164,7 @@
     },
 
     {
-        "name": "Spiral_Point",
+        "name": "Spiral Point",
         "description": "Spiral Shapes created in Blender EEVEE",
         "link": "https://www.artstation.com/artwork/N5gQK5",
         "music": false,

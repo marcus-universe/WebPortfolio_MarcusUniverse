@@ -1,60 +1,21 @@
 <template>
 <section class="About">
-    <h1 class="Headline AboutTitle">Who am I
-    </h1>
     <img src="../assets/img/me_profile.jpg" alt="profile_picture" class="profile_img">
-    <div class="centerText">
+    
 
-        <transition
-            name="fade"
-            mode="out-in">
-
-            <ThreeDAboutDE
-                v-if="currentIndex == 0"
-                key="1"
-                :showPolygon="showPoly" />
-            <MusicAboutDE
-                key="2"
-                v-else-if="currentIndex == 1"
-                :showPolygon="showPoly" />
-            <CodeAboutDE
-                key="3"
-                v-else-if="currentIndex == 2"
-                :showPolygon="showPoly" />
-        </transition>
-
-    </div>
-    <div class="rellax-wrapper">
-        <div
-            v-if="showPoly == true"
-            class="polyloop rellax"
-            data-rellax-speed="3.5">
-
-            <!-- <Vue3Lottie
-                ref="anim"
-                :animationData="PolyloopJSON"
-                :loop="true"
-                :autoPlay="false"
-                :speed="1.3"
-                direction="alternate" /> -->
-       
-
-        </div>
-
-        <div
-            class="polyloop SecondPoly rellax"
-            data-rellax-speed="3.5">
-
-            <!-- <Vue3Lottie
-                class="flipAnimation"
-                ref="polytwo"
-                :animationData="PolyloopJSON"
-                :loop="true"
-                :autoPlay="false"
-                :speed="1"
-                direction="alternate" /> -->
-       
-
+    
+    <div class="ContentAbout">
+        <h1 class="Headline AboutTitle">You want me!
+        </h1>
+        <h2>Meine Specs</h2>
+        <div class="flex_c_h flex_wrap gap2 alignStretch spec">
+            <p class="flex_c flex_space flex_start"><Logo :icon="'education'"/>Abgeschlossendes Kommunikationsdesign Studium (Note: 94%)</p>
+            <p class="flex_c flex_space flex_start"><Logo :icon="'work'" />
+                2,5 Jahre Berufserfahrung als 3D Artist, Frontend Developer, Social Media Produzent und Produkt Fotograf/Film Produzent bei <a href="https://www.morgenland-teppiche.de/" target="_blank" rel="noopener noreferrer">Morgenland-Teppiche</a>
+            </p>
+            <p class="flex_c flex_space flex_start"><Logo :icon="'education'" />Abgeschlossende Screendesign Ausbildung + Fachabitur (Note: 2,1)</p>
+            <p class="flex_c flex_space flex_start"><Logo :icon="'synth'" />Spiele über 10 Jahre Piano/Synth & Gitarre + produziere Songs <br>(Achtung: Synthesizer-Nerd)</p>
+            <p class="flex_c flex_space flex_start"><Logo :icon="'yt'" />Betreibe als Hobby einen <a href="https://www.morgenland-teppiche.de/" target="_blank" rel="noopener noreferrer">Youtube Kanal</a> seit 2012 mit über 1.300 Abonnenten</p>
         </div>
     </div>
 
@@ -66,26 +27,12 @@
 </style>
 
 <script>
-// import { Vue3Lottie } from 'vue3-lottie';
-import rellax from 'rellax';
-// import {
-//     useWindowSize
-// } from 'vue-window-size';
-const PolyloopJSON = require('../assets/lotties/polyloopanim.json')
-
-import {
-    ThreeDAboutDE,
-    CodeAboutDE,
-    MusicAboutDE,
-} from './AboutContent/German';
+import Logo from '@/components/Ui/Logo.vue'
 
 export default {
     name: 'About',
     components: {
-        // Vue3Lottie,
-        ThreeDAboutDE,
-        CodeAboutDE,
-        MusicAboutDE,
+        Logo
     },
     props: {
         currentIndex: {
@@ -94,19 +41,7 @@ export default {
             required: false
         }
     },
-    data() {
-        return {
-            PolyloopJSON,
-            showPoly: true,
-        }
-    },
     mounted() {
-        new rellax('.rellax', {
-            breakpoints: [640, 1280, 1600],
-          
-       
-        });
-
         this.checkWindowSize();
         window.addEventListener('resize', this.checkWindowSize);
 
@@ -114,8 +49,6 @@ export default {
 
     unmounted() {
         window.removeEventListener('resize', this.checkWindowSize);
-        // var polytwo = this.$refs.polytwo;
-        // polytwo.goToAndStop(0);
     },
     methods: {
         checkWindowSize() {
@@ -131,14 +64,6 @@ export default {
     },
 
     setup() {
-        // const {
-        //     width,
-        //     height
-        // } = useWindowSize();
-        // return {
-        //     windowWidth: width,
-        //     windowHeight: height,
-        // };
     },
 
 }

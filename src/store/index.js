@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+import works from '@/assets/json/works.json'
 
 export default createStore({
   state: {
@@ -35,7 +36,28 @@ export default createStore({
                         selected: false
                     }
                 ]
-            }
+        },
+    works: works,
+    Banner: [
+      {
+      title: 'Sunrise Apartment',
+      thumbnail: 'sunrise_thumbnail',
+      video: 'sunrise',
+      link: 'https://www.artstation.com/artwork/xYzgLR'
+      },
+      {
+        title: 'VR Dream Room',
+        thumbnail: 'dreamroom_thumbnail',
+        video: 'dreamroom',
+        link: 'https://www.artstation.com/artwork/2q22la'
+      },
+      {
+        title: 'Dynamic Maschines',
+        thumbnail: 'dynamicmaschines_thumbnail',
+        video: 'dynamicmaschines',
+        link: 'https://www.artstation.com/artwork/oA4wJJ'
+      }
+    ]
 
   },
   getters: {

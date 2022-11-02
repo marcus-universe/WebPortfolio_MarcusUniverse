@@ -1,7 +1,7 @@
 .About
     top: 0
     min-height: 100vh
-    z-index: 2
+    z-index: 4
     background: rgba(var(--color_bg), 1)
     transition: background 0.3s ease
     align-items: flex-start !important
@@ -18,176 +18,65 @@
         left: auto
         top: auto
         text-align: center
-        padding-bottom: 2rem
+        padding-bottom: 0rem
+        margin-bottom: 1rem
+        text-transform: uppercase
+        font-variation-settings: 'wght' 600
+        font-size: clamp(3rem, 5vw, 7rem)
     .profile_img
-        position: relative
-        left: 50%
-        transform: translateX(-50%)
-        width: clamp(200px, 100%, 400px)
-        border-radius: 50%
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3)
-    .centerText
-        display: flex
-        justify-content: center
-        align-items: center
-        .fade-enter-active,
-        .fade-leave-active
-            transition: opacity 0.3s ease
-        .fade-enter,
-        .fade-leave-to
-            opacity: 0
-        .Content
-            color: var(--color_p)
-            font-family: $fontNoto
-            font-size: clamp(1rem, 15vw, 1.2rem)
-            width: clamp(200px, 80vw, 800px)
-            text-align: center
-            padding: 0
-            .Intro
-                backdrop-filter: blur(4px)
-                width: auto !important
-                min-width: 200px
-                max-width: 500px
-                padding: 10px
-                font-variation-settings: 'wght' 700
-            h3
-                color: $WColor
-                font-size: clamp(1.5rem, 20vw, 2.2rem)
-                margin: 3rem 0 1rem 0
-            .HeadlineL
-                text-align: left
-            .article_point
-                text-align: left
-                font-variation-settings: 'wght' 500
-                padding: 2rem 0 2rem 0rem
-                margin: 0
-                border-bottom: solid 1px var(--color_p)
-                border-top: solid 1px var(--color_p)
-                backdrop-filter: blur(4px)
-                background: rgba(var(--color_bg), 0.7)
-                @include media('<tablet')
-                    backdrop-filter: none
-                    background: rgba(var(--color_bg), 0.9)
-                a
-                    color: $WColor
-            .textcenter
-                text-align: center !important
-            .SoftwareBox
-                display: flex
-                justify-content: center
-                align-items: center
-                flex-wrap: wrap
-                margin: 0 0 4rem 0
-                padding: 0
-                li
-                    list-style: none
-                    min-width: 200px
-                    max-width: 200px
-                    min-height: 230px
-                    // flex-direction: column
-                    background: rgba(var(--color_bg), 1)
-                    position: relative
-                    border: solid 1px var(--color_p)
-                    margin: 10px
-                    padding: 20px
-                    transition: box-shadow 0.3s ease
-                    &:hover
-                        cursor: pointer
-                        box-shadow: 0px 0px 10px var(--color_p)
-                    &:first-child
-                        padding-top: 20px !important
-                    img
-                        width: 150px
-                        position: relative
-                        left: 50%
-                        transform: translateX(-50%)
-                    p
-                        margin: 0px 0 0 0
-                        padding: 0
-                        text-align: center
-
-            .InstrumentsH3
-                text-align: center
-            .Instruments
-                display: flex
-                justify-content: center
-                align-items: center
-                flex-wrap: wrap
-                padding: 0
-                margin: 0 0 2rem 0
-                li
-                    min-width: 200px
-                    margin: 0.5rem 0.5rem 0.5rem 0.5rem
-                    list-style: none
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    flex-direction: column
-                    text-align: center
-                    font-variation-settings: 'wght' 500
-                    font-size: clamp(1rem, 15vw, 1.2rem)
-                    padding: 20px
-                    background-color: var(--color_p)
-                    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
-                    @include media('<phone')
-                        min-width: 100px
-                        font-size: clamp(0.8rem, 10vw, 1rem)
-                        padding: 10px
-                        &:first-child
-                            padding-top: 10px !important
-                    &:first-child
-                        padding-top: 20px
-            ul
-                li
-                    text-align: left
-                    color: $WColor
-                    padding: 1rem 0
-                    font-variation-settings: 'wght' 500
-                    &:first-child
-                        padding-top: 0
-            .LastSatzBox
-                background: var(--color_p)
-                padding: 1rem 2rem
-                margin-bottom: 2rem
-                font-variation-settings: 'wght' 600
-                h3
-                    color: rgba(var(--color_bg), 1)
-                    font-variation-settings: 'wght' 680
-                    letter-spacing: 0.15rem !important
-                .EinerSatz
-                    padding-bottom: 5rem
-                    color: rgba(var(--color_bg), 0.8)
-                    font-variation-settings: 'wght' 600
-    .rellax-wrapper
-        height: 100vh
         position: fixed
-        width: 100vw
-        top: 0
-        left: 0
-        display: flex
-        justify-content: center
-        align-items: center
-        z-index: -1
-        .polyloop
-            position: fixed
-            top: 50%
-            left: 50%
-            opacity: 0.1
-            width: 1000px
-        // left: 50%
-        // transform: translateX(-50%)
-            z-index: -1
-        .SecondPoly
-            left: -20%
-            top: 0%
-            width: clamp(1000px, 100vw, 2000px)
-            opacity: 0.2
-            @include media('<phone')
-                left: -40%
-                top: 20%
-            .lottie-animation-container
-                transform: scaleX(-1) rotate(-25deg)
-
+        left: 5vw
+        top: 50%
+        transform: translateY(-50%) translateX(0%)
+        width: clamp(200px, 100%, 400px)
+        border-radius: 2rem
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3)
+        z-index: 4
+        transition: all 0.3s ease
+    .ContentAbout
+        max-width: calc(100% - 20vw)
+        margin-left: 20vw
+        margin-bottom: 20vh
+        h2
+            font-family: $fontNoto
+            font-size: clamp( 2rem, 4vw, 4rem)
+            text-align: center
+            font-variation-settings: 'wght' 500
+            color: $WColor
+            margin: 2rem 0 2rem 0
+            border-top: 3px solid rgba($WColor, 0.5)
+        .spec
+            p
+                font-family: $fontNoto
+                font-variation-settings: 'wght' 500
+                color: $WColor
+                font-size: 1.2rem
+                background: var(--color_bg)
+                padding: 1rem
+                border-radius: 10px
+                border: 0.3rem solid var(--color_p)
+                min-width: 300px
+                max-width: 300px
+                text-align: center
+                background: rgba(var(--color_bg), 0.8)
+                transition: all 0.3s ease
+                margin: 0
+                &:hover
+                    cursor: pointer
+                    filter: brightness(1.2)
+                svg
+                    width: 6rem !important
+                    height: 6rem !important
+                    fill: var(--color_p)
+                    border-bottom: 0.3rem solid var(--color_p)
+                    path
+                        fill: var(--color_p)
+                a
+                    color: var(--color_p)
+                    text-decoration: none
+                    &:hover
+                        color: var(--color_p)
+                        text-decoration: underline
 .Talk
     min-height: 30vh
     padding-bottom: 10rem
@@ -199,7 +88,11 @@
         color: rgb(var(--color_bg)) !important
         font-variation-settings: 'wght' 700
         text-align: center
+        padding: 0px
 
     .Content
         color: rgb(var(--color_bg)) !important
-        font-variation-settings: 'wght' 500
+        font-variation-settings: 'wght' 600
+        font-size: 1.2rem
+        text-align: center
+        font-family: $fontNoto

@@ -1,24 +1,24 @@
-@import _variables
-
 nav
     z-index: 99
     left: 50%
     transform: translateX(-50%)
     position: fixed
     top: 0
-
+    background: rgba(var(--color_bg), 0.6)
+    border-bottom-left-radius: 20px
+    border-bottom-right-radius: 20px
+    backdrop-filter: blur(10px)
+    @include media('<phone')
+        bottom: 0
+        top: auto
+        border-radius: 0
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
     ul
         list-style: none
         margin: 0
         padding: 0
-        border-bottom-left-radius: 20px
-        border-bottom-right-radius: 20px
-        background: rgba(var(--color_p), 0.7)
-        backdrop-filter: blur(10px)
         gap: 2rem
-        @include media('<tablet')
-            backdrop-filter: none
-            background: rgba(var(--color_bg), 1)
         li
             display: block
             color: var(--color_p)
@@ -41,7 +41,7 @@ nav
             &:hover
                 color: $WColor
                 // padding: 8px 20px 8px 20px
-                background: rgba(var(--color_bg), 1)
+                // background: rgba(var(--color_bg), 1)
                 cursor: pointer
             a
                 text-decoration: none
@@ -57,8 +57,8 @@ nav
                     height: 60px
                     z-index: 99
                     @include media('<phone')
-                        width: 100px
-                        height: 100px
+                        width: 70px
+                        height: 70px
                         top: 5%
                     &:hover
                         cursor: pointer

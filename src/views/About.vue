@@ -34,6 +34,10 @@ export default {
     components: {
         About
     },
+    mounted() {
+        document.documentElement.style.setProperty('--color_p', '#FFA05F');
+        document.documentElement.style.setProperty('--color_bg', '66, 40, 35');
+    }
 
 }
 </script>

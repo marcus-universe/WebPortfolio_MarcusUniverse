@@ -11,6 +11,7 @@
   },
   "main": "babel.config.js",
   "dependencies": {
+    "@vueuse/core": "^9.4.0",
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "lottie-web": "^5.8.1",
@@ -19,7 +20,7 @@
     "sass": "^1.43.4",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
-    "vue3-lottie": "^1.6.0",
+    "vue3-lottie": "^2.3.4",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

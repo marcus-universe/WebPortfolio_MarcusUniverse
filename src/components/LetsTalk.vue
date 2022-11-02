@@ -4,7 +4,7 @@
 
     </h1>
 
-    <div class="centerText">
+    <div class="talkmessage">
         <p class="Content">The best ways to send a message to me and my universe.
         </p>
     </div>
@@ -77,6 +77,5 @@
 </template>
 
 <style lang="scss">
-@import '../sass/socialMedia.sass';
-@import '../sass/Pages/about.sass';
+
 </style>

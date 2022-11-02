@@ -108,5 +108,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../sass/pages/startpage.sass';
+
 </style>

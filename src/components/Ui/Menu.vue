@@ -9,7 +9,7 @@
             :key="index" class="flex_c">
 
 
-            <router-link :to=" '/' + navitem.link" :class="[{activeMenu: currentRouteName === navitem.name}]" >
+            <router-link :to=" '/' + navitem.link" :class="[{activeMenu: currentRouteName === navitem.name}]" @click="$emit('transitionbgAction')" >
                 <Logo :icon="navitem.icon" :navname="navitem.name" />
             </router-link>
         </li>
@@ -24,6 +24,7 @@ export default {
     components: {
         Logo
     },
+    emits: ['transitionbgAction'],
     computed: {
         navlists() {
             return this.$store.state.navigation.navlist
@@ -41,5 +42,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../sass/menu.sass';
+    
 </style>

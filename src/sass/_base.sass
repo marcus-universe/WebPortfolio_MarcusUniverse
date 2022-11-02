@@ -11,11 +11,16 @@ body
   background: rgba(var(--color_bg), 1)
 
 ::-webkit-scrollbar
-  width: 6px
+  width: 1rem
+  min-width: 10px
+  max-width: 12px
+  height: 1rem
+  min-height: 12px
+  max-height: 10px
 
 /* Track */
 ::-webkit-scrollbar-track
-  background: darken($WColor, 70%)
+  background: rgba(var(--color_bg), 1)
 
 /* Handle */
 ::-webkit-scrollbar-thumb
@@ -39,10 +44,10 @@ body
   flex-direction: column
 
 .flex_space
-  display: flex
   justify-content: space-between
-  align-items: center
-  flex-direction: row
+
+.flex_around
+  justify-content: space-around
 
 .flex_end
   display: flex
@@ -50,6 +55,136 @@ body
   align-items: center
   flex-direction: row
 
+.flex_start
+  justify-content: flex-start
+
+.flex_wrap
+  flex-wrap: wrap
+
+.gap1
+  gap: 1rem
+
+.gap2
+  gap: 2rem
+
+.alignStretch
+  align-items: stretch
+
 .Section
   min-height: 100vh
   background: rgba(var(--color_bg), 1)
+
+.fade-enter-active,
+.fade-leave-active
+  transition: opacity 0.5s ease, transform 0.5s ease
+
+.fade-enter-from,
+.fade-leave-to
+  opacity: 0
+  right: 50%
+  transform: scale(1.1) translateY(0%) translateX(0%)
+
+.slideL-enter-active,
+.slideL-leave-active
+  transition: all 0.6s ease
+
+.slideL-enter-from
+  position: absolute
+  opacity: 0
+  width: 100vw
+  height: 100%
+  left: 0 !important
+.slideL-leave-to
+  left: 100% !important
+  opacity: 0
+
+.slideR-enter-active,
+.slideR-leave-active
+  transition: all 0.6s ease
+
+.slideR-enter-from
+  position: absolute
+  opacity: 0
+  width: 100vw
+  height: 100%
+  right: 0 !important
+  left: 100% !important
+.slideR-leave-to
+  left: -50% !important
+  opacity: 0
+
+.transitionbg
+  position: fixed
+  height: 100vh !important
+  width: 100vw !important
+  top: 0
+  left: 0
+  z-index: 98
+  pointer-events: none
+  overflow: hidden
+  .lottie-animation-container
+    position: absolute
+    width: 100vw !important
+    height: 100vh !important
+    object-fit: cover
+    // object-fit: cover
+    svg
+      width: 100vw !important
+      height: 100vh !important
+
+.workinprogress
+  background: rgba(var(--color_bg), 1)
+  height: 100vh
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: $fontNoto
+  text-align: center
+  word-wrap: break-word
+  h1
+    margin: 0
+    padding: 0 20px
+    color: $nBlue
+    font-size: 6rem
+    word-wrap: break-word
+    @include media('<=tablet')
+      font-size: 5rem
+    @include media('<=phone')
+      font-size: 3rem
+  p
+    color: $WColor
+    font-size: 2rem
+    word-wrap: break-word
+    @include media('<=tablet')
+      font-size: 1.5rem
+    @include media('<=phone')
+      font-size: 1rem
+  .social_media
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    margin-top: 2rem
+    a
+      color: $WColor
+      margin-right: 3rem
+      @include media('<=tablet')
+        margin-right: 2rem
+      @include media('<=phone')
+        margin-right: 1rem
+      &:hover
+        color: $nBlue
+        img
+          opacity: 1
+      &:last-child
+        margin-right: 0
+      img
+        width: 5rem
+        opacity: 0.5
+        transition: opacity 0.5s ease-in-out
+
+.scroller
+  overflow-x: scroll
+.inverseX
+  transform: scaleX(-1)

@@ -20,6 +20,6 @@
 </template>
 
 <style lang="scss">
-@import '../sass/Pages/footer.sass';
+
 
 </style>

@@ -93,6 +93,9 @@ export default {
             return this.$store.state.error
         }
     },
-    methods: {},
+    mounted() {
+        document.documentElement.style.setProperty('--color_p', '#3ee4ff');
+        document.documentElement.style.setProperty('--color_bg', '35, 45, 66');
+    }
 }
 </script>
