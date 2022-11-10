@@ -17,7 +17,7 @@
                     
                     
                     <div class="vidBanner flex_c" @click="OpenProject">
-                        <video autoplay muted loop :poster="require(`@/assets/img/banner/${Banner[ind].thumbnail}.jpg`)">
+                        <video autoplay muted loop :poster="require(`@/assets/img/banner/${Banner[ind].thumbnail}.webp`)">
                             <source :src="require(`@/assets/img/banner/${Banner[ind].video}.mp4`) " type="video/mp4">
                         </video>
                     </div>

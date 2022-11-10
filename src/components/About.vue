@@ -5,7 +5,7 @@
 
     
     <div class="ContentAbout">
-        <h1 class="Headline AboutTitle">You want me!
+        <h1 class="AboutTitle">You want me!
         </h1>
         <h2>Meine Specs</h2>
         <div class="flex_c_h flex_wrap gap2 alignStretch spec">

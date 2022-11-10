@@ -1,16 +1,27 @@
 <template>
-<div
-    v-if="work.video === false"
-    class="work_thumbnail"
-    ref="transformElement"
-    :style="{
-            backgroundImage: 'url(' + require(`@/assets/img/works/${work.thumbnail}.jpg`) + ')',
-        transform: setTransform(),
-        transition: setTransition()
-    }"
-    >
-    <div class="WorkHeadline">{{work.name}}</div>
-</div>
+
+    <Suspense>
+
+        <template #default>
+        <div v-if="work.video === false" class="work_thumbnail" ref="transformElement" @click="showWork(work)" :style="{
+                    backgroundImage: 'url(' + require(`@/assets/img/works/${work.thumbnail}.webp`) + ')',
+                transform: setTransform(),
+                transition: setTransition()
+            }">
+            <div class="WorkHeadline">{{work.name}}</div>
+        </div>
+        </template>
+        <template #fallback>
+            <div>
+                Loading...                
+            </div>
+        </template>
+
+
+</Suspense>
+
+<Suspense>
+    <template #default>
 
 <div
     v-if="work.video === true"
@@ -23,19 +34,27 @@
     }"
     >
     <div class="WorkHeadline">{{work.name}}</div>
-    <video :poster="require(`@/assets/img/works/${work.vidPreview}.jpg`)" autoplay loop>
+    <video :poster="require(`@/assets/img/works/${work.vidPreview}.jpg`)" autoplay loop muted>
         <source
             :src="require(`@/assets/img/works/${work.thumbnail}.mp4`)"
             type="video/mp4">
     </video>
 </div>
+
+    </template>
+    <template #fallback>
+        <div>
+            Loading...                
+        </div>
+    </template>
+</Suspense>
 </template>
 
 <script>
 import {
     useMouseInElement
 } from '@vueuse/core'
-import {computed, ref } from 'vue'
+import {computed, ref, Suspense } from 'vue'
 
 export default {
     props: {
@@ -50,51 +69,35 @@ export default {
     },
     methods: {
         showWork(work) {
-            if (work.direct === true) {
-                window.open(work.link, '_blank').focus();
-            }
+            window.open(work.link, "_blank").focus();
         },
         setTransform() {
             if (this.isOutside === false) {
-                return this.cardTransform
-            } else {
-                return ''
+                return this.cardTransform;
+            }
+            else {
+                return "";
             }
         },
         setTransition() {
             if (this.isOutside === true) {
-                return 'all 0.25s ease-out'
-            } else {
-                return ''
+                return "all 0.25s ease-out";
+            }
+            else {
+                return "";
             }
         }
-
     },
     setup() {
-        const transformElement = ref(null)
-
-        const {
-            elementX,
-            elementY,
-            elementHeight,
-            elementWidth,
-            isOutside
-        } = useMouseInElement(transformElement)
-
+        const transformElement = ref(null);
+        const { elementX, elementY, elementHeight, elementWidth, isOutside } = useMouseInElement(transformElement);
         const cardTransform = computed(() => {
-
-            const Max_Rotation = 10
-
-            const rX = (
-                Max_Rotation / 2 -
-                (elementY.value / elementHeight.value) * Max_Rotation).toFixed(2)
-
-            const rY = (
-                (elementX.value / elementWidth.value) * Max_Rotation - Max_Rotation / 2).toFixed(2)
-
-            return `perspective(${elementWidth.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`
-        })
-
+            const Max_Rotation = 10;
+            const rX = (Max_Rotation / 2 -
+                (elementY.value / elementHeight.value) * Max_Rotation).toFixed(2);
+            const rY = ((elementX.value / elementWidth.value) * Max_Rotation - Max_Rotation / 2).toFixed(2);
+            return `perspective(${elementWidth.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`;
+        });
         return {
             cardTransform,
             transformElement,
@@ -103,13 +106,9 @@ export default {
             elementHeight,
             elementWidth,
             isOutside,
-
-        }
-
-
-    }
-
-    
+        };
+    },
+    components: { Suspense }
 }
 
 

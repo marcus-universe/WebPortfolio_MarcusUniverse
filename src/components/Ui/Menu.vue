@@ -9,7 +9,7 @@
             :key="index" class="flex_c">
 
 
-            <router-link :to=" '/' + navitem.link" :class="[{activeMenu: currentRouteName === navitem.name}]" @click="$emit('transitionbgAction')" >
+            <router-link :to=" '/' + navitem.link" :class="[{activeMenu: currentRouteName === navitem.name}]" @click="$emit('transitionbgAction', navitem.link)" >
                 <Logo :icon="navitem.icon" :navname="navitem.name" />
             </router-link>
         </li>

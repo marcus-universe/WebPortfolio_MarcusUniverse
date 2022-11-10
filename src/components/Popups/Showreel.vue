@@ -1,24 +1,11 @@
 <template>
 <div class="Videobox">
     <div class="Video">
-        <h3 v-if="currentIndex == 4"> Showreel in making ...</h3>
-        <p v-if="currentIndex != 0 || videoOneActive == false"> <span v-if="currentIndex == 4"> Here if you can't wait: </span>
-<br v-if="currentIndex == 4">
-<br v-if="currentIndex == 4">
-            <a :href="navigation.navlist[currentIndex].link" target="_blank" rel="noopener noreferrer">
-                <img 
-            :src="require('@/assets/' + navigation.navlist[currentIndex].iconlink + '.svg')" 
-            :alt="navigation.navlist[currentIndex].linkTitle" />
-            <br>
-            {{navigation.navlist[currentIndex].linkTitle}}
-            </a>
-            
-            
-            </p>
 
-        <video ref="video1" v-if="currentIndex == 0 && videoOneActive == true" class="VideoContent" poster="../../assets/thumbnail/thumbnail3d.jpg" controls>
+
+        <video ref="video1" v-if="videoOneActive == true" class="VideoContent" poster="@/assets/thumbnail/thumbnail3d.jpg" controls>
             <source
-                src="../../assets/video/video_1.mp4"
+                src="@/assets/video/video_1.mp4"
                 type="video/mp4">
         </video>
     </div>
@@ -56,10 +43,6 @@ export default {
     },
 
     props: {
-        currentIndex: {
-            type: Number,
-            required: true
-        },
 
 
     },

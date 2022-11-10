@@ -35,8 +35,8 @@ export default {
         About
     },
     mounted() {
-        document.documentElement.style.setProperty('--color_p', '#FFA05F');
-        document.documentElement.style.setProperty('--color_bg', '66, 40, 35');
+        document.documentElement.style.setProperty('--color_p', '#a25aff');
+        document.documentElement.style.setProperty('--color_bg', '57, 35, 66');
     }
 
 }

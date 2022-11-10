@@ -1,30 +1,39 @@
 @import _variables
 @import _include-media
-
-body
-
-  height: 90vh
+html, body
+  scrollbar-gutter: stable
+  // height: 90vh
   width: 100%
   margin: 0
   padding: 0
-  overflow-x: hidden
+  // overflow-x: hidden
   background: rgba(var(--color_bg), 1)
+  #app
+    overflow-x: hidden
+    width: 100%
 
 ::-webkit-scrollbar
   width: 1rem
-  min-width: 10px
-  max-width: 12px
+  min-width: 8px
+  max-width: 8px
   height: 1rem
-  min-height: 12px
-  max-height: 10px
+  min-height: 8px
+  max-height: 8px
 
 /* Track */
 ::-webkit-scrollbar-track
   background: rgba(var(--color_bg), 1)
+  width: 1rem
+  min-width: 8px
+  max-width: 8px
+  height: 1rem
+  min-height: 8px
+  max-height: 8px
 
 /* Handle */
 ::-webkit-scrollbar-thumb
   background: var(--color_p)
+  border-radius: 1rem
   transition: all 0.3s ease
 
 /* Handle on hover */
@@ -123,14 +132,26 @@ body
   pointer-events: none
   overflow: hidden
   .lottie-animation-container
-    position: absolute
-    width: 100vw !important
-    height: 100vh !important
+    position: relative
+    width: 100% !important
+    height: 100% !important
     object-fit: cover
+    top: 0
     // object-fit: cover
     svg
+      position: absolute
       width: 100vw !important
       height: 100vh !important
+      left: 50%
+      transform: translateX(-50%) !important
+      .pcolor
+        rect
+          transition: all 0.4s ease
+          fill: var(--color_p) !important
+      .bgcolor
+        rect
+          transition: all 0.4s ease
+          fill: rgba(var(--color_bg), 1) !important
 
 .workinprogress
   background: rgba(var(--color_bg), 1)

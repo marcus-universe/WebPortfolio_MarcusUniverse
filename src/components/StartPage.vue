@@ -1,15 +1,7 @@
 <template>
-<section class="Start">
-    <div class="HeadlineBox rellax" data-rellax-speed="3.5" data-rellax-mobile-speed="3.5" data-rellax-desktop-speed="7">
-        
-        
-        <!-- <h1 class="Headline">I {{navlists[currentIndex].subDo}}
-            <br>
-            <b :class="{smallerHeadline: smallHeadline, hideHeadline: hideHeadline}">{{title}}</b>
-        </h1> -->
+<section class="Start flex_c">
 
-
-        <div class="playcontainer">
+        <div class="playcontainer flex_c" @mouseover="focus()" @mouseleave="unfocus()" :class="{ 'activeplay': focusPlay }">
 
             <Vue3Lottie
                 class="playbutton"
@@ -26,13 +18,14 @@
 
         </div>
 
-    </div>
+        <VideoBG :focusVid="focusPlay"/>
+
+ 
 
     <Showreel
-        class="Showreelbox"
+        class="Showreelbox rellax" data-rellax-speed="3.5" data-rellax-mobile-speed="3.5" data-rellax-desktop-speed="7"
         :class="{activeShowreel: OpenVideo}"
         @click="OpenVideo = false" 
-        :currentIndex="currentIndex"
         :navlists="navlists"
         />
     <!-- <div class="ContentBox"></div> -->
@@ -44,6 +37,7 @@
 
 import Showreel from './Popups/Showreel.vue';
 import rellax from 'rellax';
+import VideoBG from './Ui/VideoBG.vue';
 // import { ref } from 'vue3-lottie/dist/vue3-lottie.ssr';
 
 export default {
@@ -51,7 +45,7 @@ export default {
     data() {
         return {
             OpenVideo: false,
-            // currentIndexSelected: currentIndex,
+            focusPlay: false,
             // navlistsElement: navlists,
         }
     },
@@ -98,10 +92,17 @@ export default {
         },
         OpenVideoBox: function () {
             this.OpenVideo = true;
+        },
+        focus() {
+            this.focusPlay = true;
+        },
+        unfocus() {
+            this.focusPlay = false;
         }
     },
     components: {
-        Showreel
+        Showreel,
+        VideoBG
     },
 
 }

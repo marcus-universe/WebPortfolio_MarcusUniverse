@@ -11,21 +11,25 @@ $nRed: #FF6161
 $nOrange: #FFA05F
 
 //BG
-$BGcolorPurple: rgba(57, 35, 66, 1)
-$BGcolorOrange: rgba(66, 40, 35, 1)
-$BGcolorBlue: rgb(35, 45, 66)
+$BGcolorPurple: #392342
+$BGcolorOrange: #422823
+$BGcolorBlue: #232d42
 
 $BGcolor: 35, 45, 66
-
-//root
-:root
-  --color_p: #{$nBlue}
-  --color_bg: #{$BGcolor}
 
 //Responsive
 $phone: 640px
 $tablet: 1280px
 $desktop: 1600px
+
+//root
+:root
+  --color_p: #{$nBlue}
+  --color_bg: #{$BGcolor}
+  --imageSizeN: 250px
+@media screen and (max-width: $phone)
+  :root
+    --imageSizeN: 180px
 
 // Fonts
 // @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;800;900&display=swap')
@@ -40,6 +44,7 @@ $desktop: 1600px
 // $fontNoto: 'Noto Sans JP', sans-serif
 @font-face
   font-family: 'Assistant'
+  font-display: swap
   src: url(assets/fonts/Assistant/Assistant-VariableFont_wght.ttf) format("truetype")
 
 $fontNoto: 'Assistant', sans-serif
