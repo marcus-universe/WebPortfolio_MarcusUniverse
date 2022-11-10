@@ -4,7 +4,7 @@
     
 
     
-    <div class="ContentAbout">
+    <div class="ContentAbout flex_c_v flex_start gap2 ">
         <h1 class="AboutTitle">You want me!
         </h1>
         <h2>Meine Specs</h2>
@@ -17,6 +17,8 @@
             <p class="flex_c flex_space flex_start"><Logo :icon="'synth'" />Spiele über 10 Jahre Piano/Synth & Gitarre + produziere Songs <br>(Achtung: Synthesizer-Nerd)</p>
             <p class="flex_c flex_space flex_start"><Logo :icon="'yt'" />Betreibe als Hobby einen <a href="https://www.morgenland-teppiche.de/" target="_blank" rel="noopener noreferrer">Youtube Kanal</a> seit 2012 mit über 1.300 Abonnenten</p>
         </div>
+
+        <LetsTalk />
     </div>
 
 </section>
@@ -28,11 +30,13 @@
 
 <script>
 import Logo from '@/components/Ui/Logo.vue'
+import LetsTalk from '@/components/LetsTalk.vue'
 
 export default {
     name: 'About',
     components: {
-        Logo
+        Logo,
+        LetsTalk
     },
     props: {
         currentIndex: {
