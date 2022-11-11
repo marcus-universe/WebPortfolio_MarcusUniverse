@@ -44,8 +44,11 @@
 <script>
 import Menu from '@/components/Ui/Menu.vue'
 import Footer from '@/components/Footer.vue'
-import { useBreakpoints, useWindowSize } from '@vueuse/core'
-import { ref, } from 'vue'
+import { useBreakpoints, useWindowSize, useMouse } from '@vueuse/core'
+import { ref, watch} from 'vue'
+import { useStore } from 'vuex'
+
+
 export default {
     name: 'Marcus Universe Webportfolio',
     components: {
@@ -93,15 +96,49 @@ export default {
         }
     },
     setup() {
+        const store = useStore()
         const transBG = ref(null)
         const { width } = useWindowSize()
+        const { x, y, sourceType } = useMouse()
         
         const breakpoints = useBreakpoints({
             phone: 640,
             tablet: 1280,
             desktop: 1600,
         })
+
+        function checkScreenSize(value) {
+            if (value < 640) {
+                store.commit('setScreen', 'phone')
+            }
+            else if (value < 1280) {
+                store.commit('setScreen', 'tablet')
+            }
+            else if (value < 1600) {
+                store.commit('setScreen', 'desktop')
+            }
+        }
+        checkScreenSize(width.value)
+
+        function checkMouse( x, y, sourceType ) {
+            store.commit('setMousePosition', { x, y })
+            store.commit('setMouseSource', sourceType)   
+        }
+        checkMouse(x.value, y.value, sourceType.value)
+
+        watch(x, (value) => {
+            checkMouse(value, y.value, sourceType.value )
+        })
+
+        //add a watcher to the breakpoints and add the current breakpoint to store.state.screen
+        watch(width, (value) => {
+            checkScreenSize(value)
+        })
+       
+        
         const Smartphone = ref(breakpoints.smaller('phone'))
+
+
            
 
         // watch(breakpoints.smaller('phone'), () => {

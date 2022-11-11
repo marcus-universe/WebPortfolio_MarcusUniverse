@@ -23,6 +23,7 @@ html, body
 /* Track */
 ::-webkit-scrollbar-track
   background: rgba(var(--color_bg), 1)
+  transition: background 0.3s ease
   width: 1rem
   min-width: 8px
   max-width: 8px
@@ -33,6 +34,7 @@ html, body
 /* Handle */
 ::-webkit-scrollbar-thumb
   background: var(--color_p)
+  transition: background 0.3s ease
   border-radius: 1rem
   transition: all 0.3s ease
 
@@ -83,6 +85,11 @@ html, body
 
 .alignStretch
   align-items: stretch
+.alignCenter
+  align-items: center
+
+.roundCorner
+  border-radius: 1rem
 
 .Section
   min-height: 100vh
@@ -97,6 +104,15 @@ html, body
   opacity: 0
   right: 50%
   transform: scale(1.1) translateY(0%) translateX(0%)
+
+.navfade-enter-active,
+.navfade-leave-active
+  transition: opacity 0.2s ease, transform 0.5s ease
+
+.navfade-enter-from,
+.navfade-leave-to
+  opacity: 0
+  transform: scale(1.4) translateY(0%) translateX(0%)
 
 .slideL-enter-active,
 .slideL-leave-active

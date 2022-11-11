@@ -1,0 +1,45 @@
+[{
+        "name": "Adobe Creative Cloud",
+        "link": "adobecloud"
+    },
+    {
+        "name": "Blender",
+        "link": "blender"
+    },
+    {
+        "name": "Davinci Resolve",
+        "link": "davinciresolve"
+    },
+    {
+        "name": "Unreal Engine",
+        "link": "unrealengine"
+    },
+    {
+        "name": "Vue3",
+        "link": "vue"
+    },
+    {
+        "name": "NodeJS",
+        "link": "nodejs"
+    },
+    {
+        "name": "Electron",
+        "link": "electron"
+    },
+    {
+        "name": "Tauri",
+        "link": "tauri"
+    },
+    {
+        "name": "Pureref",
+        "link": "pureref"
+    },
+    {
+        "name": "Fl Studio",
+        "link": "flstudio"
+    },
+    {
+        "name": "VCV Rack",
+        "link": "vcv"
+    }
+]

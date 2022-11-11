@@ -1,3 +1,16 @@
+@keyframes discoglasses
+    0%
+
+        filter: drop-shadow( 0.3rem 0.3rem 0.8rem rgba(0,0,0,0))
+
+    50%
+
+        filter: drop-shadow( 0.3rem 0.3rem 0.8rem var(--color_p))
+
+    100%
+
+        filter: drop-shadow( 0.3rem 0.3rem 0.8rem rgba(0,0,0,0))
+
 .About
     top: 0
     min-height: 100vh
@@ -10,20 +23,36 @@
     position: relative
     overflow-x: hidden
 
-    .profile_img
-        position: fixed
-        left: 5vw
-        top: 50%
-        transform: translateY(-50%) translateX(0%)
-        width: clamp(200px, 100%, 400px)
-        border-radius: 2rem
-        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3)
-        z-index: 4
-        transition: all 0.3s ease
     .ContentAbout
-        max-width: calc(100% - 20vw)
-        margin-left: 20vw
-        margin-bottom: 20vh
+        margin-bottom: 3rem
+        .profilimgContainer
+            position: relative
+            &:hover
+                cursor: pointer
+            .logo
+                position: absolute
+                top: 40%
+                left: 48%
+                transform: translate(-50%, -50%) rotate(-3deg)
+                width: clamp(30px, 100%, 230px)
+                z-index: 5
+                svg
+                    animation: discoglasses 2s infinite
+                    .sunglass
+                        path
+                            fill: rgba(var(--color_bg), 1)
+                            filter: brightness(0.5)
+
+                    .sunglasshighlight
+                        path
+                            fill: var(--color_p)
+            .profile_img
+                position: relative
+                width: clamp(200px, 100%, 400px)
+                border-radius: 2rem
+                box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3)
+                z-index: 4
+                transition: all 0.3s ease
         .AboutTitle
             position: relative
             display: inline-block
@@ -46,9 +75,12 @@
             text-align: center
             font-variation-settings: 'wght' 500
             color: $WColor
+            width: 100%
+            max-width: 1200px
             margin: 2rem 0 2rem 0
             border-top: 3px solid rgba($WColor, 0.5)
         .spec
+            max-width: 1200px
             p
                 font-family: $fontNoto
                 font-variation-settings: 'wght' 500
@@ -102,3 +134,5 @@
         font-size: clamp(1rem, 5vw, 1.5rem)
         text-align: center
         font-family: $fontNoto
+.maxLetsTalk
+    max-width: calc(1200px - 20rem)

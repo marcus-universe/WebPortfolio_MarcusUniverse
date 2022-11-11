@@ -69,10 +69,15 @@
 
     <Vue3Lottie v-if="icon === 'synth'" ref="logo" :animationData="require('../../assets/lotties/synth.json')" :loop="true"
         :autoPlay="true" :speed="1" :pauseAnimation="false" />
+
+    <Vue3Lottie v-if="icon === 'glasses'" ref="hoveredElement" :animationData="require('@/assets/lotties/glasses.json')" :loop="false"
+        :autoPlay="false" :speed="1" :pauseAnimation="true" :direction="'reverse'" />
 </div>
 </template>
 
 <script>
+import { toRef, ref, watch } from 'vue'
+
 export default {
     components: {
 
@@ -85,6 +90,31 @@ export default {
         customClass: {
             type: String,
             default: ''
+        },
+        hovered: {
+            type: Boolean,
+            default: false
+        }
+
+    },
+    setup(props) {
+        const hoveredStatus = toRef(props, 'hovered')
+        const hoveredElement = ref(null)
+
+        watch(hoveredStatus, (val) => {
+            if (val) {
+                hoveredElement.value.setDirection("forward");
+                hoveredElement.value.play()
+                
+            } else {
+                hoveredElement.value.setDirection("reverse");
+                hoveredElement.value.play()
+            }
+        })
+
+        return {
+            hoveredStatus,
+            hoveredElement
         }
     },
     methods: {

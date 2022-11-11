@@ -6,6 +6,12 @@ export default createStore({
     error: false,
     color_p: ["#3EE4FF", "#A25AFF", "#FFA05F"],
     color_bg: ["35, 45, 66", "57, 35, 66", "66, 40, 35"],
+    screen: 'desktop',
+    mousePosition: {
+      x: 0,
+      y: 0
+    },
+    mouseSource: 'mouse',
     navigation: {
         navlist: [
                 {
@@ -61,8 +67,25 @@ export default createStore({
 
   },
   getters: {
+    isDesktop: state => {
+      if (state.screen === 'desktop' || state.screen === 'tablet') {
+        return true;
+      } else {
+        return false;
+      }
+    }
   },
   mutations: {
+    setScreen(state, payload) {
+      state.screen = payload
+    },
+    setMousePosition(state, { x, y }) {
+      state.mousePosition.x = x
+      state.mousePosition.y = y
+    },
+    setMouseSource(state, payload) {
+      state.mouseSource = payload
+    }
   },
   actions: {
   },
