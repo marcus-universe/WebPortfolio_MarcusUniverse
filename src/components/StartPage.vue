@@ -20,31 +20,31 @@
 
         <VideoBG :focusVid="focusPlay"/>
 
- 
-
-    <Showreel
-        class="Showreelbox rellax" data-rellax-speed="3.5" data-rellax-mobile-speed="3.5" data-rellax-desktop-speed="7"
-        :class="{activeShowreel: OpenVideo}"
-        @click="OpenVideo = false" 
-        :navlists="navlists"
-        />
+<div class="Videobox Showreelbox"
+        v-show="OpenVideo"
+        :navlists="navlists">
+    <video ref="videoElement" class="VideoContent" poster="@/assets/thumbnail/thumbnail3d.jpg" controls>
+        <source src="@/assets/video/video_1.mp4" type="video/mp4">
+    </video>
+</div>
     <!-- <div class="ContentBox"></div> -->
 <!-- <canvas class="pointcloud" ref="pointcloud"></canvas> -->
 </section>
 </template>
 
 <script>
-
-import Showreel from './Popups/Showreel.vue';
-import rellax from 'rellax';
+// import rellax from 'rellax';
 import VideoBG from './Ui/VideoBG.vue';
+import { ref } from 'vue';
+import { useStore } from 'vuex';
+import { onClickOutside } from '@vueuse/core'
+
 // import { ref } from 'vue3-lottie/dist/vue3-lottie.ssr';
 
 export default {
     name: 'StartPage',
     data() {
         return {
-            OpenVideo: false,
             focusPlay: false,
             // navlistsElement: navlists,
         }
@@ -73,12 +73,64 @@ export default {
 
     },
     mounted() {
-        new rellax('.rellax', {
-                breakpoints: [640, 1280, 1600]
-            // wrapper: '.rellax-wrapper',
-            // center: true,
-            // horizontal: true
-        });
+        var video = this.$refs.videoElement;
+        var self = this;
+
+        if (video != null) {
+            video.addEventListener('ended', function () {
+                self.$store.commit('setVideo', false);
+                if (video.exitFullscreen)
+                    video.exitFullscreen();
+                else if (video.webkitExitFullscreen)
+                    video.webkitExitFullscreen();
+                else if (video.mozCancelFullScreen)
+                    video.mozCancelFullScreen();
+                else if (video.msExitFullscreen)
+                    video.msExitFullscreen();
+            }, false);
+
+
+            video.addEventListener('fullscreenchange', (event) => { 
+                console.log('fullscreenchange', event);
+            });
+        }
+    },
+    computed: {
+        OpenVideo () {
+            return this.$store.state.OpenVideo;
+        },
+    },
+    setup() {
+        const videoElement = ref(null)
+        const store = useStore()
+
+        onClickOutside(videoElement, () => {
+            CloseVideoBox();
+        })
+
+        function CloseVideoBox() {
+            store.commit('setVideo', false);
+            videoElement.value.pause();
+            videoElement.value.currentTime = 0;
+        }
+
+        function OpenVideoBox() {
+            store.commit('setVideo', true);
+            if (videoElement.value.mozRequestFullScreen) {
+                videoElement.value.mozRequestFullScreen();
+            } else if (videoElement.value.webkitRequestFullScreen) {
+                videoElement.value.webkitRequestFullScreen();
+            }  
+            videoElement.value.volume = 0.5
+            videoElement.value.play();
+           
+        }
+
+        return {
+            videoElement,
+            CloseVideoBox,
+            OpenVideoBox
+        }
     },
     
     methods: {
@@ -90,9 +142,6 @@ export default {
             this.$refs['playButton'].setDirection("reverse");
             this.$refs['playButton'].play();
         },
-        OpenVideoBox: function () {
-            this.OpenVideo = true;
-        },
         focus() {
             this.focusPlay = true;
         },
@@ -101,7 +150,6 @@ export default {
         }
     },
     components: {
-        Showreel,
         VideoBG
     },
 

@@ -88,8 +88,14 @@ html, body
 .alignCenter
   align-items: center
 
+.alignSelf
+  align-self: flex-start
+
 .roundCorner
   border-radius: 1rem
+
+.flexInline
+  display: inline-flex
 
 .Section
   min-height: 100vh
@@ -113,6 +119,19 @@ html, body
 .navfade-leave-to
   opacity: 0
   transform: scale(1.4) translateY(0%) translateX(0%)
+
+.fadeWork-move,
+.fadeWork-enter-active,
+.fadeWork-leave-active
+  transition: all 0.5s ease
+
+.fadeWork-enter-from,
+.fadeWork-leave-to
+  opacity: 0
+  transform: scale(0) translateY(0%) translateX(0%)
+
+.fadeWork-leave-active
+  position: absolute
 
 .slideL-enter-active,
 .slideL-leave-active
@@ -174,6 +193,24 @@ html, body
           transition: all 0.4s ease
           fill: rgba(var(--color_bg), 1) !important
 
+.CAButton
+  font-family: $fontNoto
+  color: rgba(var(--color_bg), 1)
+  background: var(--color_p)
+  padding: 0.2rem 2rem
+  border-radius: 0.6vmax
+  font-size: 1.4rem
+  text-align: center
+  font-variation-settings: 'wght' 700
+  cursor: pointer
+  transition: all 0.3s ease
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8)
+  text-transform: uppercase
+  &:hover
+    background: $WColor
+    transform: scale(1.1) rotate(-2deg)
+.marginTopButton
+  margin-top: 2rem
 .workinprogress
   background: rgba(var(--color_bg), 1)
   height: 100vh

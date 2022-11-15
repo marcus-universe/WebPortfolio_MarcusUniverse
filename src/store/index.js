@@ -7,11 +7,13 @@ export default createStore({
     color_p: ["#3EE4FF", "#A25AFF", "#FFA05F"],
     color_bg: ["35, 45, 66", "57, 35, 66", "66, 40, 35"],
     screen: 'desktop',
+    lang: 'en',
     mousePosition: {
       x: 0,
       y: 0
     },
     mouseSource: 'mouse',
+    OpenVideo: false,
     navigation: {
         navlist: [
                 {
@@ -85,6 +87,12 @@ export default createStore({
     },
     setMouseSource(state, payload) {
       state.mouseSource = payload
+    },
+    setVideo(state, payload) {
+      state.OpenVideo = payload
+    },
+    setLang(state, payload) {
+      state.lang = payload
     }
   },
   actions: {

@@ -1,12 +1,20 @@
 <template>
 <section class="About Talk">
-    <h1 class="Headline AboutTitle">Let's Talk
-
-    </h1>
+    <template v-if="lang.includes('de')"><h1 class="Headline AboutTitle">Schreib mich an</h1></template>
+    <template v-if="!lang.includes('de')"><h1 class="Headline AboutTitle">Let's Talk</h1></template>
+    
 
     <div class="talkmessage">
-        <p class="Content">The best ways to send a message to me and my universe.
-        </p>
+        <template v-if="!lang.includes('de')">
+            <p class="Content">The best ways to send a message to me into my universe.
+            </p>
+        </template>
+
+        <template v-if="lang.includes('de')">
+            <p class="Content">Die besten Wege mir eine Nachricht in mein Universum zu senden.
+            </p>
+        </template>
+
     </div>
 
     <div class="social_media">
@@ -76,6 +84,13 @@
 </section>
 </template>
 
-<style lang="scss">
-
-</style>
+<script>
+export default {
+    name: "Contact",
+    computed: {
+        lang() {
+            return this.$store.state.lang;
+        }
+    }
+}
+</script>

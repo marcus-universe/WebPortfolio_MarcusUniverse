@@ -210,3 +210,58 @@
             height: 4rem
 .w100
     width: 100%
+
+@keyframes backgroundSlide
+    0%
+        background-position: 0 0
+
+    100%
+        background-position: calc(200vw - 1rem) 0
+
+.LetsExploreContainer
+    background: url('assets/img/banner/WorksWall.webp') repeat left center
+    background-size: cover
+    width: 100%
+    height: 70vh
+    min-height: 500px
+    animation: backgroundSlide 60s linear infinite
+    @include media('<phone')
+        animation: backgroundSlide 30s linear infinite
+    .letsexploreItems
+        line-height: 2.7rem
+        position: relative
+        z-index: 2
+    h2
+        font-family: $fontNoto
+        font-size: clamp(3rem, 15vw, 5rem)
+        font-variation-settings: 'wght' 700
+        color: $WColor
+        text-align: center
+        margin: 0 0
+        padding: 0 5vw
+        hyphens: auto
+        text-transform: uppercase
+        text-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.8)
+        line-height: 4.5rem
+        em
+            color: var(--color_p)
+        @include media('<phone')
+            font-size: clamp(1.5rem, 15vw, 3.5rem)
+            line-height: 3.5rem
+    p
+        margin: 0 0
+        padding: 0 5vw
+        font-family: $fontNoto
+        font-size: clamp(1rem, 15vw, 1.3rem)
+        font-variation-settings: 'wght' 500
+        text-align: center
+        color: $WColor
+        line-height: 1.5rem
+
+    .bglayer
+        position: absolute
+        width: 100%
+        height: 100%
+        background: rgba(var(--color_bg), 0.8)
+        backdrop-filter: blur(0.2vmax)
+        z-index: 1

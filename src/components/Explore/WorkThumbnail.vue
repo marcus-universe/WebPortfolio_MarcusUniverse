@@ -1,5 +1,5 @@
 <template>
-
+<div>
     <Suspense>
 
         <template #default>
@@ -48,6 +48,8 @@
         </div>
     </template>
 </Suspense>
+
+</div>
 </template>
 
 <script>

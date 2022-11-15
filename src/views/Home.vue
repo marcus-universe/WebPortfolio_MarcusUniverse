@@ -4,7 +4,9 @@
     <teleport to="head">
         <title>Marcus Universe Portfolio</title>
 
-  <meta name="msapplication-TileColor" :content="color_p[currentselectedIndex]">
+        <meta
+            name="msapplication-TileColor"
+            :content="color_p[currentselectedIndex]">
 
         <meta
             name="theme-color"
@@ -16,18 +18,14 @@
         <meta
             property="og:description"
             content="Marcus Harting (alias Marcus Universe) Portfolio. Im an artist, musician and coder">
-        
+
         <meta
             property="og:image"
             content="./assets/img/me_profile.png">
     </teleport>
 
-    
     <ErrorPage v-if="error == true" />
 
-    
-
- 
     <StartPage
         v-if="error == false"
         :title="title"
@@ -36,21 +34,15 @@
         :navlists="navigation.navlist"
         :currentIndex="currentselectedIndex" />
 
-
-
+    <LetsExplore />
     <LetsTalk v-if="error == false" />
 
-    
 </div>
 </template>
 
-
-
 <script>
-
-
 import StartPage from '../components/StartPage.vue'
-
+import LetsExplore from '../components/LetsExplore.vue'
 import LetsTalk from '../components/LetsTalk.vue'
 import ErrorPage from '../components/ErrorPage.vue'
 
@@ -62,6 +54,7 @@ export default {
         StartPage,
         LetsTalk,
         ErrorPage,
+        LetsExplore
     },
 
     setup() {

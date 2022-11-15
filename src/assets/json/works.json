@@ -138,13 +138,9 @@
         "music": true,
         "github": false,
         "direct": true,
-        "video": false,
-        "thumbnail": "drivehorizon",
-        "images": [
-            "https://cdna.artstation.com/p/assets/images/images/028/405/598/large/marcus-harting-artstation.jpg?1594377555",
-            "https://cdnb.artstation.com/p/assets/images/images/028/408/171/large/marcus-harting-screenshot-2.jpg?1594384932",
-            "https://cdnb.artstation.com/p/assets/images/images/028/408/167/large/marcus-harting-screenshot-1.jpg?1594384929"
-        ]
+        "video": true,
+        "vidPreview": "drivehorizon",
+        "thumbnail": "drivehorizon"
     },
     {
         "name": "MT Future Office Room",

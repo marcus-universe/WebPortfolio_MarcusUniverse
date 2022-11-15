@@ -47,6 +47,8 @@ import Footer from '@/components/Footer.vue'
 import { useBreakpoints, useWindowSize, useMouse } from '@vueuse/core'
 import { ref, watch} from 'vue'
 import { useStore } from 'vuex'
+import { useNavigatorLanguage } from '@vueuse/core'
+
 
 
 export default {
@@ -100,7 +102,13 @@ export default {
         const transBG = ref(null)
         const { width } = useWindowSize()
         const { x, y, sourceType } = useMouse()
-        
+        const { language } = useNavigatorLanguage()
+        store.commit('setLang', language)
+        watch(language, (value) => {
+            store.commit('setLang', value)
+        })
+
+        console.log(store.state.lang)
         const breakpoints = useBreakpoints({
             phone: 640,
             tablet: 1280,

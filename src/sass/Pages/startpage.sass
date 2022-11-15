@@ -164,15 +164,13 @@ section
 //##############################################################################
 
 .Showreelbox
-    opacity: 0
+    opacity: 1
     transition: opacity 0.3s ease
-    pointer-events: none
 .activeShowreel
     opacity: 1
-    pointer-events: all
 .Videobox
     position: fixed
-    z-index: 99
+    z-index: 98
     top: 0
     left: 0
     width: 100vw
@@ -182,55 +180,16 @@ section
     justify-content: center
     align-items: center
     backdrop-filter: blur(10px)
-    .Video
-        .VideoContent
-            position: absolute
-            top: 50%
-            left: 50%
-            width: 60vw
-            aspect-ratio: 16/9
-            transform: translate(-50%, -50%)
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
-        img
-            width: 150px
-        h3
-            margin-top: 0rem
-            font-family: $fontNoto
-            font-size: clamp(2rem, 15vw, 3rem)
-            font-weight: 500
-            font-variation-settings: 'wght' 700
-            color: var(--color_p)
-            text-align: center
-            @include media('<phone')
-                position: fixed
-                top: 40%
-                left: 50%
-                transform: translate(-50%, -50%)
-                min-width: 350px
-                font-size: clamp(1.5rem, 10vw, 2rem)
-        p
-            font-family: $fontNoto
-            font-size: clamp(1.5rem, 10vw, 2rem)
-            font-weight: 500
-            font-variation-settings: 'wght' 500
-            color: var(--color_p)
-            text-align: center
-            @include media('<phone')
-                font-size: clamp(1rem, 5vw, 1.5rem)
-                margin-top: 4rem
-                position: fixed
-                bottom: 35%
-                left: 50%
-                transform: translate(-50%, -50%)
-                min-width: 350px
-            a
-                color: $WColor
-                text-decoration: none
-                opacity: 0.8
-                transition: opacity 0.3s ease
-                font-variation-settings: 'wght' 700
-                &:hover
-                    opacity: 1
+    .VideoContent
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 70%
+        aspect-ratio: 16/9
+        transform: translate(-50%, -50%)
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+        @include media('<tablet')
+            width: 90%
 
 .pointcloud
     position: absolute

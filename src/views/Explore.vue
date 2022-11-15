@@ -18,16 +18,11 @@
 
 
     <ExploreBanner />
-    <div
-        class="flex_c_h flex_wrap gap2 WorkList"
-        @click="sliceIncrement"
-        >
-            <WorkThumbnail
-                v-for="(work, index) in loadWorks"
-                :key="work"
-                :work="work"
-                :index="index" />
-    </div>
+
+        <transition-group name="fadeWork" tag="div" class="flex_c_h flex_wrap gap2 WorkList">
+            <WorkThumbnail v-for="(work, index) in loadWorks" :key="work" :work="work" :index="index" />
+        </transition-group>
+            
 
 </div>
 </template>
