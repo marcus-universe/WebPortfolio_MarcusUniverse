@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory  } from 'vue-router'
-import Home from '../views/Home.vue'
-
+const Home = () => import('@/views/Home.vue')
+const Impressum = () => import('@/views/Impressum.vue')
+const About = () => import('@/views/About.vue')
+const Explore = () => import('@/views/Explore.vue')
 const routes = [
   {
     path: '/',
@@ -10,23 +12,23 @@ const routes = [
   {
     path: '/impressum',
     name: 'Impressum',
-    component: () => import('../views/Impressum.vue')
+    component: Impressum
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/About.vue')
+    component: About
   },
   {
     path: '/explore',
     name: 'Explore',
-    component: () => import('../views/Explore.vue')
+    component: Explore
   }
 ]
 
 const router = createRouter({
   mode: 'history',
-  history: createWebHistory(),
+  history: createWebHistory(),  
   routes,
   scrollBehavior(to, from, savedPosition) {
     return savedPosition || new Promise((resolve) => {

@@ -39,6 +39,7 @@ import { ref } from 'vue';
 import { useStore } from 'vuex';
 import { onClickOutside } from '@vueuse/core'
 
+
 // import { ref } from 'vue3-lottie/dist/vue3-lottie.ssr';
 
 export default {

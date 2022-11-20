@@ -65,8 +65,7 @@
         </div>
 
         <h2>Software Skills</h2>
-
-        <LetsTalk class="roundCorner w100 maxLetsTalk" />
+        <SoftwareSkills />
     </div>
 
 </section>
@@ -78,13 +77,13 @@
 
 <script>
 import Logo from '@/components/Ui/Logo.vue'
-import LetsTalk from '@/components/LetsTalk.vue'
+import SoftwareSkills from '@/components/SoftwareSkills.vue'
 
 export default {
     name: 'About',
     components: {
         Logo,
-        LetsTalk
+        SoftwareSkills
     },
     props: {
         currentIndex: {

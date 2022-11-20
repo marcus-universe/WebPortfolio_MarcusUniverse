@@ -1,5 +1,6 @@
 import { createStore } from 'vuex'
 import works from '@/assets/json/works.json'
+import softwareStack from '@/assets/json/softwarestack.json'
 
 export default createStore({
   state: {
@@ -8,10 +9,6 @@ export default createStore({
     color_bg: ["35, 45, 66", "57, 35, 66", "66, 40, 35"],
     screen: 'desktop',
     lang: 'en',
-    mousePosition: {
-      x: 0,
-      y: 0
-    },
     mouseSource: 'mouse',
     OpenVideo: false,
     navigation: {
@@ -46,6 +43,8 @@ export default createStore({
                 ]
         },
     works: works,
+    softwareStack: softwareStack,
+    currentSelectedSoftwareStack: 'all',
     Banner: [
       {
       title: 'Sunrise Apartment',
@@ -75,15 +74,19 @@ export default createStore({
       } else {
         return false;
       }
+    },
+    getSoftwareFilter: state => {
+      if (state.currentSelectedSoftwareStack === 'all') {
+        return state.softwareStack.filterKathegorie;
+      } else {
+        return state.softwareStack.filterKathegorie.filter(software => software.tag === state.currentSelectedSoftwareStack);
+      }
+      
     }
   },
   mutations: {
     setScreen(state, payload) {
       state.screen = payload
-    },
-    setMousePosition(state, { x, y }) {
-      state.mousePosition.x = x
-      state.mousePosition.y = y
     },
     setMouseSource(state, payload) {
       state.mouseSource = payload
@@ -93,9 +96,35 @@ export default createStore({
     },
     setLang(state, payload) {
       state.lang = payload
-    }
+    },
+    selectSoftwareStack(state, payload) {
+      state.currentSelectedSoftwareStack = payload
+    },
+    setActiveSoftwareStack(state , { active, software, index, getters }) {
+      if (getters.getSoftwareFilter[index].active === true) {
+            console.log('already active ' + active + ' ' + software + ' ' + index)
+            getters.getSoftwareFilter[index].active = false
+            state.currentSelectedSoftwareStack = 'all'
+      } else {
+          state.softwareStack.filterKathegorie.forEach((item) => {
+            item.active = false
+          })
+            console.log('not active ' + active + ' ' + software + ' ' + index)
+            state.softwareStack.filterKathegorie[index].active = true 
+            state.currentSelectedSoftwareStack = software
+          }
+        }
   },
   actions: {
+    changeScreen({ commit }, payload) {
+      commit('setScreen', payload)
+    },
+    changeMouseSource({ commit }, payload) {
+      commit('setMouseSource', payload)
+    },
+    changeSoftwareStack({ commit, getters }, { active, software, index }) {
+      commit('setActiveSoftwareStack', { active, software, index, getters })
+    }
   },
   modules: {
   }

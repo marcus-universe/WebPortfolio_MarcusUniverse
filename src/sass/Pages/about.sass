@@ -21,7 +21,10 @@
     // border-bottom: 3px solid rgba($WColor, 0.5)
     padding: 0 clamp(20px, 10vw, 300px)
     position: relative
-    overflow-x: hidden
+    // overflow-x: hidden   
+    @include media('<phone')
+        padding: 0 2vw
+        min-height: auto
 
     .ContentAbout
         margin-bottom: 3rem
@@ -75,7 +78,7 @@
             font-variation-settings: 'wght' 500
             color: $WColor
             width: 100%
-            max-width: 1200px
+            // max-width: 1200px
             margin: 2rem 0 2rem 0
             border-top: 3px solid rgba($WColor, 0.5)
         .spec
@@ -89,7 +92,7 @@
                 padding: 1rem
                 border-radius: 10px
                 border: 0.3rem solid var(--color_p)
-                min-width: 300px
+                min-width: 250px
                 max-width: 300px
                 text-align: center
                 background: rgba(var(--color_bg), 0.8)
@@ -111,9 +114,73 @@
                     &:hover
                         color: var(--color_p)
                         text-decoration: underline
+        .SoftwareSkills
+            width: 100%
+            font-family: $fontNoto
+            .filterSoftware
+                // overflow-x: scroll
+                @include media('<phone')
+                    flex-wrap: wrap
+                    border-bottom: none
+                .SoftwareCategorie
+                    transition: all 0.3s ease
+                    &:hover
+                        cursor: pointer
+                        filter: brightness(1.2)
+                    h3
+                        font-variation-settings: 'wght' 600
+                        color: var(--color_p)
+                        font-size: clamp( 1rem, 5vw, 1rem)
+                        background: var(--color_bg)
+                        border-radius: 10px
+                        border: 0.3rem solid var(--color_p)
+                        padding: 1rem
+                        text-align: center
+                        background: rgba(var(--color_bg), 0.8)
+                        transition: all 0.3s ease
+                        margin: 0
+                    &:first-child h3
+                        margin-top: 0
+                .active
+                    background: rgba(var(--color_p), 1)
+                    color: rgba(var(--color_bg), 1)
+                    h3
+                        color: rgba(var(--color_bg), 1)
+                        background: var(--color_p)
+            .softwareList
+
+                .softwareCard
+                    width: 10rem
+                    background: var(--color_p)
+                    border: 0.3rem solid var(--color_p)
+                    padding: 2rem
+                    border-radius: 10px
+                    @include media('<phone')
+                        padding: 1rem
+                        width: 7rem
+
+                    h4
+                        color: var(--color_bg)
+                        font-size: 1.5rem
+                        text-align: center
+                        margin: 0
+                        padding: 0
+                        @include media('<phone')
+                            font-size: 1rem
+                    .logo
+                        img, svg
+                            width: 7vmax
+
+                            path, circle, rect
+                                fill: rgba(var(--color_bg), 1)
+                            #second
+                                path, circle, rect
+                                    fill: #1c1220 !important
+
 .Talk
     min-height: 30vh
-    padding-bottom: 10rem
+    // padding-bottom: 10rem
+    padding: 5rem 0
     background: var(--color_p)
     color: rgb(var(--color_bg)) !important
     border-bottom: none
@@ -125,7 +192,7 @@
         font-family: $fontNoto
         font-size: clamp(3rem, 15vw, 5rem)
         padding: 0px
-        margin: 10vh 0 0 0
+        margin: 0 0 0 0
 
     .Content
         color: rgb(var(--color_bg)) !important
@@ -133,5 +200,64 @@
         font-size: clamp(1rem, 5vw, 1.5rem)
         text-align: center
         font-family: $fontNoto
+
+    .FormContainer
+        .Form
+            width: 50%
+            min-width: 250px
+            max-width: 700px
+            @include media('<phone')
+                width: 90%
+            input, textarea
+                border: none
+                padding: 1rem
+                background: rgba(var(--color_bg), 1)
+                font-family: $fontNoto
+                font-size: 1.2rem
+                border-radius: clamp(0.5rem, 1vw, 1rem)
+                color: $WColor
+                transition: padding 0.1s ease
+                &::placeholder
+                    color: var(--color_p)
+                    opacity: 0.8
+                    font-family: $fontNoto
+                    font-size: 1.2rem
+                &:-internal-autofill-selected, &:-internal-autofill-selected:focus
+                    transition: background-color 600000s 0s, color 600000s 0s
+                    background-image: none !important
+                    background-color: rgba(var(--color_bg), 1) !important
+                    background: rgba(var(--color_bg), 1) !important
+                    color: var(--color_p) !important
+                &:focus, &:focus-visible
+                    outline: none
+                    border: none
+                    padding: 1rem 1rem 1rem 1rem
+            textarea
+                resize: vertical
+                min-height: 10rem
+            button
+                border: none
+                background: rgba(var(--color_bg), 1)
+                font-family: $fontNoto
+                font-size: 1.2rem
+                font-variation-settings: 'wght' 700
+                border-radius: clamp(0.5rem, 1vw, 1rem)
+                color: var(--color_p)
+                transition: all 0.2s ease
+                width: 20%
+                min-width: 15ch
+                margin-left: 50%
+                transform: translateX(-50%)
+                padding: 1rem
+                &:hover
+                    outline: none
+                    border: solid 0.2rem var(--color_bg)
+                    background: $WColor
+                    color: rgb(var(--color_bg))
+                    cursor: pointer
+
 .maxLetsTalk
-    max-width: calc(1200px - 20rem)
+    max-width: calc(100%)
+    padding: 5rem 0
+    h1
+        margin: 0

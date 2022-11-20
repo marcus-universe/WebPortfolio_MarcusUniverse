@@ -21,6 +21,8 @@
     </transition>
 </router-view>
 
+
+<LetsTalk />
 <Footer v-if="error == false" />
 <!-- <p>
   Klicken Sie <a href="#" @click.prevent="disableTracking">hier</a>,
@@ -44,6 +46,7 @@
 <script>
 import Menu from '@/components/Ui/Menu.vue'
 import Footer from '@/components/Footer.vue'
+import LetsTalk from '@/components/LetsTalk.vue'
 import { useBreakpoints, useWindowSize, useMouse } from '@vueuse/core'
 import { ref, watch} from 'vue'
 import { useStore } from 'vuex'
@@ -55,7 +58,8 @@ export default {
     name: 'Marcus Universe Webportfolio',
     components: {
         Menu,
-        Footer
+        Footer,
+        LetsTalk
     },
     methods: {
         disableTracking: function () {
@@ -101,7 +105,7 @@ export default {
         const store = useStore()
         const transBG = ref(null)
         const { width } = useWindowSize()
-        const { x, y, sourceType } = useMouse()
+        const { sourceType } = useMouse()
         const { language } = useNavigatorLanguage()
         store.commit('setLang', language)
         watch(language, (value) => {
@@ -117,25 +121,24 @@ export default {
 
         function checkScreenSize(value) {
             if (value < 640) {
-                store.commit('setScreen', 'phone')
+                store.dispatch('changeScreen', 'phone')
             }
             else if (value < 1280) {
-                store.commit('setScreen', 'tablet')
+                store.dispatch('changeScreen', 'tablet')
             }
             else if (value < 1600) {
-                store.commit('setScreen', 'desktop')
+                store.dispatch('changeScreen', 'desktop')
             }
         }
         checkScreenSize(width.value)
 
-        function checkMouse( x, y, sourceType ) {
-            store.commit('setMousePosition', { x, y })
-            store.commit('setMouseSource', sourceType)   
+        function checkMouse(sourceType ) {
+            store.dispatch('changeMouseSource', sourceType)   
         }
-        checkMouse(x.value, y.value, sourceType.value)
+        checkMouse(sourceType.value)
 
-        watch(x, (value) => {
-            checkMouse(value, y.value, sourceType.value )
+        watch(sourceType, (value) => {
+            checkMouse(value)
         })
 
         //add a watcher to the breakpoints and add the current breakpoint to store.state.screen

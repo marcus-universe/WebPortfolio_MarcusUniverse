@@ -5,52 +5,51 @@
     flex-direction: row
     margin-top: 2rem
     margin-bottom: 2rem
-    @include media('<phone')
-        justify-content: space-around
     a
-        color: $WColor
-        margin-right: 3rem
+        color: var(--color_p)
+        background: rgb(var(--color_bg))
+        border: none
         display: flex
         justify-content: center
         align-items: center
-
-        @include media('<=tablet')
-            margin-right: 2rem
-        @include media('<=phone')
-            margin-right: 1rem
-            width: clamp(4rem, 50%, 6rem)
-            height: clamp(4rem, 50%, 6rem)
-        &:hover
-            color: $nBlue
-            cursor: pointer
-            img
-                opacity: 1
+        padding: 2rem
+        text-decoration: none
+        border-radius: clamp( 1rem, 5vw, 1rem)
+        transition: all 0.3s ease
+        text-transform: none
+        @include media('<phone')
+            padding: 1rem
+            flex-wrap: wrap
+            max-width: 80%
+            text-align: center
         &:last-child
             margin-right: 0
         &:hover
-            svg
-                polygon
-                    fill: rgba(var(--color_bg), 1)
-                path
-                    fill: rgba(var(--color_bg), 1)
-                rect
-                    fill: rgba(var(--color_bg), 1)
+            filter: brightness(1.2)
+            transform: scale(1.05)
+            cursor: pointer
         img
             width: 5rem
             opacity: 0.5
             transition: opacity 0.5s ease-in-out
-        svg
+        .logo
             width: 6rem
             height: 6rem
-            @include media('<phone')
-                width: clamp(4rem, 50%, 6rem)
-                height: clamp(4rem, 50%, 6rem)
-            polygon
-                fill: rgba(var(--color_bg), 0.8)
-                transition: all 0.3s ease
-            path
-                fill: rgba(var(--color_bg), 0.8)
-                transition: all 0.3s ease
-            rect
-                fill: rgba(var(--color_bg), 0.8)
-                transition: all 0.3s ease
+            svg
+                width: 6rem
+                height: 6rem
+                border-radius: clamp( 1rem, 1rem + 5vw, 1rem)
+                polygon, path, rect
+                    fill: var(--color_p)
+                    transition: all 0.3s ease
+        p
+            font-size: 1rem
+            font-family: $fontNoto
+            font-weight: 600
+            margin: 0
+            padding: 0
+            margin-left: 1rem
+        .smallInfo
+            font-size: 2.1rem
+            color: $WColor
+            text-transform: uppercase

@@ -1,45 +1,83 @@
-[{
-        "name": "Adobe Creative Cloud",
-        "link": "adobecloud"
-    },
-    {
-        "name": "Blender",
-        "link": "blender"
-    },
-    {
-        "name": "Davinci Resolve",
-        "link": "davinciresolve"
-    },
-    {
-        "name": "Unreal Engine",
-        "link": "unrealengine"
-    },
-    {
-        "name": "Vue3",
-        "link": "vue"
-    },
-    {
-        "name": "NodeJS",
-        "link": "nodejs"
-    },
-    {
-        "name": "Electron",
-        "link": "electron"
-    },
-    {
-        "name": "Tauri",
-        "link": "tauri"
-    },
-    {
-        "name": "Pureref",
-        "link": "pureref"
-    },
-    {
-        "name": "Fl Studio",
-        "link": "flstudio"
-    },
-    {
-        "name": "VCV Rack",
-        "link": "vcv"
-    }
-]
+{
+    "filterKathegorie": [{
+        "name": "3D Software",
+        "tag": "3D",
+        "active": false
+
+    }, {
+        "name": "Film/VFX Software",
+        "tag": "film",
+        "active": false
+    }, {
+        "name": "Coding Stack",
+        "tag": "code",
+        "active": false
+
+    }, {
+        "name": "Music Software",
+        "tag": "music",
+        "active": false
+
+    }, {
+        "name": "Design Software",
+        "tag": "design",
+        "active": false
+
+    }],
+
+    "softwareList": [{
+            "name": "Blender",
+            "link": "blender",
+            "tags": ["3D", "all"]
+        },
+        {
+            "name": "Unreal Engine",
+            "link": "unrealengine",
+            "tags": ["3D", "all"]
+        },
+        {
+            "name": "Davinci Resolve",
+            "link": "davinciresolve",
+            "tags": ["film", "all"]
+        }, {
+            "name": "Adobe After Effects",
+            "link": "ae",
+            "tags": ["film", "all"]
+        },
+        {
+            "name": "NodeJS",
+            "link": "nodejs",
+            "tags": ["code", "all"]
+        }, {
+            "name": "Vue3",
+            "link": "vue",
+            "tags": ["code", "all"]
+        }, {
+            "name": "Electron",
+            "link": "electron",
+            "tags": ["code", "all"]
+        }, {
+            "name": "Tauri",
+            "link": "tauri",
+            "tags": ["code", "all"]
+        },
+        {
+            "name": "Fl Studio",
+            "link": "fl_studio",
+            "tags": ["music", "all"]
+        }, {
+            "name": "VCV Rack",
+            "link": "vcv",
+            "tags": ["music", "all"]
+        },
+        {
+            "name": "Creative Cloud",
+            "link": "adobecloud",
+            "tags": ["design", "all"]
+        }, {
+            "name": "Pureref",
+            "link": "pureref",
+            "tags": ["design", "all"]
+        }
+    ]
+}

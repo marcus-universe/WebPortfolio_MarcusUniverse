@@ -231,6 +231,13 @@
         line-height: 2.7rem
         position: relative
         z-index: 2
+        opacity: 0
+        transform: scale(0.6)
+        transition: all 0.5s ease
+    .show
+        opacity: 1
+        transform: scale(1)
+
     h2
         font-family: $fontNoto
         font-size: clamp(3rem, 15vw, 5rem)
@@ -265,3 +272,85 @@
         background: rgba(var(--color_bg), 0.8)
         backdrop-filter: blur(0.2vmax)
         z-index: 1
+
+.MoreWorks
+    min-width: calc(100%)
+    text-align: center
+    border-top: 0.5rem solid var(--color_p)
+    border-bottom: 0.5rem solid var(--color_p)
+    min-height: 60vh
+    overflow: hidden
+    position: relative
+    padding: 5rem 0
+    .MoreWorks__container__title
+        position: relative
+        z-index: 2
+        h2
+            font-variation-settings: 'wght' 700
+            font-size: clamp(3rem, 15vw + 1rem, 5rem)
+            color: var(--color_p)
+            text-align: center
+            margin: 0 0
+    .MoreWorkIconContainer
+        position: relative
+        z-index: 2
+        transform: scale(0)
+        transition: all 0.5s ease
+        @include media('<=phone')
+            flex-wrap: wrap
+        a
+            color: rgb(var(--color_bg))
+            background: var(--color_p)
+            font-variation-settings: 'wght' 700
+            font-size: clamp(1rem, 15vw + 1rem, 1.3rem)
+            text-decoration: none
+            padding: 1rem 2rem
+            transition: all 0.3s ease
+            border-radius: clamp(0.5rem, 15vw, 1rem)
+            .logo
+                // border-radius: clamp(0.5rem, 15vw, 1rem)
+                transition: all 0.3s ease
+                svg
+                    fill: rgb(var(--color_bg))
+                    width: clamp(5rem, 15vw, 10rem)
+                    border-radius: clamp(0.5rem, 15vw, 1rem)
+                    aspect-ratio: 1/1
+                    // background: rgba(var(--color_bg), 1)
+            &:hover
+                cursor: pointer
+                z-index: 3
+                transform: scale(1.1) rotate(5deg) translateZ(0)
+                box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3)
+                -webkit-backface-visibility: hidden
+                will-change: transform
+                -webkit-perspective: 1000
+                outline: 1px solid transparent
+                filter: brightness(1.2)
+    .show
+        transform: scale(1)
+
+    .SpaceClouds
+        min-width: 100%
+        position: absolute
+        flex-shrink: 0
+        z-index: 1
+        bottom: 0
+        @include media('<=phone')
+            min-width: 400vw
+        svg
+            flex-shrink: 0
+            width: 100%
+            .cls-1
+                opacity: 0.18
+
+            .cls-2, .cls-5, .cls-3
+                fill: var(--color_p)
+
+            .cls-2
+                filter: drop-shadow(0px 0px 0.4rem rgb($WColor, 0.7))
+
+            .cls-3
+                opacity: 0.33
+
+            .cls-4
+                opacity: 1

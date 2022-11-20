@@ -35,7 +35,6 @@
         :currentIndex="currentselectedIndex" />
 
     <LetsExplore />
-    <LetsTalk v-if="error == false" />
 
 </div>
 </template>
@@ -43,7 +42,6 @@
 <script>
 import StartPage from '../components/StartPage.vue'
 import LetsExplore from '../components/LetsExplore.vue'
-import LetsTalk from '../components/LetsTalk.vue'
 import ErrorPage from '../components/ErrorPage.vue'
 
 // let root = document.documentElement;
@@ -52,7 +50,6 @@ export default {
     name: 'App',
     components: {
         StartPage,
-        LetsTalk,
         ErrorPage,
         LetsExplore
     },
