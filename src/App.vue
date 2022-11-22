@@ -39,7 +39,7 @@
 @import '@/sass/socialMedia.sass';
 @import '@/sass/Pages/about.sass';
 @import '@/sass/Pages/explore.sass';
-@import '@/sass/Pages/Impressum.sass';
+@import '@/sass/Pages/impressum.sass';
 @import '@/sass/Pages/footer.sass';
 </style>
 
