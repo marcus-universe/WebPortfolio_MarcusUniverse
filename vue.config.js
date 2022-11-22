@@ -1,4 +1,4 @@
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
   pages: {
     index: {
@@ -20,9 +20,9 @@ module.exports = {
   chainWebpack: config => {
     config.plugins.delete('prefetch');
   },
-  configureWebpack: {
-    plugins: [new BundleAnalyzerPlugin()]
-  }
+  // configureWebpack: {
+  //   plugins: [new BundleAnalyzerPlugin()]
+  // }
 
   // publicPath: process.env.NODE_ENV === 'production'
   //   ? '/dist/'
