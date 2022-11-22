@@ -35,7 +35,7 @@
 
 @import "@/sass/_base.sass";
 @import '@/sass/menu.sass';
-@import '@/sass/pages/startpage.sass';
+@import '@/sass/Pages/startpage.sass';
 @import '@/sass/socialMedia.sass';
 @import '@/sass/Pages/about.sass';
 @import '@/sass/Pages/explore.sass';
