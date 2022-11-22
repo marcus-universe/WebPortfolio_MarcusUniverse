@@ -9,8 +9,8 @@ This is my <b>webportfolio</b> build in <b>Vue3</b> and can be looked at
 <a target="_blank" href="https://marcus-universe.de"><b>marcus-universe.de</b></a>
 </p>
 
-![Explore Image 1](./design/explore-1.png)
-![Explore Image 2](./design/explore-2.png)
+![Explore Image 1](./design/Explore_1.png)
+![Explore Image 2](./design/Explore_2.png)
 
 ## Project setup
 
