@@ -53,3 +53,28 @@
             font-size: 2.1rem
             color: $WColor
             text-transform: uppercase
+
+.shareButtons
+    background: var(--color_p)
+    color: var(--color_bg)
+    font-family: $fontNoto
+    font-variation-settings: 'wght' 700
+    padding: 1rem 1rem
+    border-radius: clamp( 0.5rem, 15vw, 0.6rem)
+    margin-bottom: 2rem
+    font-size: 1rem
+    text-align: center
+    transition: all 0.3s ease
+    .logo
+        width: 1.5rem
+        height: 1.5rem
+        svg
+            width: 1.5rem
+            height: 1.5rem
+            polygon, path, rect
+                fill: var(--color_bg)
+                transition: all 0.3s ease
+    &:hover
+        cursor: pointer
+        transform: scale(1.1)
+        background: $WColor
