@@ -329,28 +329,24 @@
     .show
         transform: scale(1)
 
-    .SpaceClouds
-        min-width: 100%
-        position: absolute
+.SpaceClouds
+    min-width: 100%
+    position: absolute
+    flex-shrink: 0
+    z-index: 1
+    bottom: 0
+    @include media('<=phone')
+        min-width: 400vw
+    svg
         flex-shrink: 0
-        z-index: 1
-        bottom: 0
-        @include media('<=phone')
-            min-width: 400vw
-        svg
-            flex-shrink: 0
-            width: 100%
-            .cls-1
-                opacity: 0.18
-
-            .cls-2, .cls-5, .cls-3
-                fill: var(--color_p)
-
-            .cls-2
-                filter: drop-shadow(0px 0px 0.4rem rgb($WColor, 0.7))
-
-            .cls-3
-                opacity: 0.33
-
-            .cls-4
-                opacity: 1
+        width: 100%
+        .cls-1
+            opacity: 0.18
+        .cls-2, .cls-5, .cls-3
+            fill: var(--color_p)
+        .cls-2
+            filter: drop-shadow(0px 0px 0.4rem rgb($WColor, 0.7))
+        .cls-3
+            opacity: 0.33
+        .cls-4
+            opacity: 1

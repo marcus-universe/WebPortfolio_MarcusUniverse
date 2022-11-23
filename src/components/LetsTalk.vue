@@ -38,7 +38,7 @@
         <input type="email" name="email" required placeholder="E-Mail">
         <input type="text" name="subject" required placeholder="Subject" v-model="subject">
         <textarea name="message" required placeholder="Write me a message"></textarea>
-        <input type="hidden" name="_next" value="https://marcus-universe.de/impressum">
+        <input type="hidden" name="_next" value="https://marcus-universe.de/#/submit">
         <input type="hidden" name="_subject" :value="'New Mail ' + subject">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_autoresponse" value="Marcus Universe received your Message. Be patient until you get an answer. The universe is very big and messages take time to get to you at the speed of light.">
