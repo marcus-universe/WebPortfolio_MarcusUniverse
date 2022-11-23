@@ -3,6 +3,7 @@ const Home = () => import('@/views/Home.vue')
 const Impressum = () => import('@/views/Impressum.vue')
 const About = () => import('@/views/About.vue')
 const Explore = () => import('@/views/Explore.vue')
+const ContactSubmit = () => import('@/views/ContactSubmit.vue')
 const routes = [
   {
     path: '/',
@@ -23,6 +24,11 @@ const routes = [
     path: '/explore',
     name: 'Explore',
     component: Explore
+  },
+  {
+    path: '/submit',
+    name: 'Submited',
+    component: ContactSubmit
   }
 ]
 
