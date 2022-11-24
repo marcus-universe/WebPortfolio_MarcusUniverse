@@ -59,7 +59,7 @@
 import {
     useMouseInElement
 } from '@vueuse/core'
-import {computed, ref, Suspense } from 'vue'
+import { computed, ref, Suspense } from 'vue'
 
 export default {
     props: {
