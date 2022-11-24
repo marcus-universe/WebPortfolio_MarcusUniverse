@@ -16,7 +16,7 @@
                 :to=" '/' + navitem.link"
                 :class="[{activeMenu: currentRouteName === navitem.name}]"
                 @click="$emit('transitionbgAction', navitem.link)"
-                class="flex_c flex_start">
+                class="flex_c flex_start" :alt="navitem.name">
                 <Logo
                     :icon="navitem.icon"
                     :navname="navitem.name" />
