@@ -12,7 +12,7 @@
         </div>
         </template>
         <template #fallback>
-            <div>
+            <div class="loading">
                 Loading...                
             </div>
         </template>
@@ -43,7 +43,7 @@
 
     </template>
     <template #fallback>
-        <div>
+        <div class="loading">
             Loading...                
         </div>
     </template>
