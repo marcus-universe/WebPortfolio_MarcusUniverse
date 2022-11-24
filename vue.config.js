@@ -8,23 +8,24 @@ module.exports = {
       title: 'Home'
     }
   },
-  css: {
-    loaderOptions: {
-      scss: {
-        additionalData: `
-          
-        `
-      }
-    }
-  },
   chainWebpack: config => {
     config.plugins.delete('prefetch');
   },
   // configureWebpack: {
-  //   plugins: [new BundleAnalyzerPlugin()]
+  //   optimization: {
+  //     minimize: true,
+  //     splitChunks: {
+  //       minSize: 1000,
+  //       maxSize: 250000,
+  //       cacheGroups: {
+  //         vendors: {
+  //           test: /[\\/]node_modules[\\/]/,
+  //           name: 'vendor',
+  //           chunks: 'initial',
+  //           priority: -30
+  //         },
+  //       }
+  //     }
+  //   }
   // }
-
-  // publicPath: process.env.NODE_ENV === 'production'
-  //   ? '/dist/'
-  //   : '/dist/'
 };
