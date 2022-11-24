@@ -3,16 +3,16 @@
     <Suspense>
 
         <template #default>
-        <div v-if="work.video === false" class="work_thumbnail" ref="transformElement" @click="showWork(work)" :style="{
-                    backgroundImage: 'url(' + require(`@/assets/img/works/${work.thumbnail}.webp`) + ')',
-                transform: setTransform(),
-                transition: setTransition()
-            }">
+        <a v-if="work.video === false" :href="work.link" target="_blank" :alt="work.name" class="work_thumbnail" ref="transformElement" @click="showWork(work)" :style="{
+                backgroundImage: 'url(' + require(`@/assets/img/works/${work.thumbnail}.webp`) + ')',
+            transform: setTransform(),
+            transition: setTransition()
+        }">
             <div class="WorkHeadline">{{work.name}}</div>
-        </div>
+        </a>
         </template>
         <template #fallback>
-            <div>
+            <div class="loading">
                 Loading...                
             </div>
         </template>
@@ -23,9 +23,12 @@
 <Suspense>
     <template #default>
 
-<div
+<a
     v-if="work.video === true"
     class="work_thumbnail"
+    :href="work.link" 
+    target="_blank"
+    :alt="work.name"
     @click="showWork(work)"
     ref="transformElement"
     :style="{
@@ -39,11 +42,11 @@
             :src="require(`@/assets/img/works/${work.thumbnail}.mp4`)"
             type="video/mp4">
     </video>
-</div>
+</a>
 
     </template>
     <template #fallback>
-        <div>
+        <div class="loading">
             Loading...                
         </div>
     </template>
@@ -56,7 +59,7 @@
 import {
     useMouseInElement
 } from '@vueuse/core'
-import {computed, ref, Suspense } from 'vue'
+import { computed, ref, Suspense } from 'vue'
 
 export default {
     props: {

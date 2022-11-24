@@ -57,6 +57,18 @@
         "thumbnail": "DreamRoom"
     },
     {
+        "name": "Bonscheladen Flexible CD",
+        "description": "This is a student project for Corporate Design. The goal is to create a flexible design system. Here I have chosen the brand Bonscheladen, which produces handmade candies. https://www.bonscheladen.de/ For this, I created 3 D renders of their candies and combined them with my newly designed logo.In addition, I also created a whole design system. You can find the style guide PDF here: https://drive.google.com/file/d/1fKSRTjAh7095nk7tnuHr5XWIUzHuQJFu/view?usp=share_link",
+        "link": "https://www.artstation.com/artwork/JemqE0",
+        "music": false,
+        "github": false,
+        "direct": true,
+        "video": false,
+        "vidPreview": "",
+        "thumbnail": "bonscheladen"
+    },
+
+    {
         "name": "Dynamic Maschines Challange Submission",
         "description": "This was my submission for the dynamic maschines challange from @pwnisher. Everything is modelled, textured, animated, shaded by me and sounds + piano in background are created and played by me",
         "link": "https://www.artstation.com/artwork/oA4wJJ",
@@ -66,6 +78,40 @@
         "video": true,
         "vidPreview": "dynamicmaschines_preview",
         "thumbnail": "dynamicmaschines"
+    },
+    {
+        "name": "RetroBoy",
+        "description": "As a study project in the subject screen design we had the task to design a new product which you can customize in a configurator according to your wishes. I designed the brand Retro Boy, which offers a portable and customizable game console, on which all retro classics can be played without any problems.I was inspired by the design of the Gameboy Classic and designed and modernized it completely in 3 D. In addition, I created the whole web design in Adobe XD which is interactive.",
+        "link": "https://www.artstation.com/artwork/lRwdKO",
+        "music": false,
+        "github": false,
+        "direct": true,
+        "video": false,
+        "vidPreview": "",
+        "thumbnail": "retroboy"
+    },
+    {
+        "name": "96s Driver",
+        "description": "My first Eurobeat Song. Let's drive with speed, speed and more speed with 169BPM 😎",
+        "link": "https://on.soundcloud.com/eqJv5",
+        "music": true,
+        "github": false,
+        "direct": true,
+        "video": false,
+        "vidPreview": "",
+        "thumbnail": "96sdriver"
+    },
+
+    {
+        "name": "SoundNinja",
+        "description": "Best Soundboardapp",
+        "link": "https://github.com/marcus-universe/SoundNinja",
+        "music": false,
+        "github": true,
+        "direct": true,
+        "video": false,
+        "vidPreview": "",
+        "thumbnail": "soundninja"
     },
 
     {
@@ -99,6 +145,17 @@
         "direct": true,
         "video": false,
         "thumbnail": "journey"
+    },
+    {
+        "name": "Insta 360 One X",
+        "description": "I created a Website for the Insta 360 One X2 Premium Set. I added self created 3D renders of the product and also coded the whole website in HTML, CSS and JavaScript. The website is fully responsive and works on all devices. For the Website, I also created 360 Panoramas for Google Street View. These Images are created with an DSLR Camera on a tripod and be stitched together into a 360 Panorama",
+        "link": "https://github.com/marcus-universe/insta360",
+        "music": false,
+        "github": true,
+        "direct": true,
+        "video": false,
+        "vidPreview": "",
+        "thumbnail": "insta360"
     },
     {
         "name": "Fake Corporate Design",
