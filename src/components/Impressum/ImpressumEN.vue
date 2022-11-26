@@ -12,7 +12,7 @@
     <p><b>Kunstschule Wandsbek</b></p>
     <p>Holzmühlenstraße 84<br>22041 Hamburg<br></p>
     <br>
-    <p><b class="red">Please do not send letters to the university.  <br>Please contact me by mail!</b></p>
+    <p><b class="red">Please do not send letters to the university.  <br>Please contact me by E-Mail!</b></p>
 
     <p><br></p>
     <p></p>
