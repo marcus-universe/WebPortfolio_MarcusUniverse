@@ -30,10 +30,33 @@
         </li>
     </ul>
 </nav>
+<div class="langSelector">
+    <transition name="langChange">
+        <Logo v-if="selectedLang === 'de'" :icon="'de'" />
+        </transition>
+
+        <transition name="langChange">
+            <Logo v-if="selectedLang === 'en'" :icon="'en'" />
+        </transition>
+
+   
+    
+    <select name="lang" id="lang" v-model="selectedLang">
+        
+        <option value="de">
+           de 
+        </option>
+        <option value="en">
+            en <Logo :icon="'en'" />
+        </option>
+    </select>
+</div>
 </template>
 
 <script>
 import Logo from '@/components/Ui/Logo.vue';
+import { ref, watch } from 'vue';
+import { useStore } from 'vuex';
 export default {
     name: 'Menu',
     components: {
@@ -45,6 +68,27 @@ export default {
         }
     },
     emits: ['transitionbgAction'],
+    setup() {
+        const selectedLang = ref('de');
+        const store = useStore();
+
+        function setDefaultLang () {
+            if (store.state.lang.includes('de')) {
+                selectedLang.value = 'de';
+            } else {
+                selectedLang.value = 'en';
+            }
+        } 
+        setDefaultLang();
+
+        watch (selectedLang, (val) => {
+            store.state.lang = val;
+        })
+
+        return {
+            selectedLang
+        }
+    },
     computed: {
         navlists() {
             return this.$store.state.navigation.navlist

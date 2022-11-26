@@ -82,3 +82,37 @@ nav
                     color: var(--color_p)
 .activeNav
     padding-bottom: 1rem
+
+$langSize: clamp(5ch , 4vw, 6ch)
+.langSelector
+    position: fixed
+    top: 0.5rem
+    right: 0.5rem
+    z-index: 99
+    width: $langSize
+    aspect-ratio: 4/3
+    .logo
+        width: $langSize
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 98
+        svg
+            width: 100%
+            height: 100%
+    #lang
+        opacity: 1
+        position: absolute
+        top: 0
+        border: none
+        outline: none
+        width: 100%
+        height: 100%
+        opacity: 0
+        z-index: 99
+        option
+            display: block
+            background: rgba(var(--color_bg), 1)
+            color: var(--color_p)
+            padding: 0.5rem
+            font-size: 1.2rem
