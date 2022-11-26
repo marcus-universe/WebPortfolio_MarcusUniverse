@@ -20,13 +20,14 @@
 
         <VideoBG :focusVid="focusPlay"/>
 
-<div class="Videobox Showreelbox"
-        v-show="OpenVideo"
-        :navlists="navlists">
+        <Showreel v-if="OpenVideo"/>
+
+<!-- <div class="Videobox Showreelbox"
+        v-show="OpenVideo">
     <video ref="videoElement" class="VideoContent" poster="@/assets/thumbnail/thumbnail3d.jpg" controls>
-        <source src="@/assets/video/video_1.mp4" type="video/mp4">
+        <source src="@/assets/video/MarcusUniverseShowreel2022.mp4" type="video/mp4">
     </video>
-</div>
+</div> -->
     <!-- <div class="ContentBox"></div> -->
 <!-- <canvas class="pointcloud" ref="pointcloud"></canvas> -->
 </section>
@@ -35,10 +36,11 @@
 <script>
 // import rellax from 'rellax';
 import VideoBG from './Ui/VideoBG.vue';
-import { ref } from 'vue';
-import { useStore } from 'vuex';
-import { onClickOutside } from '@vueuse/core'
 
+import { ref, defineAsyncComponent } from 'vue';
+import { useStore } from 'vuex';
+
+const Showreel = defineAsyncComponent(() => import('@/components/Popups/Showreel.vue'));
 
 // import { ref } from 'vue3-lottie/dist/vue3-lottie.ssr';
 
@@ -55,47 +57,9 @@ export default {
             type: String,
             required: true
         },
-        smallHeadline: {
-            type: Boolean,
-            required: true
-        },
-        hideHeadline: {
-            type: Boolean,
-            required: true
-        },
-        currentIndex: {
-            type: Number,
-            required: true
-        },
-        navlists: {
-            type: Array,
-            required: true
-        }
 
     },
-    mounted() {
-        var video = this.$refs.videoElement;
-        var self = this;
-
-        if (video != null) {
-            video.addEventListener('ended', function () {
-                self.$store.commit('setVideo', false);
-                if (video.exitFullscreen)
-                    video.exitFullscreen();
-                else if (video.webkitExitFullscreen)
-                    video.webkitExitFullscreen();
-                else if (video.mozCancelFullScreen)
-                    video.mozCancelFullScreen();
-                else if (video.msExitFullscreen)
-                    video.msExitFullscreen();
-            }, false);
-
-
-            video.addEventListener('fullscreenchange', (event) => { 
-                console.log('fullscreenchange', event);
-            });
-        }
-    },
+   
     computed: {
         OpenVideo () {
             return this.$store.state.OpenVideo;
@@ -105,10 +69,6 @@ export default {
         const videoElement = ref(null)
         const store = useStore()
 
-        onClickOutside(videoElement, () => {
-            CloseVideoBox();
-        })
-
         function CloseVideoBox() {
             store.commit('setVideo', false);
             videoElement.value.pause();
@@ -117,14 +77,6 @@ export default {
 
         function OpenVideoBox() {
             store.commit('setVideo', true);
-            if (videoElement.value.mozRequestFullScreen) {
-                videoElement.value.mozRequestFullScreen();
-            } else if (videoElement.value.webkitRequestFullScreen) {
-                videoElement.value.webkitRequestFullScreen();
-            }  
-            videoElement.value.volume = 0.5
-            videoElement.value.play();
-           
         }
 
         return {
@@ -151,7 +103,8 @@ export default {
         }
     },
     components: {
-        VideoBG
+        VideoBG,
+        Showreel
     },
 
 }

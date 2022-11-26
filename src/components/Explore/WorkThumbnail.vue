@@ -3,54 +3,50 @@
     <Suspense>
 
         <template #default>
-        <a v-if="work.video === false" :href="work.link" target="_blank" :alt="work.name" class="work_thumbnail" ref="transformElement" @click="showWork(work)" :style="{
-                backgroundImage: 'url(' + require(`@/assets/img/works/${work.thumbnail}.webp`) + ')',
+            <a v-if="work.video === false" :href="work.link" target="_blank" :alt="work.name" class="work_thumbnail flex_c" ref="transformElement" @click="showWork(work)" :style="{
             transform: setTransform(),
             transition: setTransition()
         }">
-            <div class="WorkHeadline">{{work.name}}</div>
-        </a>
+
+                <picture>
+                    <source
+                        :srcset="require(`@/assets/img/works/${work.thumbnail}.webp`)"
+                        type="image/webp" lazy="load" decode="async">
+                    <img :src="require(`@/assets/img/works/${work.thumbnail}.jpg`)" :alt="work.name" lazy="load" decode="async">
+                </picture>
+                <div class="WorkHeadline">{{work.name}}</div>
+            </a>
         </template>
         <template #fallback>
             <div class="loading">
-                Loading...                
+                Loading...
             </div>
         </template>
 
+    </Suspense>
 
-</Suspense>
+    <Suspense>
+        <template #default>
 
-<Suspense>
-    <template #default>
-
-<a
-    v-if="work.video === true"
-    class="work_thumbnail"
-    :href="work.link" 
-    target="_blank"
-    :alt="work.name"
-    @click="showWork(work)"
-    ref="transformElement"
-    :style="{
+            <a v-if="work.video === true" class="work_thumbnail" :href="work.link" target="_blank" :alt="work.name" @click="showWork(work)" ref="transformElement" :style="{
     transform: setTransform(),
     transition: setTransition()
-    }"
-    >
-    <div class="WorkHeadline">{{work.name}}</div>
-    <video :poster="require(`@/assets/img/works/${work.vidPreview}.jpg`)" autoplay loop muted>
-        <source
-            :src="require(`@/assets/img/works/${work.thumbnail}.mp4`)"
-            type="video/mp4">
-    </video>
-</a>
+    }">
+                <div class="WorkHeadline">{{work.name}}</div>
+                <video :poster="require(`@/assets/img/works/${work.vidPreview}.jpg`)" autoplay loop muted>
+                    <source
+                        :src="require(`@/assets/img/works/${work.thumbnail}.mp4`)"
+                        type="video/mp4">
+                </video>
+            </a>
 
-    </template>
-    <template #fallback>
-        <div class="loading">
-            Loading...                
-        </div>
-    </template>
-</Suspense>
+        </template>
+        <template #fallback>
+            <div class="loading">
+                Loading...
+            </div>
+        </template>
+    </Suspense>
 
 </div>
 </template>
@@ -59,7 +55,11 @@
 import {
     useMouseInElement
 } from '@vueuse/core'
-import { computed, ref, Suspense } from 'vue'
+import {
+    computed,
+    ref,
+    Suspense
+} from 'vue'
 
 export default {
     props: {
@@ -79,23 +79,27 @@ export default {
         setTransform() {
             if (this.isOutside === false) {
                 return this.cardTransform;
-            }
-            else {
+            } else {
                 return "";
             }
         },
         setTransition() {
             if (this.isOutside === true) {
                 return "all 0.25s ease-out";
-            }
-            else {
+            } else {
                 return "";
             }
         }
     },
     setup() {
         const transformElement = ref(null);
-        const { elementX, elementY, elementHeight, elementWidth, isOutside } = useMouseInElement(transformElement);
+        const {
+            elementX,
+            elementY,
+            elementHeight,
+            elementWidth,
+            isOutside
+        } = useMouseInElement(transformElement);
         const cardTransform = computed(() => {
             const Max_Rotation = 10;
             const rX = (Max_Rotation / 2 -
@@ -113,8 +117,8 @@ export default {
             isOutside,
         };
     },
-    components: { Suspense }
+    components: {
+        Suspense
+    }
 }
-
-
 </script>
