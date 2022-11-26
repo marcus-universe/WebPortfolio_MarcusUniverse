@@ -24,7 +24,7 @@
     </teleport>
 
     <ExploreBanner />
-    <div ref="workDom">
+    <div ref="workDom" class="workDom">
         <transition-group
             name="fadeWork"
             tag="div"
@@ -47,11 +47,15 @@ import {
     ref,
     onMounted,
     onUnmounted,
-    computed
+    computed,
+    defineAsyncComponent
 } from 'vue'
+
 import WorkThumbnail from '@/components/Explore/WorkThumbnail.vue'
 import ExploreBanner from '@/components/Explore/ExploreBanner.vue'
-import MoreWorks from '@/components/Explore/MoreWorks.vue'
+const MoreWorks = defineAsyncComponent(() =>
+    import('@/components/Explore/MoreWorks.vue')
+)
 import {
     useStore
 } from 'vuex'
@@ -82,22 +86,31 @@ export default {
             window.removeEventListener('scroll', handleScroll)
         })
 
+        function loadMoreWorks(){
+            if (sliceNumber.value < works.value.length) {
+                if (works.value.length % 2 === 0) {
+                    sliceNumber.value += 2
+                } else {
+                    sliceNumber.value += 3
+                }
+            }
+
+            if (sliceNumber.value === works.value.length || sliceNumber.value > works.value.length) {
+                window.removeEventListener('scroll', handleScroll)
+            }
+        }
+
         const handleScroll = () => {
             const element = workDom.value
-            if (element.getBoundingClientRect().bottom < window.innerHeight) {
-                if (sliceNumber.value < works.value.length) {
-                    if (works.value.length % 2 === 0) {
-                        sliceNumber.value += 2
-                    } else {
-                        sliceNumber.value += 3
-                    }
-                }
-
-                if (sliceNumber.value === works.value.length || sliceNumber.value > works.value.length) {
-                    window.removeEventListener('scroll', handleScroll)
-                }
-                console.log(loadWorks.value)
+            try {
+                if (element.getBoundingClientRect().bottom < window.innerHeight) {
+                    loadMoreWorks()
+                } 
+            }catch (error) {
+                console.log(error)
+                sliceNumber.value = works.value.length
             }
+            
         }
 
         return {

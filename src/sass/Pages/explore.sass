@@ -5,6 +5,8 @@
     margin-top: 60px
     @include media('<=phone')
         margin-top: 0
+    .workDom
+        min-height: 60vh
 
     .WorkList
         margin: 5rem 5vw
@@ -94,6 +96,9 @@
                 @include media('>=tablet')
                     width: calc(var(--imageSizeN) + var(--imageSizeN) / 2)
                     height: calc(var(--imageSizeN) + var(--imageSizeN) / 2)
+            img
+                height: 100%
+                flex-shrink: 0
 
     .exploreBanner
         width: 90vw
