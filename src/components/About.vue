@@ -1,22 +1,21 @@
 <template>
 <section class="About">
     
-    
-
-    
     <div class="ContentAbout flex_c_v flex_start gap2 alignCenter">
         
-        <h1 v-if="!lang.includes('de')" class="AboutTitle">You want me!</h1>
-        <h1 v-if="lang.includes('de')" class="AboutTitle">Sie wollen mich!</h1>
+     <h1 v-if="!lang.includes('de')" class="AboutTitle">You want me!</h1>
+      <h1 v-if="lang.includes('de')" class="AboutTitle">Sie wollen mich!</h1>
         <div class="profilimgContainer" v-on:mouseover="hovered = true" v-on:mouseleave="hovered = false">
             <Logo :icon="'glasses'" ref="logo" :hovered="hovered"/>
             <img src="../assets/img/me_profile.jpg" alt="profile_picture" class="profile_img">
         </div>
         
-        <h2 v-if="!lang.includes('de')">Specs</h2>
-        <h2 v-if="lang.includes('de')">Spezifikationen</h2>
+        
+       <h2 v-if="!lang.includes('de')">Specs</h2>
+<h2 v-if="lang.includes('de')">Spezifikationen</h2>
         <div class="flex_c_h flex_wrap gap2 alignStretch spec">
-            <template v-if="lang.includes('de')">
+  
+            <template v-if="lang.includes('de')" >
                 <p class="flex_c flex_space flex_start">
                     <Logo :icon="'education'" />Abgeschlossenes Kommunikationsdesign Studium (Note: 94%)
                 </p>
@@ -39,8 +38,9 @@
                         rel="noopener noreferrer">Youtube Kanal</a> seit 2012 mit über 1.300 Abonnenten
                 </p>
             </template>
+    
 
-            <template v-if="!lang.includes('de')">
+            <template v-if="!lang.includes('de')" tag="div">
                 <p class="flex_c flex_space flex_start">
                     <Logo :icon="'education'" />Degree in communication design (grade: 94%)
                 </p>
@@ -61,10 +61,9 @@
                     <Logo :icon="'yt'" />Run as a hobby a <a href="https://www.youtube.com/c/MarcusUniverse-Official" target="_blank" rel="noopener noreferrer">Youtube channel</a>since 2012 with over 1.300 subscribers
                 </p>
             </template>
-            
         </div>
 
-        <h2>Software Skills</h2>
+        <h2>Skills</h2>
         <SoftwareSkills />
     </div>
 
