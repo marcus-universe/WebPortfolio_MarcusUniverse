@@ -6,17 +6,20 @@
 
         <meta
             name="msapplication-TileColor"
-            :content="color_p[currentselectedIndex]">
+            content="#3ee4ff">
 
         <meta
             name="theme-color"
-            :content="color_p[currentselectedIndex]">
+            content="#3ee4ff">
         <meta
             property="og:title"
             content="Marcus Universe Portfolio">
+        <meta property="title" name="title" content="Marcus Universe Portfolio">
 
         <meta
             property="og:description"
+            content="Marcus Harting (alias Marcus Universe) Portfolio. Im an artist, musician and coder">
+        <meta property="description" name="description"
             content="Marcus Harting (alias Marcus Universe) Portfolio. Im an artist, musician and coder">
 
         <meta
@@ -33,7 +36,6 @@
         :hideHeadline="hideHeadline"
         :navlists="navigation.navlist"
         :currentIndex="currentselectedIndex" />
-
     <LetsExplore />
 
 </div>
