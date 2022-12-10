@@ -34,7 +34,7 @@
                     Synthesizer-Nerd)
                 </p>
                 <p class="flex_c flex_space flex_start">
-                    <Logo :icon="'yt'" />Betreibe als Hobby einen <a href="https://www.youtube.com/c/MarcusUniverse-Official" target="_blank"
+                    <Logo :icon="'yt'" />Betreibe als Hobby einen <a href="https://youtube.com/@marcusunivers" target="_blank"
                         rel="noopener noreferrer">Youtube Kanal</a> seit 2012 mit über 1.300 Abonnenten
                 </p>
             </template>
@@ -58,7 +58,7 @@
                     <Logo :icon="'synth'" />I play piano/synth & guitar for over 10 years and produce songs (note: synth nerd).
                 </p>
                 <p class="flex_c flex_space flex_start">
-                    <Logo :icon="'yt'" />Run as a hobby a <a href="https://www.youtube.com/c/MarcusUniverse-Official" target="_blank" rel="noopener noreferrer">Youtube channel</a>since 2012 with over 1.300 subscribers
+                    <Logo :icon="'yt'" />Run as a hobby a <a href="https://youtube.com/@marcusunivers" target="_blank" rel="noopener noreferrer">Youtube channel</a>since 2012 with over 1.300 subscribers
                 </p>
             </template>
         </div>

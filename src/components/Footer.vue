@@ -2,8 +2,13 @@
 <footer>
 
     <div class="flex_c_h">
-        <router-link to="/impressum" class="flex_c_h impressumButton">
+        <router-link v-if="lang.includes('de')" to="/impressum" class="flex_c_h impressumButton">
             Impressum / Datapolicy
+        
+        </router-link>
+
+        <router-link v-if="!lang.includes('de')" to="/impressum" class="flex_c_h impressumButton">
+            imprint / legal
         
         </router-link>
     </div>
@@ -46,6 +51,11 @@ export default {
     components: {
         ShareButton
     },
+    computed: {
+        lang() {
+            return this.$store.state.lang
+        }
+    }
 }
 
 </script>

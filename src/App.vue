@@ -44,11 +44,11 @@
 </style>
 
 <script>
-import Menu from '@/components/Ui/Menu.vue'
-import Footer from '@/components/Footer.vue'
-import LetsTalk from '@/components/LetsTalk.vue'
+import { ref, watch, defineAsyncComponent } from 'vue'
+const Menu = defineAsyncComponent(() => import('@/components/Ui/Menu.vue'))
+const LetsTalk = defineAsyncComponent(() => import('@/components/LetsTalk.vue'))
+const Footer = defineAsyncComponent(() => import('@/components/Footer.vue'))
 import { useBreakpoints, useWindowSize, useMouse } from '@vueuse/core'
-import { ref, watch} from 'vue'
 import { useStore } from 'vuex'
 import { useNavigatorLanguage } from '@vueuse/core'
 

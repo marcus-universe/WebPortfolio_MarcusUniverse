@@ -1,7 +1,15 @@
 <template>
 <section class="Start flex_c">
 
-        <div class="playcontainer flex_c" @mouseover="focus()" @mouseleave="unfocus()" :class="{ 'activeplay': focusPlay }">
+    <div class="HeadBox flex_c">
+        <h1 v-if="lang.includes('de')">Willkommen in <br> <b>Marcus Universe</b></h1>
+        <h1 v-if="!lang.includes('de')">Welcome to <br> <b>Marcus Universe</b></h1>
+
+        <div
+            class="playcontainer flex_c"
+            @mouseover="focus()"
+            @mouseleave="unfocus()"
+            :class="{ 'activeplay': focusPlay }">
 
             <Vue3Lottie
                 class="playbutton"
@@ -15,21 +23,21 @@
                 v-on:mouseover="hoverPlay"
                 v-on:mouseleave="leavePlay"
                 @click="OpenVideoBox" />
+            <transition name="fade">
+                <p
+                    v-if="!lang.includes('de') && focusPlay===true"
+                    class="playText">Watch Showreel!</p>
+            </transition>
+            <transition name="fade">
+                <p
+                    v-if="lang.includes('de') && focusPlay===true"
+                    class="playText">Showreel anschauen!</p>
+            </transition>
 
         </div>
+    </div>
 
-        <VideoBG :focusVid="focusPlay"/>
-
-        <Showreel v-if="OpenVideo"/>
-
-<!-- <div class="Videobox Showreelbox"
-        v-show="OpenVideo">
-    <video ref="videoElement" class="VideoContent" poster="@/assets/thumbnail/thumbnail3d.jpg" controls>
-        <source src="@/assets/video/MarcusUniverseShowreel2022.mp4" type="video/mp4">
-    </video>
-</div> -->
-    <!-- <div class="ContentBox"></div> -->
-<!-- <canvas class="pointcloud" ref="pointcloud"></canvas> -->
+    <VideoBG :focusVid="focusPlay" />
 </section>
 </template>
 
@@ -37,10 +45,12 @@
 // import rellax from 'rellax';
 import VideoBG from './Ui/VideoBG.vue';
 
-import { ref, defineAsyncComponent } from 'vue';
-import { useStore } from 'vuex';
-
-const Showreel = defineAsyncComponent(() => import('@/components/Popups/Showreel.vue'));
+import {
+    ref
+} from 'vue';
+import {
+    useStore
+} from 'vuex';
 
 // import { ref } from 'vue3-lottie/dist/vue3-lottie.ssr';
 
@@ -59,10 +69,9 @@ export default {
         },
 
     },
-   
     computed: {
-        OpenVideo () {
-            return this.$store.state.OpenVideo;
+        lang() {
+            return this.$store.state.lang;
         },
     },
     setup() {
@@ -85,7 +94,7 @@ export default {
             OpenVideoBox
         }
     },
-    
+
     methods: {
         hoverPlay: function () {
             this.$refs['playButton'].setDirection("forward");
@@ -100,11 +109,10 @@ export default {
         },
         unfocus() {
             this.focusPlay = false;
-        }
+        },
     },
     components: {
         VideoBG,
-        Showreel
     },
 
 }

@@ -61,7 +61,6 @@
             display: inline-block
             width: 100%
             transform: translateY(0%) translateX(0%)
-            font-family: $fontNoto
             font-size: clamp(3rem, 15vw, 5rem)
             color: var(--color_p)
             left: auto
@@ -70,12 +69,13 @@
             padding-bottom: 0rem
             margin-bottom: 1rem
             // text-transform: uppercase
+            font-weight: 700
             font-variation-settings: 'wght' 700
         h2
-            font-family: $fontNoto
             font-size: clamp( 3rem, 4vw, 4rem)
             text-align: center
-            font-variation-settings: 'wght' 500
+            font-weight: 500
+            font-variation-settings: 'wght' 700
             color: $WColor
             width: 100%
             // max-width: 1200px
@@ -84,7 +84,7 @@
         .spec
             max-width: 1200px
             p
-                font-family: $fontNoto
+                font-weight: 500
                 font-variation-settings: 'wght' 500
                 color: $WColor
                 font-size: 1.2rem
@@ -116,7 +116,6 @@
                         text-decoration: underline
         .SoftwareSkills
             width: 100%
-            font-family: $fontNoto
             .filterSoftware
                 // overflow-x: scroll
                 @include media('<phone')
@@ -128,6 +127,7 @@
                         cursor: pointer
                         filter: brightness(1.2)
                     h3
+                        font-weight: 600
                         font-variation-settings: 'wght' 600
                         color: var(--color_p)
                         font-size: clamp( 1rem, 5vw, 1rem)
@@ -184,22 +184,24 @@
     background: var(--color_p)
     color: rgb(var(--color_bg)) !important
     border-bottom: none
+    z-index: 8
+    position: relative
 
     h1
         color: rgb(var(--color_bg)) !important
+        font-weight: 700
         font-variation-settings: 'wght' 700
         text-align: center
-        font-family: $fontNoto
         font-size: clamp(3rem, 15vw, 5rem)
         padding: 0px
         margin: 0 0 0 0
 
     .Content
         color: rgb(var(--color_bg)) !important
+        font-weight: 600
         font-variation-settings: 'wght' 600
         font-size: clamp(1rem, 5vw, 1.5rem)
         text-align: center
-        font-family: $fontNoto
 
     .FormContainer
         .Form
@@ -212,7 +214,6 @@
                 border: none
                 padding: 1rem
                 background: rgba(var(--color_bg), 1)
-                font-family: $fontNoto
                 font-size: 1.2rem
                 border-radius: clamp(0.5rem, 1vw, 1rem)
                 color: $WColor
@@ -220,7 +221,6 @@
                 &::placeholder
                     color: var(--color_p)
                     opacity: 0.8
-                    font-family: $fontNoto
                     font-size: 1.2rem
                 &:-internal-autofill-selected, &:-internal-autofill-selected:focus
                     transition: background-color 600000s 0s, color 600000s 0s
@@ -238,8 +238,8 @@
             button
                 border: none
                 background: rgba(var(--color_bg), 1)
-                font-family: $fontNoto
                 font-size: 1.2rem
+                font-weight: 700
                 font-variation-settings: 'wght' 700
                 border-radius: clamp(0.5rem, 1vw, 1rem)
                 color: var(--color_p)
@@ -269,7 +269,7 @@
     z-index: 2
     h1
         font-size: clamp(3rem, 15vw, 5rem)
-        font-family: $fontNoto
+        font-weight: 700
         font-variation-settings: 'wght' 700
         text-align: center
         color: $WColor
@@ -282,7 +282,7 @@
             line-height: 3.5rem
     p
         font-size: clamp(1rem, 5vw, 1.5rem)
-        font-family: $fontNoto
+        font-weight: 600
         font-variation-settings: 'wght' 600
         text-align: center
         color: var(--color_p)

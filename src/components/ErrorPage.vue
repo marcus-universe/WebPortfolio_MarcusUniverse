@@ -1,23 +1,17 @@
 <template>
-    <div class="workinprogress">
+    <div class="error">
     <div class="workingcontent">
-        <h1>Universe in Development</h1>
+        <h1>You missed the Universe <br><b>(ERROR 404)</b></h1>
         <p>
-            This portfolio universe is currently under construction. <br>
-            While then follow me on Social Media.
+            This page is not avalible. <br>
+            Please go back to the <router-link :to="'/'">Homepage</router-link> <br>or follow me at Social Media 😎
         </p>
 
         <div class="social_media">
-            <a href="https://www.artstation.com/marcusharting"><img src="../assets/artstation.svg" alt="Artstation"></a>
-            <a href="https://www.instagram.com/marcustutorials/"><img src="../assets/insta.svg" alt="Instagram"></a>
-            <a href="https://www.youtube.com/user/MarcusTutorials1"><img src="../assets/yt.svg" alt="YouTube"></a>
+            <a href="https://www.artstation.com/marcusharting" target="_blank"><img src="../assets/artstation.svg" alt="Artstation"></a>
+            <a href="https://www.instagram.com/marcusunivers/" target="_blank"><img src="../assets/insta.svg" alt="Instagram"></a>
+            <a href="https://youtube.com/@marcusunivers" target="_blank"><img src="../assets/yt.svg" alt="YouTube"></a>
         </div>
-
-
-<!-- Impressum -->
-<router-link to="/impressum" class="flex_c_h impressumButton">
-   Impressum
-</router-link>
     </div>
 </div>    
 </template>

@@ -6,17 +6,20 @@
 
         <meta
             name="msapplication-TileColor"
-            :content="color_p[currentselectedIndex]">
+            content="#3ee4ff">
 
         <meta
             name="theme-color"
-            :content="color_p[currentselectedIndex]">
+            content="#3ee4ff">
         <meta
             property="og:title"
             content="Marcus Universe Portfolio">
+        <meta property="title" name="title" content="Marcus Universe Portfolio">
 
         <meta
             property="og:description"
+            content="Marcus Harting (alias Marcus Universe) Portfolio. Im an artist, musician and coder">
+        <meta property="description" name="description"
             content="Marcus Harting (alias Marcus Universe) Portfolio. Im an artist, musician and coder">
 
         <meta
@@ -24,16 +27,14 @@
             content="./assets/img/me_profile.png">
     </teleport>
 
-    <ErrorPage v-if="error == true" />
-
     <StartPage
-        v-if="error == false"
         :title="title"
         :smallHeadline="smallHeadline"
         :hideHeadline="hideHeadline"
         :navlists="navigation.navlist"
         :currentIndex="currentselectedIndex" />
 
+    <Showreel v-show="OpenVideo" />
     <LetsExplore />
 
 </div>
@@ -42,16 +43,15 @@
 <script>
 import StartPage from '../components/StartPage.vue'
 import LetsExplore from '../components/LetsExplore.vue'
-import ErrorPage from '../components/ErrorPage.vue'
-
-// let root = document.documentElement;
+import { defineAsyncComponent } from 'vue'
+const Showreel = defineAsyncComponent(() => import(/* webpackChunkName: 'showreel' */ '@/components/Popups/Showreel.vue'));
 
 export default {
     name: 'App',
     components: {
         StartPage,
-        ErrorPage,
-        LetsExplore
+        LetsExplore,
+        Showreel
     },
 
     setup() {
@@ -81,7 +81,10 @@ export default {
         },
         error() {
             return this.$store.state.error
-        }
+        },
+        OpenVideo() {
+            return this.$store.state.OpenVideo;
+        },
     },
     mounted() {
         document.documentElement.style.setProperty('--color_p', '#3ee4ff');

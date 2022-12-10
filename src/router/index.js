@@ -1,9 +1,10 @@
 import { createRouter, createWebHashHistory  } from 'vue-router'
-const Home = () => import('@/views/Home.vue')
-const Impressum = () => import('@/views/Impressum.vue')
-const About = () => import('@/views/About.vue')
-const Explore = () => import('@/views/Explore.vue')
-const ContactSubmit = () => import('@/views/ContactSubmit.vue')
+const Home = () => import(/* webpackChunkName: 'Home' */ '@/views/Home.vue')
+const Impressum = () => import(/* webpackChunkName: 'Impressum' */ '@/views/Impressum.vue')
+const About = () => import(/* webpackChunkName: 'About' */ '@/views/About.vue')
+const Explore = () => import(/* webpackChunkName: 'Explore' */ '@/views/Explore.vue')
+const ContactSubmit = () => import(/* webpackChunkName: 'ContactSubmit' */ '@/views/ContactSubmit.vue')
+const ErrorPage = () => import(/* webpackChunkName: 'ContactSubmit' */ '@/components/ErrorPage.vue')
 const routes = [
   {
     path: '/',
@@ -29,6 +30,9 @@ const routes = [
     path: '/submit',
     name: 'Submited',
     component: ContactSubmit
+  },
+  {
+    path: '/:NotFound(.*)*', component: ErrorPage
   }
 ]
 

@@ -5,18 +5,25 @@
 
         <meta
             name="msapplication-TileColor"
-            :content="color_p[2]">
+            content="#FFA05F">
 
         <meta
             name="theme-color"
-            :content="color_p[2]">
+            content="#FFA05F">
         <meta
             property="og:title"
             content="Marcus Universe Portfolio">
 
         <meta
             property="og:description"
-            content="Marcus Harting (alias Marcus Universe) Portfolio. Im an artist, musician and coder">
+            content="Marcus Harting (alias Marcus Universe) Portfolio. Explore my designs, 3D art, music and work">
+
+<meta property="title" name="title" content="Marcus Universe | Explore">
+
+<meta property="og:description"
+    content="Marcus Harting (alias Marcus Universe) Portfolio. Explore my designs, 3D art, music and work">
+<meta property="description" name="description"
+    content="Marcus Harting (alias Marcus Universe) Portfolio. Explore my designs, 3D art, music and work">
 
         <meta
             property="og:image"
@@ -54,7 +61,7 @@ import {
 import WorkThumbnail from '@/components/Explore/WorkThumbnail.vue'
 import ExploreBanner from '@/components/Explore/ExploreBanner.vue'
 const MoreWorks = defineAsyncComponent(() =>
-    import('@/components/Explore/MoreWorks.vue')
+    import( /* webpackChunkName: 'more_works' */  '@/components/Explore/MoreWorks.vue')
 )
 import {
     useStore
