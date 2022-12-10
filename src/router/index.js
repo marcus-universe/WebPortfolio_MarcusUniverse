@@ -4,6 +4,7 @@ const Impressum = () => import(/* webpackChunkName: 'Impressum' */ '@/views/Impr
 const About = () => import(/* webpackChunkName: 'About' */ '@/views/About.vue')
 const Explore = () => import(/* webpackChunkName: 'Explore' */ '@/views/Explore.vue')
 const ContactSubmit = () => import(/* webpackChunkName: 'ContactSubmit' */ '@/views/ContactSubmit.vue')
+const ErrorPage = () => import(/* webpackChunkName: 'ContactSubmit' */ '@/components/ErrorPage.vue')
 const routes = [
   {
     path: '/',
@@ -29,6 +30,9 @@ const routes = [
     path: '/submit',
     name: 'Submited',
     component: ContactSubmit
+  },
+  {
+    path: '/:NotFound(.*)*', component: ErrorPage
   }
 ]
 

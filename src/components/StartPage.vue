@@ -23,6 +23,17 @@
                 v-on:mouseover="hoverPlay"
                 v-on:mouseleave="leavePlay"
                 @click="OpenVideoBox" />
+            <transition name="fade">
+                <p
+                    v-if="!lang.includes('de') && focusPlay===true"
+                    class="playText">Watch Showreel!</p>
+            </transition>
+            <transition name="fade">
+                <p
+                    v-if="lang.includes('de') && focusPlay===true"
+                    class="playText">Showreel anschauen!</p>
+            </transition>
+
         </div>
     </div>
 
@@ -98,7 +109,7 @@ export default {
         },
         unfocus() {
             this.focusPlay = false;
-        }
+        },
     },
     components: {
         VideoBG,
