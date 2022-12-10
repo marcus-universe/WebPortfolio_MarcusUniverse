@@ -61,7 +61,7 @@ import {
 import WorkThumbnail from '@/components/Explore/WorkThumbnail.vue'
 import ExploreBanner from '@/components/Explore/ExploreBanner.vue'
 const MoreWorks = defineAsyncComponent(() =>
-    import('@/components/Explore/MoreWorks.vue')
+    import( /* webpackChunkName: 'more_works' */  '@/components/Explore/MoreWorks.vue')
 )
 import {
     useStore
