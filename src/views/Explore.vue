@@ -1,34 +1,5 @@
 <template>
 <div class="Section Explore">
-    <teleport to="head">
-        <title>Explore</title>
-
-        <meta
-            name="msapplication-TileColor"
-            content="#FFA05F">
-
-        <meta
-            name="theme-color"
-            content="#FFA05F">
-        <meta
-            property="og:title"
-            content="Marcus Universe Portfolio">
-
-        <meta
-            property="og:description"
-            content="Marcus Harting (alias Marcus Universe) Portfolio. Explore my designs, 3D art, music and work">
-
-<meta property="title" name="title" content="Marcus Universe | Explore">
-
-<meta property="og:description"
-    content="Marcus Harting (alias Marcus Universe) Portfolio. Explore my designs, 3D art, music and work">
-<meta property="description" name="description"
-    content="Marcus Harting (alias Marcus Universe) Portfolio. Explore my designs, 3D art, music and work">
-
-        <meta
-            property="og:image"
-            content="./assets/img/me_profile.png">
-    </teleport>
 
     <ExploreBanner />
     <div ref="workDom" class="workDom">
