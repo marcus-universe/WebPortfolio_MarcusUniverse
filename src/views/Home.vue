@@ -1,6 +1,7 @@
 <template>
-<div class="HOME">
 
+<div class="HOME">
+    
     <StartPage
         :title="title"
         :smallHeadline="smallHeadline"

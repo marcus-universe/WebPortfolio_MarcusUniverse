@@ -1,5 +1,7 @@
 <template>
+
 <div class="Section Explore">
+
 
     <ExploreBanner />
     <div ref="workDom" class="workDom">

@@ -1,5 +1,6 @@
 <template>
 <div class="Impressum">
+
 <ImpressumDE v-if="lang.includes('de')"/>
 <ImpressumEN v-if="!lang.includes('de')"/>
 

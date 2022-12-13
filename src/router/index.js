@@ -10,27 +10,47 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Marcus Universe Portfolio'
+
+    }
   },
   {
     path: '/impressum',
     name: 'Impressum',
-    component: Impressum
+    component: Impressum,
+    meta: {
+      title: 'Impressum'
+
+    }
   },
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: About,
+    meta: {
+      title: 'About'
+
+    }
   },
   {
     path: '/explore',
     name: 'Explore',
-    component: Explore
+    component: Explore,
+    meta: {
+      title: 'Explore'
+
+    }
   },
   {
     path: '/submit',
     name: 'Submited',
-    component: ContactSubmit
+    component: ContactSubmit,
+    meta: {
+      title: 'Submitted'
+
+    }
   },
   {
     path: '/:NotFound(.*)*', component: ErrorPage
@@ -48,6 +68,11 @@ const router = createRouter({
       }, 500)
     }
     )}
+})
+router.beforeEach((to, from, next) => {
+  document.title = `${to.meta.title}`;
+
+  next()
 })
 
 export default router

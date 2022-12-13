@@ -1,5 +1,7 @@
 <template>
+
 <div class="Section">
+
     <About />
 </div>
 </template>
