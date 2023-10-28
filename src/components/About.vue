@@ -1,8 +1,8 @@
 <template>
   <section class="About">
     <div class="ContentAbout flex_c_v flex_start gap2 alignCenter">
-      <h1 v-if="!lang.includes('de')" class="AboutTitle">You want me!</h1>
-      <h1 v-if="lang.includes('de')" class="AboutTitle">Sie wollen mich!</h1>
+      <h1 v-if="!lang.includes('de')" class="AboutTitle">You need me!</h1>
+      <h1 v-if="lang.includes('de')" class="AboutTitle">Sie brauchen mich!</h1>
       <div
         class="profilimgContainer"
         v-on:mouseover="hovered = true"
@@ -14,6 +14,19 @@
           alt="profile_picture"
           class="profile_img"
         />
+      </div>
+      <div class="descriptionBox" v-if="!lang.includes('de')">
+        <h5>Marcus Harting</h5>
+        <p class="descriptionProfile">
+          Passion in XR, 3D, CGI and Music/Film production
+        </p>
+      </div>
+
+      <div class="descriptionBox" v-if="lang.includes('de')">
+        <h5>Marcus Harting</h5>
+        <p class="descriptionProfile">
+          Leidenschaft für XR, 3D, CGI und Musik-/Filmproduktion
+        </p>
       </div>
 
       <h2 v-if="!lang.includes('de')">Specs</h2>
