@@ -9,7 +9,7 @@
         "tag": "film",
         "active": false
     }, {
-        "name": "Coding Stack",
+        "name": "Coding Skills",
         "tag": "code",
         "active": false
 
@@ -60,6 +60,16 @@
             "name": "Tauri",
             "link": "tauri",
             "tags": ["code", "all"]
+        },
+        {
+            "name": "Python",
+            "link": "python",
+            "tags": ["code", "all"]
+        },
+         {
+            "name": "OBS",
+            "link": "obs",
+            "tags": ["film", "all"]
         },
         {
             "name": "Fl Studio",

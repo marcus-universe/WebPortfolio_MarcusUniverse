@@ -1,6 +1,7 @@
 import { createStore } from "vuex";
 import works from "@/assets/json/works.json";
 import softwareStack from "@/assets/json/softwarestack.json";
+// import { supabase } from "./lib/supabaseClient";
 
 export default createStore({
   state: {

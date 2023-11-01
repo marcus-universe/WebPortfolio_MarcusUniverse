@@ -11,6 +11,7 @@
   },
   "main": "babel.config.js",
   "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
     "@vueuse/components": "^9.5.0",
     "@vueuse/core": "^9.5.0",
     "axios": "^0.24.0",
