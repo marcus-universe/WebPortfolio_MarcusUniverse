@@ -5,7 +5,7 @@
         "active": false
 
     }, {
-        "name": "Film/VFX Software",
+        "name": "Film/Broadcast Software",
         "tag": "film",
         "active": false
     }, {
@@ -45,6 +45,11 @@
             "tags": ["film", "all"]
         },
         {
+            "name": "OBS",
+            "link": "obs",
+            "tags": ["film", "all"]
+        },
+        {
             "name": "NodeJS",
             "link": "nodejs",
             "tags": ["code", "all"]
@@ -69,6 +74,16 @@
             "name": "VCV Rack",
             "link": "vcv",
             "tags": ["music", "all"]
+        },
+        {
+            "name": "Python",
+            "link": "python",
+            "tags": ["code", "all"]
+        },
+        {
+            "name": "Rust",
+            "link": "rust",
+            "tags": ["code", "all"]
         },
         {
             "name": "Creative Cloud",

@@ -1,18 +1,26 @@
 <template lang="en">
 <div>
-    <h1>Impressum</h1>
+    <h1>Imprint/Legal</h1>
     <h2>Information according to § 5 TMG:</h2>
-    <p>Marcus Universe<br>Communication designer (freelance)<br>Marcus Harting</p>
+    <p>Marcus Harting<br>Technical Artist<br>Marcus Universe</p>
 
     <h3>Kontakt:</h3>
     <p>E-Mail: <a href="mailto:contact@marcus-universe.de">contact@marcus-universe.de</a> (preferred)</p>
 
     <h3>Address:</h3>
 
-    <p><b>Kunstschule Wandsbek</b></p>
-    <p>Holzmühlenstraße 84<br>22041 Hamburg<br></p>
+    <p><b>Factory Hammerbrooklyn</b></p>
+    <p>Stadtdeich 2-4<br>20097 Hamburg<br></p>
     <br>
-    <p><b class="red">Please do not send letters to the university.  <br>Please contact me by E-Mail!</b></p>
+    <p><b class="red">Please do not send letters to the Factory!  <br>Please contact me by E-Mail!</b></p>
+
+    <br>
+    <p>
+    It is only the Telemedia Act (TMG) that obligates all website operators to disclose their private addresses. Myself and many other creatives and private individuals who do not wish to be exposed to potential stalkers are facing a significant issue with this regulation. 
+    <br>
+    <br>
+    Please support this petition to have this law repealed: <a href="https://epetitionen.bundestag.de/petitionen/_2023/_06/_12/Petition_152089.nc.html">Petition</a>
+    </p>
 
     <p><br></p>
     <p></p>
@@ -50,11 +58,7 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style lang="">
-
-</style>
+<style lang=""></style>
