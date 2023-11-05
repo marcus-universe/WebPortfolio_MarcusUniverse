@@ -14,6 +14,7 @@
     "@vueuse/components": "^9.5.0",
     "@vueuse/core": "^9.5.0",
     "axios": "^0.24.0",
+    "browserslist": "^4.22.1",
     "compression": "^1.7.4",
     "core-js": "^3.6.5",
     "rellax": "^1.12.1",
